@@ -1,0 +1,19 @@
+{
+  "name": "news-scrapper",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "",
+  "main": "articlesScrapeSave.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guilherme Sa",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^7.4.5",
+    "scrape-it": "^5.3.2"
+  }
+}

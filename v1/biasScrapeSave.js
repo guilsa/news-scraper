@@ -1,9 +1,9 @@
-const Database = require('better-sqlite3')
+import Database from 'better-sqlite3'
 const db = new Database('news.db')
 
 // TODO: move this stuff out of here
-import { MediaBiasFactCheck } from '../biasScrapper.mjs'
-import { getUrlFromSource } from './biasGetUrlFromSource'
+import { MediaBiasFactCheck } from './biasScrapper.mjs'
+import { getUrlFromSource } from './biasGetUrlFromSource.js'
 
 class DatabaseModel {}
 
@@ -37,7 +37,7 @@ const scrapper = new MediaBiasFactCheck()
 
 for (const url of urls) {
   setTimeout(() => {
-    console.log('url', url);
+    console.log('url', url)
     // const data = await scrapper.fetchText(url)
     // scrapper.clean(data)
 
