@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<style id="jetpack-boost-critical-css">@media screen{.pmpro_content_message a,.pmpro_content_message a:link{background-color:#efefef;background-image:none;border:1px solid #d6d6d6;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:none;box-shadow:none;color:#444;display:inline-block;font-weight:700;margin:0;padding:6px 12px;text-align:center;text-decoration:none;text-transform:none;vertical-align:middle;white-space:nowrap}.pmpro_content_message a,.pmpro_content_message a:link{margin:10px 10px 0 0}#pmpro_payment_information_fields .pmpro_checkout-fields-display-seal .pmpro_checkout-fields-leftcol{grid-area:leftcol}#pmpro_payment_information_fields .pmpro_checkout-fields-display-seal .pmpro_checkout-fields-rightcol{grid-area:rightcol}.pmpro_checkout_gateway-stripe form.pmpro_form #pmpro_payment_information_fields .pmpro_checkout-field-payment-request-button{grid-area:paymentrequestbutton}.pmpro_billing_gateway-stripe form.pmpro_form #pmpro_payment_information_fields .pmpro_payment-account-number,.pmpro_checkout_gateway-stripe form.pmpro_form #pmpro_payment_information_fields .pmpro_payment-account-number{-ms-grid-row:1;-ms-grid-column:1;-ms-grid-column-span:3;grid-area:AccountNumber}.pmpro_billing_gateway-stripe form.pmpro_form #pmpro_payment_information_fields .pmpro_payment-expiration,.pmpro_checkout_gateway-stripe form.pmpro_form #pmpro_payment_information_fields .pmpro_payment-expiration{-ms-grid-row:3;-ms-grid-column:1;grid-area:Expiry}.pmpro_billing_gateway-stripe form.pmpro_form #pmpro_payment_information_fields .pmpro_payment-cvv,.pmpro_checkout_gateway-stripe form.pmpro_form #pmpro_payment_information_fields .pmpro_payment-cvv{-ms-grid-row:3;-ms-grid-column:3;grid-area:CVV}.pmpro_checkout_gateway-stripe form.pmpro_form #pmpro_payment_information_fields .pmpro_payment-discount-code{-ms-grid-row:5;-ms-grid-column:1;-ms-grid-column-span:3;grid-area:DiscountCode}}@media all{#mega-menu-wrap-header_nav,#mega-menu-wrap-header_nav #mega-menu-header_nav,#mega-menu-wrap-header_nav #mega-menu-header_nav a.mega-menu-link,#mega-menu-wrap-header_nav #mega-menu-header_nav li.mega-menu-item{border-radius:0;box-shadow:none;background:0 0;border:0;bottom:auto;box-sizing:border-box;clip:auto;color:#666;display:block;float:none;font-family:inherit;font-size:14px;height:auto;left:auto;line-height:1.7;list-style-type:none;margin:0;min-height:auto;max-height:none;min-width:auto;max-width:none;opacity:1;outline:0;overflow:visible;padding:0;position:relative;right:auto;text-align:left;text-decoration:none;text-indent:0;text-transform:none;transform:none;top:auto;vertical-align:baseline;visibility:inherit;width:auto;word-wrap:break-word;white-space:normal}#mega-menu-wrap-header_nav #mega-menu-header_nav a.mega-menu-link:after,#mega-menu-wrap-header_nav #mega-menu-header_nav a.mega-menu-link:before,#mega-menu-wrap-header_nav #mega-menu-header_nav li.mega-menu-item:after,#mega-menu-wrap-header_nav #mega-menu-header_nav li.mega-menu-item:before,#mega-menu-wrap-header_nav #mega-menu-header_nav:after,#mega-menu-wrap-header_nav #mega-menu-header_nav:before,#mega-menu-wrap-header_nav:after,#mega-menu-wrap-header_nav:before{display:none}#mega-menu-wrap-header_nav{border-radius:0}@media only screen and (min-width:769px){#mega-menu-wrap-header_nav{background:#222}}#mega-menu-wrap-header_nav #mega-menu-header_nav{visibility:visible;text-align:left;padding:0}#mega-menu-wrap-header_nav #mega-menu-header_nav a.mega-menu-link{display:inline}#mega-menu-wrap-header_nav #mega-menu-header_nav input{max-width:100%}#mega-menu-wrap-header_nav #mega-menu-header_nav li.mega-menu-item a.mega-menu-link:before{display:inline-block;font:inherit;font-family:dashicons;position:static;margin:0 6px 0 0;vertical-align:top;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:inherit;background:0 0;height:auto;width:auto;top:auto}#mega-menu-wrap-header_nav #mega-menu-header_nav>li.mega-menu-megamenu.mega-menu-item{position:static}#mega-menu-wrap-header_nav #mega-menu-header_nav>li.mega-menu-item{margin:0;display:inline-block;height:auto;vertical-align:middle}#mega-menu-wrap-header_nav #mega-menu-header_nav>li.mega-menu-item>a.mega-menu-link{line-height:40px;height:40px;padding:0 10px 0 10px;vertical-align:baseline;width:auto;display:block;color:#fff;text-transform:none;text-decoration:none;text-align:left;text-decoration:none;background:rgba(0,0,0,0);border:0;border-radius:0;font-family:inherit;font-size:14px;font-weight:400;outline:0}@media only screen and (max-width:768px){#mega-menu-wrap-header_nav #mega-menu-header_nav>li.mega-menu-item{display:list-item;margin:0;clear:both;border:0}#mega-menu-wrap-header_nav #mega-menu-header_nav>li.mega-menu-item>a.mega-menu-link{border-radius:0;border:0;margin:0;line-height:40px;height:40px;padding:0 10px;background:0 0;text-align:left;color:#fff;font-size:14px}}@media only screen and (max-width:768px){#mega-menu-wrap-header_nav:after{content:"";display:table;clear:both}}#mega-menu-wrap-header_nav .mega-menu-toggle{display:none;z-index:1;background:#222;border-radius:2px 2px 2px 2px;line-height:40px;height:40px;text-align:left;outline:0;white-space:nowrap}@media only screen and (max-width:768px){#mega-menu-wrap-header_nav .mega-menu-toggle{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex}}#mega-menu-wrap-header_nav .mega-menu-toggle .mega-toggle-blocks-center,#mega-menu-wrap-header_nav .mega-menu-toggle .mega-toggle-blocks-left,#mega-menu-wrap-header_nav .mega-menu-toggle .mega-toggle-blocks-right{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-preferred-size:33.33%;-webkit-flex-basis:33.33%;flex-basis:33.33%}#mega-menu-wrap-header_nav .mega-menu-toggle .mega-toggle-blocks-left{-webkit-box-flex:1;-ms-flex:1;-webkit-flex:1;flex:1;-webkit-box-pack:start;-ms-flex-pack:start;-webkit-justify-content:flex-start;justify-content:flex-start}#mega-menu-wrap-header_nav .mega-menu-toggle .mega-toggle-blocks-center{-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center}#mega-menu-wrap-header_nav .mega-menu-toggle .mega-toggle-blocks-right{-webkit-box-flex:1;-ms-flex:1;-webkit-flex:1;flex:1;-webkit-box-pack:end;-ms-flex-pack:end;-webkit-justify-content:flex-end;justify-content:flex-end}#mega-menu-wrap-header_nav .mega-menu-toggle .mega-toggle-blocks-right .mega-toggle-block{margin-right:6px}#mega-menu-wrap-header_nav .mega-menu-toggle .mega-toggle-blocks-right .mega-toggle-block:only-child{margin-left:6px}#mega-menu-wrap-header_nav .mega-menu-toggle .mega-toggle-block{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;height:100%;outline:0;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;-ms-flex-negative:0;-webkit-flex-shrink:0;flex-shrink:0}@media only screen and (max-width:768px){#mega-menu-wrap-header_nav .mega-menu-toggle+#mega-menu-header_nav{background:#222;padding:0;display:none}}#mega-menu-wrap-header_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated{padding:0;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;font:inherit;color:inherit;text-transform:none;background-color:transparent;border:0;margin:0;overflow:visible;transform:scale(.8);align-self:center;outline:0;background:0 0}#mega-menu-wrap-header_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-box{width:40px;height:24px;display:inline-block;position:relative;outline:0}#mega-menu-wrap-header_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner{display:block;top:50%;margin-top:-2px}#mega-menu-wrap-header_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner,#mega-menu-wrap-header_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::after,#mega-menu-wrap-header_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::before{width:40px;height:4px;background-color:#ddd;border-radius:4px;position:absolute}#mega-menu-wrap-header_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::after,#mega-menu-wrap-header_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::before{content:"";display:block}#mega-menu-wrap-header_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::before{top:-10px}#mega-menu-wrap-header_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::after{bottom:-10px}#mega-menu-wrap-header_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-slider .mega-toggle-animated-inner{top:2px}#mega-menu-wrap-header_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-slider .mega-toggle-animated-inner::before{top:10px}#mega-menu-wrap-header_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-slider .mega-toggle-animated-inner::after{top:20px}#mega-menu-wrap-header_nav #mega-menu-header_nav li#mega-menu-item-22627{border-left:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}@media only screen and (min-width:769px){#mega-menu-wrap-header_nav #mega-menu-header_nav li#mega-menu-item-22627{line-height:40px}}#mega-menu-wrap-header_nav #mega-menu-header_nav li#mega-menu-item-22627 .mega-search-wrap{position:relative;width:40px;height:40px;vertical-align:middle;display:inline-block;z-index:99999;margin-top:0}@media only screen and (min-width:769px){#mega-menu-wrap-header_nav #mega-menu-header_nav li#mega-menu-item-22627 .mega-search-wrap.mega-static{width:400px}}@media only screen and (max-width:768px){#mega-menu-wrap-header_nav #mega-menu-header_nav li#mega-menu-item-22627 .mega-search-wrap{width:100%;margin:5px 0}}#mega-menu-wrap-header_nav #mega-menu-header_nav li#mega-menu-item-22627 .mega-search{line-height:40px;margin:0}@media only screen and (max-width:768px){#mega-menu-wrap-header_nav #mega-menu-header_nav li#mega-menu-item-22627 .mega-search{padding:0 5px}}#mega-menu-wrap-header_nav #mega-menu-header_nav li#mega-menu-item-22627 .mega-search.mega-search-open input[type=text]{background-color:#d7d8d8}#mega-menu-wrap-header_nav #mega-menu-header_nav li#mega-menu-item-22627 .mega-search.mega-search-open .search-icon:before{color:#020202}#mega-menu-wrap-header_nav #mega-menu-header_nav li#mega-menu-item-22627 .mega-search input[type=text]{color:#040303;background-color:rgba(255,251,251,0);width:400px;margin:0;min-height:0;padding:0 40px 0 5px;height:40px;border:0;line-height:40px;box-sizing:border-box;border-radius:0;vertical-align:top}@media only screen and (max-width:768px){#mega-menu-wrap-header_nav #mega-menu-header_nav li#mega-menu-item-22627 .mega-search input[type=text]{width:100%;background-color:#d7d8d8}}#mega-menu-wrap-header_nav #mega-menu-header_nav li#mega-menu-item-22627 .mega-search input[type=submit]{display:none}#mega-menu-wrap-header_nav #mega-menu-header_nav li#mega-menu-item-22627 .mega-search .search-icon{right:0;position:absolute;width:40px;height:40px;text-align:center}@media only screen and (max-width:768px){#mega-menu-wrap-header_nav #mega-menu-header_nav li#mega-menu-item-22627 .mega-search .search-icon{right:5px}}#mega-menu-wrap-header_nav #mega-menu-header_nav li#mega-menu-item-22627 .mega-search .search-icon:before{color:#fff;height:40px;width:40px;vertical-align:middle;line-height:40px}@media only screen and (max-width:768px){#mega-menu-wrap-header_nav #mega-menu-header_nav li#mega-menu-item-22627 .mega-search .search-icon:before{color:#020202}}#mega-menu-wrap-header_nav{clear:both}#mega-menu-wrap-main_nav,#mega-menu-wrap-main_nav #mega-menu-main_nav,#mega-menu-wrap-main_nav #mega-menu-main_nav a.mega-menu-link,#mega-menu-wrap-main_nav #mega-menu-main_nav li.mega-menu-item,#mega-menu-wrap-main_nav #mega-menu-main_nav ul.mega-sub-menu{border-radius:0;box-shadow:none;background:0 0;border:0;bottom:auto;box-sizing:border-box;clip:auto;color:#666;display:block;float:none;font-family:inherit;font-size:14px;height:auto;left:auto;line-height:1.7;list-style-type:none;margin:0;min-height:auto;max-height:none;min-width:auto;max-width:none;opacity:1;outline:0;overflow:visible;padding:0;position:relative;right:auto;text-align:left;text-decoration:none;text-indent:0;text-transform:none;transform:none;top:auto;vertical-align:baseline;visibility:inherit;width:auto;word-wrap:break-word;white-space:normal}#mega-menu-wrap-main_nav #mega-menu-main_nav a.mega-menu-link:after,#mega-menu-wrap-main_nav #mega-menu-main_nav a.mega-menu-link:before,#mega-menu-wrap-main_nav #mega-menu-main_nav li.mega-menu-item:after,#mega-menu-wrap-main_nav #mega-menu-main_nav li.mega-menu-item:before,#mega-menu-wrap-main_nav #mega-menu-main_nav ul.mega-sub-menu:after,#mega-menu-wrap-main_nav #mega-menu-main_nav ul.mega-sub-menu:before,#mega-menu-wrap-main_nav #mega-menu-main_nav:after,#mega-menu-wrap-main_nav #mega-menu-main_nav:before,#mega-menu-wrap-main_nav:after,#mega-menu-wrap-main_nav:before{display:none}#mega-menu-wrap-main_nav{border-radius:0}@media only screen and (min-width:601px){#mega-menu-wrap-main_nav{background:#040404;background:linear-gradient(to bottom,#060606,#040404)}}#mega-menu-wrap-main_nav #mega-menu-main_nav{visibility:visible;text-align:center;padding:0}#mega-menu-wrap-main_nav #mega-menu-main_nav a.mega-menu-link{display:inline}#mega-menu-wrap-main_nav #mega-menu-main_nav li.mega-menu-item>ul.mega-sub-menu{display:block;visibility:hidden;opacity:1}@media only screen and (max-width:600px){#mega-menu-wrap-main_nav #mega-menu-main_nav li.mega-menu-item>ul.mega-sub-menu{display:none;visibility:visible;opacity:1}}@media only screen and (min-width:601px){#mega-menu-wrap-main_nav #mega-menu-main_nav[data-effect=fade_up] li.mega-menu-item.mega-menu-flyout ul.mega-sub-menu{opacity:0;transform:translate(0,10px)}}#mega-menu-wrap-main_nav #mega-menu-main_nav li.mega-menu-item a.mega-menu-link:before{display:inline-block;font:inherit;font-family:dashicons;position:static;margin:0 6px 0 0;vertical-align:top;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:inherit;background:0 0;height:auto;width:auto;top:auto}#mega-menu-wrap-main_nav #mega-menu-main_nav>li.mega-menu-item{margin:0;display:inline-block;height:auto;vertical-align:middle}@media only screen and (min-width:601px){#mega-menu-wrap-main_nav #mega-menu-main_nav>li.mega-menu-item{border-left:1px solid rgba(255,255,255,.1);box-shadow:inset 1px 0 0 0 rgba(255,255,255,.1)}#mega-menu-wrap-main_nav #mega-menu-main_nav>li.mega-menu-item:first-of-type{border-left:0;box-shadow:none}}#mega-menu-wrap-main_nav #mega-menu-main_nav>li.mega-menu-item>a.mega-menu-link{line-height:40px;height:40px;padding:0 10px 0 10px;vertical-align:baseline;width:auto;display:block;color:#fff;text-transform:none;text-decoration:none;text-align:left;text-decoration:none;background:rgba(0,0,0,0);border:0;border-radius:0;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;outline:0}@media only screen and (max-width:600px){#mega-menu-wrap-main_nav #mega-menu-main_nav>li.mega-menu-item{display:list-item;margin:0;clear:both;border:0}#mega-menu-wrap-main_nav #mega-menu-main_nav>li.mega-menu-item>a.mega-menu-link{border-radius:0;border:0;margin:0;line-height:40px;height:40px;padding:0 10px;background:0 0;text-align:left;color:#fff;font-size:14px}}#mega-menu-wrap-main_nav #mega-menu-main_nav>li.mega-menu-flyout ul.mega-sub-menu{z-index:999;position:absolute;width:300px;max-width:none;padding:0;border:0;background:#222;border-radius:0}@media only screen and (max-width:600px){#mega-menu-wrap-main_nav #mega-menu-main_nav>li.mega-menu-flyout ul.mega-sub-menu{float:left;position:static;width:100%;padding:0;border:0;border-radius:0}}@media only screen and (max-width:600px){#mega-menu-wrap-main_nav #mega-menu-main_nav>li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item{clear:both}}#mega-menu-wrap-main_nav #mega-menu-main_nav>li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link{display:block;background:#080808;background:linear-gradient(to bottom,#040404,#080808);color:#fafafa;font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:400;padding:0 10px 0 10px;line-height:35px;text-decoration:none;text-transform:none;vertical-align:baseline}#mega-menu-wrap-main_nav #mega-menu-main_nav>li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item:first-child>a.mega-menu-link{border-top-left-radius:0;border-top-right-radius:0}@media only screen and (max-width:600px){#mega-menu-wrap-main_nav #mega-menu-main_nav>li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item:first-child>a.mega-menu-link{border-top-left-radius:0;border-top-right-radius:0}}#mega-menu-wrap-main_nav #mega-menu-main_nav>li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item:last-child>a.mega-menu-link{border-bottom-right-radius:0;border-bottom-left-radius:0}@media only screen and (max-width:600px){#mega-menu-wrap-main_nav #mega-menu-main_nav>li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item:last-child>a.mega-menu-link{border-bottom-right-radius:0;border-bottom-left-radius:0}}#mega-menu-wrap-main_nav #mega-menu-main_nav li.mega-menu-item-has-children>a.mega-menu-link>span.mega-indicator:after{content:'\f140';font-family:dashicons;font-weight:400;display:inline-block;margin:0 0 0 6px;vertical-align:top;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;transform:rotate(0);color:inherit;position:relative;background:0 0;height:auto;width:auto;right:auto;line-height:inherit}#mega-menu-wrap-main_nav #mega-menu-main_nav li.mega-menu-item-has-children>a.mega-menu-link>span.mega-indicator{display:inline;height:auto;width:auto;background:0 0;position:relative;left:auto;min-width:auto;line-height:inherit;color:inherit;font-size:inherit;padding:0}@media only screen and (max-width:600px){#mega-menu-wrap-main_nav #mega-menu-main_nav li.mega-menu-item-has-children>a.mega-menu-link>span.mega-indicator{float:right}}@media only screen and (max-width:600px){#mega-menu-wrap-main_nav:after{content:"";display:table;clear:both}}#mega-menu-wrap-main_nav .mega-menu-toggle{display:none;z-index:1;background:#222;border-radius:2px 2px 2px 2px;line-height:40px;height:40px;text-align:left;outline:0;white-space:nowrap}@media only screen and (max-width:600px){#mega-menu-wrap-main_nav .mega-menu-toggle{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex}}#mega-menu-wrap-main_nav .mega-menu-toggle .mega-toggle-blocks-center,#mega-menu-wrap-main_nav .mega-menu-toggle .mega-toggle-blocks-left,#mega-menu-wrap-main_nav .mega-menu-toggle .mega-toggle-blocks-right{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-preferred-size:33.33%;-webkit-flex-basis:33.33%;flex-basis:33.33%}#mega-menu-wrap-main_nav .mega-menu-toggle .mega-toggle-blocks-left{-webkit-box-flex:1;-ms-flex:1;-webkit-flex:1;flex:1;-webkit-box-pack:start;-ms-flex-pack:start;-webkit-justify-content:flex-start;justify-content:flex-start}#mega-menu-wrap-main_nav .mega-menu-toggle .mega-toggle-blocks-center{-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center}#mega-menu-wrap-main_nav .mega-menu-toggle .mega-toggle-blocks-center .mega-toggle-block{margin-left:3px;margin-right:3px}#mega-menu-wrap-main_nav .mega-menu-toggle .mega-toggle-blocks-right{-webkit-box-flex:1;-ms-flex:1;-webkit-flex:1;flex:1;-webkit-box-pack:end;-ms-flex-pack:end;-webkit-justify-content:flex-end;justify-content:flex-end}#mega-menu-wrap-main_nav .mega-menu-toggle .mega-toggle-block{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;height:100%;outline:0;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;-ms-flex-negative:0;-webkit-flex-shrink:0;flex-shrink:0}@media only screen and (max-width:600px){#mega-menu-wrap-main_nav .mega-menu-toggle+#mega-menu-main_nav{background:#222;padding:0;display:none}}#mega-menu-wrap-main_nav .mega-menu-toggle .mega-toggle-block-1:after{content:'\f333';font-family:dashicons;font-size:24px;color:#fff;margin:0 0 0 5px}#mega-menu-wrap-main_nav .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-label{color:#fff;font-size:17px}#mega-menu-wrap-main_nav .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-label .mega-toggle-label-open{display:none}#mega-menu-wrap-main_nav .mega-menu-toggle .mega-toggle-block-1 .mega-toggle-label .mega-toggle-label-closed{display:inline}#mega-menu-wrap-main_nav{clear:both}#mega-menu-wrap-social_nav,#mega-menu-wrap-social_nav #mega-menu-social_nav,#mega-menu-wrap-social_nav #mega-menu-social_nav a.mega-menu-link,#mega-menu-wrap-social_nav #mega-menu-social_nav li.mega-menu-item{border-radius:0;box-shadow:none;background:0 0;border:0;bottom:auto;box-sizing:border-box;clip:auto;color:#666;display:block;float:none;font-family:inherit;font-size:14px;height:auto;left:auto;line-height:1.7;list-style-type:none;margin:0;min-height:auto;max-height:none;min-width:auto;max-width:none;opacity:1;outline:0;overflow:visible;padding:0;position:relative;right:auto;text-align:left;text-decoration:none;text-indent:0;text-transform:none;transform:none;top:auto;vertical-align:baseline;visibility:inherit;width:auto;word-wrap:break-word;white-space:normal}#mega-menu-wrap-social_nav #mega-menu-social_nav a.mega-menu-link:after,#mega-menu-wrap-social_nav #mega-menu-social_nav a.mega-menu-link:before,#mega-menu-wrap-social_nav #mega-menu-social_nav li.mega-menu-item:after,#mega-menu-wrap-social_nav #mega-menu-social_nav li.mega-menu-item:before,#mega-menu-wrap-social_nav #mega-menu-social_nav:after,#mega-menu-wrap-social_nav #mega-menu-social_nav:before,#mega-menu-wrap-social_nav:after,#mega-menu-wrap-social_nav:before{display:none}#mega-menu-wrap-social_nav{border-radius:0}@media only screen and (min-width:601px){#mega-menu-wrap-social_nav{background:#e20c0c;background:linear-gradient(to bottom,#e70e0e,#e20c0c)}}#mega-menu-wrap-social_nav #mega-menu-social_nav{visibility:visible;text-align:center;padding:0}#mega-menu-wrap-social_nav #mega-menu-social_nav a.mega-menu-link{display:inline}#mega-menu-wrap-social_nav #mega-menu-social_nav li.mega-menu-item a.mega-menu-link:before{display:inline-block;font:inherit;font-family:dashicons;position:static;margin:0 6px 0 0;vertical-align:top;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:inherit;background:0 0;height:auto;width:auto;top:auto}#mega-menu-wrap-social_nav #mega-menu-social_nav>li.mega-menu-item{margin:0;display:inline-block;height:auto;vertical-align:middle}@media only screen and (min-width:601px){#mega-menu-wrap-social_nav #mega-menu-social_nav>li.mega-menu-item{border-left:1px solid rgba(255,255,255,.1);box-shadow:inset 1px 0 0 0 rgba(255,255,255,.1)}#mega-menu-wrap-social_nav #mega-menu-social_nav>li.mega-menu-item:first-of-type{border-left:0;box-shadow:none}}#mega-menu-wrap-social_nav #mega-menu-social_nav>li.mega-menu-item>a.mega-menu-link{line-height:40px;height:40px;padding:0 10px 0 10px;vertical-align:baseline;width:auto;display:block;color:#fff;text-transform:none;text-decoration:none;text-align:left;text-decoration:none;background:rgba(0,0,0,0);border:0;border-radius:0;font-family:Arial,Helvetica,sans-serif;font-size:16px;font-weight:700;outline:0}@media only screen and (max-width:600px){#mega-menu-wrap-social_nav #mega-menu-social_nav>li.mega-menu-item{display:list-item;margin:0;clear:both;border:0}#mega-menu-wrap-social_nav #mega-menu-social_nav>li.mega-menu-item>a.mega-menu-link{border-radius:0;border:0;margin:0;line-height:40px;height:40px;padding:0 10px;background:0 0;text-align:left;color:#fff;font-size:14px}}@media only screen and (max-width:600px){#mega-menu-wrap-social_nav:after{content:"";display:table;clear:both}}#mega-menu-wrap-social_nav .mega-menu-toggle{display:none;z-index:1;background:#222;border-radius:2px 2px 2px 2px;line-height:40px;height:40px;text-align:left;outline:0;white-space:nowrap}@media only screen and (max-width:600px){#mega-menu-wrap-social_nav .mega-menu-toggle{display:none}}#mega-menu-wrap-social_nav .mega-menu-toggle .mega-toggle-blocks-center,#mega-menu-wrap-social_nav .mega-menu-toggle .mega-toggle-blocks-left,#mega-menu-wrap-social_nav .mega-menu-toggle .mega-toggle-blocks-right{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-preferred-size:33.33%;-webkit-flex-basis:33.33%;flex-basis:33.33%}#mega-menu-wrap-social_nav .mega-menu-toggle .mega-toggle-blocks-left{-webkit-box-flex:1;-ms-flex:1;-webkit-flex:1;flex:1;-webkit-box-pack:start;-ms-flex-pack:start;-webkit-justify-content:flex-start;justify-content:flex-start}#mega-menu-wrap-social_nav .mega-menu-toggle .mega-toggle-blocks-center{-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center}#mega-menu-wrap-social_nav .mega-menu-toggle .mega-toggle-blocks-right{-webkit-box-flex:1;-ms-flex:1;-webkit-flex:1;flex:1;-webkit-box-pack:end;-ms-flex-pack:end;-webkit-justify-content:flex-end;justify-content:flex-end}#mega-menu-wrap-social_nav .mega-menu-toggle .mega-toggle-blocks-right .mega-toggle-block{margin-right:6px}#mega-menu-wrap-social_nav .mega-menu-toggle .mega-toggle-blocks-right .mega-toggle-block:only-child{margin-left:6px}#mega-menu-wrap-social_nav .mega-menu-toggle .mega-toggle-block{display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;height:100%;outline:0;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;-ms-flex-negative:0;-webkit-flex-shrink:0;flex-shrink:0}@media only screen and (max-width:600px){#mega-menu-wrap-social_nav .mega-menu-toggle+#mega-menu-social_nav{background:#222;padding:0;display:block}}#mega-menu-wrap-social_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated{padding:0;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;font:inherit;color:inherit;text-transform:none;background-color:transparent;border:0;margin:0;overflow:visible;transform:scale(.8);align-self:center;outline:0;background:0 0}#mega-menu-wrap-social_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-box{width:40px;height:24px;display:inline-block;position:relative;outline:0}#mega-menu-wrap-social_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner{display:block;top:50%;margin-top:-2px}#mega-menu-wrap-social_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner,#mega-menu-wrap-social_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::after,#mega-menu-wrap-social_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::before{width:40px;height:4px;background-color:#ddd;border-radius:4px;position:absolute}#mega-menu-wrap-social_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::after,#mega-menu-wrap-social_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::before{content:"";display:block}#mega-menu-wrap-social_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::before{top:-10px}#mega-menu-wrap-social_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-inner::after{bottom:-10px}#mega-menu-wrap-social_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-slider .mega-toggle-animated-inner{top:2px}#mega-menu-wrap-social_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-slider .mega-toggle-animated-inner::before{top:10px}#mega-menu-wrap-social_nav .mega-menu-toggle .mega-toggle-block-0 .mega-toggle-animated-slider .mega-toggle-animated-inner::after{top:20px}#mega-menu-wrap-social_nav{clear:both}}@media all{a,article,aside,body,center,div,em,fieldset,form,h1,h2,h3,h4,header,html,img,ins,label,li,nav,p,span,strong,time,ul{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,header,nav{display:block}ul{list-style:none}html{font-size:100%;-ms-text-size-adjust:none;-webkit-text-size-adjust:none}body{font-family:"PT Serif",Georgia,Times,"Times New Roman",serif;font-size:16px;font-size:1rem;line-height:1.6;word-wrap:break-word;background:#efefef}#mh-wrapper{width:90%;max-width:1180px;margin:0 auto;padding:0 20px 20px;overflow:hidden;background:#fff}.wrapper-inner{width:90%;max-width:1180px;margin:0 auto}#main-content{display:block;width:65.83%;overflow:hidden}.mh-sidebar{display:block;float:left;width:31.66%}.mh-right-sb #main-content{float:left;margin-right:2.5%}.mh-section{clear:both;padding:0;margin:0}.clearfix{display:block}.clearfix:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;margin:0;padding:0}h1{font-size:36px;font-size:2.25rem}h2{font-size:28px;font-size:1.75rem}h3{font-size:24px;font-size:1.5rem}h4{font-size:20px;font-size:1.25rem}h1,h2,h3,h4{line-height:1.3;font-weight:400;color:#1f1e1e}strong{font-weight:900}em{font-style:italic}a{text-decoration:none;color:#1f1e1e}.breadcrumb,.header-nav,.header-sub,h1,h2,h3,h4{font-family:Oswald,Helvetica,Arial,sans-serif}.mh-col{display:block;float:left;margin-left:2.5%}.mh-col:first-child{margin-left:0}.mh-group:after,.mh-group:before{content:"";display:table}.mh-group:after{clear:both}.mh-2-3{width:65.83%}.mh-1-3{width:31.66%}.header-top{background:#333;line-height:1}.mh-header{margin-bottom:30px}.header-wrap{padding:20px 0}.header-sub{display:block;padding:10px;text-transform:uppercase;overflow:hidden;background:#efefef}.header-search{float:right}.news-ticker{height:33px;font-size:12px;line-height:33px;overflow:hidden}.ticker-title{float:left;color:#fff;padding:0 10px;background:#005a8c}.ticker-item{display:block;padding:0 10px;overflow:hidden}.ticker-item-separator{margin:0 3px}.header-nav{float:left;width:50%;font-size:12px;font-size:.75rem;text-transform:uppercase}.header-nav li{float:left;position:relative;border-left:1px solid #424242}.header-nav li:first-child{border:none}.header-nav li a{display:block;color:#fff;padding:10px 15px;padding:.625rem .9375rem;text-decoration:none}.main-nav{background:#1f1e1e;text-transform:uppercase}.main-nav li{float:left;position:relative;border-left:1px solid #424242}.main-nav li:first-child{border:none}.main-nav li a{display:block;color:#fff;padding:10px 15px;padding:.625rem .9375rem;text-decoration:none}.main-nav ul ul{display:none;position:absolute;font-size:12px;font-size:.75rem}.main-nav ul ul li{width:13em;border:none}.social-nav{float:right;width:50%;overflow:hidden}.social-nav a{color:#333}.social-nav ul{list-style-type:none;margin:0;text-align:right}.social-nav ul li{display:inline-block}.breadcrumb{font-size:14px;font-size:.875rem;margin-bottom:20px;text-transform:uppercase}.breadcrumb .bc-text,.breadcrumb a{display:inline-block;color:#fff;padding:10px 20px;background:#005a8c}.breadcrumb .bc-home{background:#1f1e1e}.entry-header .entry-title,.page-title{font-size:38px;font-size:2.375rem;margin-bottom:20px}.entry-content{font-size:17px;font-size:1.063rem;line-height:1.4}.entry-content h1,.entry-content h2,.entry-content h3,.entry-content p{margin-bottom:20px;margin-bottom:1.25rem}.entry-content a{font-weight:600;color:#005a8c}.entry-content ul{list-style:square}.entry-content ul{margin:0 0 30px 40px;margin:0 0 1.875rem 2.5rem}input{font-size:12px;font-size:.75rem;padding:5px;padding:.3125rem;border:1px solid #d7d8d8}input[type=text]{width:60%}input[type=submit]{color:#fff;padding:14px;background:#005a8c;display:inline-block;border:0;-webkit-appearance:none;-webkit-border-radius:0;border-radius:0}textarea{width:96%;line-height:1.5;padding:5px;padding:.3125rem;border:1px solid #d7d8d8}img{max-width:100%;height:auto;vertical-align:bottom}.alignnone{display:block;margin:20px 0;margin:1.25rem 0}.aligncenter{display:block;margin:20px auto 20px;margin:1.25rem auto 1.25rem}.header-search .search-form{float:right}.search-form input{min-width:200px;font-size:11px;line-height:1;color:#1f1e1e;text-transform:uppercase}.search-form .search-submit{display:none}.search-form .screen-reader-text{position:absolute;left:-9999px;overflow:hidden}.search-form .search-field{background:#fff;border:1px solid #cdcdcd;margin:0;padding:10px;position:relative;-webkit-appearance:none;-webkit-border-radius:0;border-radius:0}.sb-widget{margin-bottom:30px;margin-bottom:1.875rem;overflow:hidden}.widget-title{font-size:14px;font-size:.875rem;font-weight:400;color:#fff;background:#ccdee8;padding:20px 0;margin-bottom:20px;text-transform:uppercase;overflow:hidden}.widget-title span{padding:20px;background:#005a8c}.header-ad .textwidget{text-align:right;overflow:hidden}.header-ad img{margin:0;padding:0}@media only screen and (max-width:980px){#mh-wrapper,.wrapper-inner{max-width:777px}.header-ad .textwidget{text-align:center;margin-top:20px}.logo-wrap{text-align:center}.mh-col,.mh-right-sb #main-content{margin:0}#main-content,.mh-1-3,.mh-2-3,.mh-sidebar{width:100%}.news-ticker{width:65.83%}.header-search{width:31.66%}}@media only screen and (max-width:767px){.news-ticker{display:none}.header-search{float:none;width:100%}.header-search .search-form{float:none;width:100%;text-align:center}.header-search .search-form input{width:90%;max-width:300px}.search-form{width:90%}}@media only screen and (max-width:580px){#mh-wrapper,.wrapper-inner{width:85%}.header-nav,.social-nav{float:none;width:100%;margin:0}.header-nav ul{display:table;margin:0 auto}.social-nav ul{text-align:center}}@media only screen and (max-width:420px){#mh-wrapper,.wrapper-inner{min-width:160px}.header-ad .textwidget{margin-top:10px}}}@media all{.srpw-block ul{list-style:none;margin-left:0;padding-left:0}.srpw-block li{list-style-type:none;padding:10px 0}.srpw-block li:first-child{padding-top:0}.srpw-block a{text-decoration:none}.srpw-block a.srpw-title{overflow:hidden}.srpw-meta{display:block;font-size:13px;overflow:hidden}.srpw-time{display:inline-block}.srpw-clearfix:after,.srpw-clearfix:before{content:"";display:table!important}.srpw-clearfix:after{clear:both}.srpw-clearfix{zoom:1}.srpw-classic-style li{padding:10px 0!important;border-bottom:1px solid #f0f0f0!important;margin-bottom:5px!important}.srpw-classic-style li:first-child{padding-top:0!important}.srpw-classic-style li:last-child{border-bottom:0!important;padding-bottom:0!important}.srpw-classic-style .srpw-meta{color:#888!important;font-size:12px!important;padding:3px 0!important}}@media all{.hustle-ui [class*=hustle-icon-]:after,.hustle-ui [class*=hustle-icon-]:before{speak:none;display:inline-block;color:inherit;font-family:hustle-icons-font!important;font-size:1em;line-height:1em;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}@font-face{font-family:hustle-icons-font;font-weight:400;font-style:normal;font-display:swap}.hustle-ui .hustle-icon-close:before{content:""}}@media all{.hustle-ui .hustle-screen-reader{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute!important;width:1px;word-wrap:normal!important}.hustle-ui a.hustle-button-cta{min-width:100px;text-align:center}.hustle-ui a.hustle-button-cta{outline:0}.hustle-ui .hustle-button-icon{width:30px;height:30px;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0;padding:0;border:0;background-color:transparent;background-image:unset;text-align:center}.hustle-ui .hustle-button-icon [class*=hustle-icon-]{display:block;margin:0 auto;font-size:12px}.hustle-ui .hustle-button-icon [class*=hustle-icon-]:before{display:block}.hustle-ui .hustle-button-icon{outline:0;-webkit-box-shadow:none;box-shadow:none}.hustle-ui .hustle-button-icon.hustle-button-close{display:-webkit-box;display:-ms-flexbox;display:flex;margin-right:0;margin-left:auto}.hustle-ui .hustle-info .hustle-group-content{word-break:break-word}.hustle-ui .hustle-info .hustle-group-content :not([class*=forminator-]) strong{font-weight:700}@media (min-width:783px){.hustle-ui:not(.hustle-size--small) .hustle-info .hustle-group-content p:not(:last-child){margin-bottom:20px}}}@media all{.hustle-ui .hustle-info,.hustle-ui .hustle-info *{font-variant-ligatures:none;-webkit-font-variant-ligatures:none;text-rendering:optimizeLegibility;-moz-osx-font-smoothing:grayscale;font-smoothing:antialiased;-webkit-font-smoothing:antialiased;text-shadow:rgba(0,0,0,.01) 0 0 1px}.hustle-ui a.hustle-button-cta{min-width:100px;text-align:center}.hustle-ui a.hustle-button-cta{outline:0}.hustle-ui .hustle-button-icon{width:30px;height:30px;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0;padding:0;border:0;background-color:transparent;background-image:unset;text-align:center}.hustle-ui .hustle-button-icon [class*=hustle-icon-]{display:block;margin:0 auto;font-size:12px}.hustle-ui .hustle-button-icon [class*=hustle-icon-]:before{display:block}.hustle-ui .hustle-button-icon{outline:0;-webkit-box-shadow:none;box-shadow:none}.hustle-ui .hustle-button-icon.hustle-button-close{display:-webkit-box;display:-ms-flexbox;display:flex;margin-right:0;margin-left:auto}.hustle-ui .hustle-info .hustle-group-content{word-break:break-word}.hustle-ui .hustle-info .hustle-group-content :not([class*=forminator-]) strong{font-weight:700}@media (min-width:783px){.hustle-ui:not(.hustle-size--small) .hustle-info .hustle-group-content p:not(:last-child){margin-bottom:20px}}.hustle-ui .hustle-info{width:100%;display:block}.hustle-ui .hustle-info,.hustle-ui .hustle-info *{-webkit-box-sizing:border-box;box-sizing:border-box}.hustle-ui .hustle-info .hustle-nsa-link{margin:0;padding:0;border:0;font:400 14px/20px "Open Sans",sans-serif;text-align:center}.hustle-ui .hustle-info .hustle-nsa-link a{font-weight:inherit}.hustle-ui .hustle-info .hustle-nsa-link a{outline:0;-webkit-box-shadow:none;box-shadow:none;text-decoration:none}.hustle-ui .hustle-info .hustle-nsa-link:not(:first-child){margin-top:10px}@media (min-width:783px){.hustle-ui:not(.hustle-size--small) .hustle-info .hustle-nsa-link:not(:first-child){margin-top:20px}}@media (min-width:783px){.hustle-ui:not(.hustle-size--small) .hustle-info.hustle-info--compact .hustle-layout .hustle-content .hustle-content-wrap{min-width:1px;min-height:0;-webkit-box-flex:1;-ms-flex:1;flex:1}}@media (min-width:783px){.hustle-ui:not(.hustle-size--small) .hustle-info.hustle-info--compact .hustle-layout .hustle-content{min-width:1px;min-height:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-flex:1;-ms-flex:1;flex:1;-webkit-box-align:center;-ms-flex-align:center;align-items:center}}@media (min-width:783px){.hustle-ui:not(.hustle-size--small) .hustle-info.hustle-info--compact .hustle-layout{min-height:0;display:-webkit-box;display:-ms-flexbox;display:flex}}}@media all{:root{--swiper-theme-color:#007aff}.jp-carousel-overlay .swiper-container{margin-left:auto;margin-right:auto;position:relative;overflow:hidden;list-style:none;padding:0;z-index:1}.jp-carousel-overlay .swiper-wrapper{position:relative;width:100%;height:100%;z-index:1;display:flex;box-sizing:content-box}.jp-carousel-overlay .swiper-wrapper{transform:translate3d(0,0,0)}:root{--swiper-navigation-size:44px}.jp-carousel-overlay .swiper-button-next,.jp-carousel-overlay .swiper-button-prev{position:absolute;top:50%;width:calc(var(--swiper-navigation-size)/ 44 * 27);height:var(--swiper-navigation-size);margin-top:calc(0px - (var(--swiper-navigation-size)/ 2));z-index:10;display:flex;align-items:center;justify-content:center;color:var(--swiper-navigation-color,var(--swiper-theme-color))}.jp-carousel-overlay .swiper-button-next:after,.jp-carousel-overlay .swiper-button-prev:after{font-family:swiper-icons;font-size:var(--swiper-navigation-size);text-transform:none!important;letter-spacing:0;text-transform:none;font-variant:initial;line-height:1}.jp-carousel-overlay .swiper-button-prev{left:10px;right:auto}.jp-carousel-overlay .swiper-button-prev:after{content:'prev'}.jp-carousel-overlay .swiper-button-next{right:10px;left:auto}.jp-carousel-overlay .swiper-button-next:after{content:'next'}.jp-carousel-overlay .swiper-pagination{position:absolute;text-align:center;transform:translate3d(0,0,0);z-index:10}:root{--jp-carousel-primary-color:#fff;--jp-carousel-primary-subtle-color:#999;--jp-carousel-bg-color:#000;--jp-carousel-bg-faded-color:#222;--jp-carousel-border-color:#3a3a3a}:root .jp-carousel-light{--jp-carousel-primary-color:#000;--jp-carousel-primary-subtle-color:#646970;--jp-carousel-bg-color:#fff;--jp-carousel-bg-faded-color:#fbfbfb;--jp-carousel-border-color:#dcdcde}.jp-carousel-overlay .swiper-button-next,.jp-carousel-overlay .swiper-button-prev{background-image:none}.jp-carousel-wrap *{line-height:inherit}.jp-carousel-wrap.swiper-container{height:auto;width:100vw}.jp-carousel-overlay .swiper-button-next,.jp-carousel-overlay .swiper-button-prev{opacity:.5;height:initial;width:initial;padding:20px 40px;background-image:none}.jp-carousel-overlay .swiper-button-next:after,.jp-carousel-overlay .swiper-button-prev:after{content:none}.jp-carousel-overlay .swiper-button-next svg,.jp-carousel-overlay .swiper-button-prev svg{height:30px;width:28px;background:var(--jp-carousel-bg-color);border-radius:4px}.jp-carousel-overlay{font-family:'Helvetica Neue',sans-serif!important;z-index:2147483647;overflow-x:hidden;overflow-y:auto;direction:ltr;position:fixed;top:0;right:0;bottom:0;left:0;background:var(--jp-carousel-bg-color)}.jp-carousel-overlay *{box-sizing:border-box}.jp-carousel-overlay h2:before,.jp-carousel-overlay h3:before{content:none;display:none}.jp-carousel-overlay .swiper-container .swiper-button-prev{left:0;right:auto}.jp-carousel-overlay .swiper-container .swiper-button-next{right:0;left:auto}.jp-carousel-container{display:grid;grid-template-rows:1fr 64px;height:100%}.jp-carousel-info{display:flex;flex-direction:column;text-align:left!important;-webkit-font-smoothing:subpixel-antialiased!important;z-index:100;background-color:var(--jp-carousel-bg-color);opacity:1}.jp-carousel-info-footer{position:relative;background-color:var(--jp-carousel-bg-color);height:64px;display:flex;align-items:center;justify-content:space-between;width:100vw}.jp-carousel-info-extra{display:none;background-color:var(--jp-carousel-bg-color);padding:35px;width:100vw;border-top:1px solid var(--jp-carousel-bg-faded-color)}.jp-carousel-title-and-caption{margin-bottom:15px}.jp-carousel-photo-info{left:0!important;width:100%!important}.jp-carousel-comments-wrapper{padding:0;width:100%!important;display:none}.jp-carousel-close-hint{letter-spacing:0!important;position:fixed;top:20px;right:30px;padding:10px;text-align:right;width:45px;height:45px;z-index:15;color:var(--jp-carousel-primary-color)}.jp-carousel-close-hint svg{padding:3px 2px;background:var(--jp-carousel-bg-color);border-radius:4px}.jp-carousel-pagination-container{flex:1;margin:0 15px 0 35px}.jp-carousel-pagination,.jp-swiper-pagination{color:var(--jp-carousel-primary-color);font-size:15px;font-weight:400;white-space:nowrap;display:none;position:static!important}.jp-carousel-pagination-container .swiper-pagination{text-align:left;line-height:8px}.jp-carousel-pagination{padding-left:5px}.jp-carousel-info-footer .jp-carousel-photo-title-container{flex-basis:50vw;flex:4;justify-content:center;overflow:hidden;margin:0}.jp-carousel-photo-caption,.jp-carousel-photo-title{background:0 0!important;border:none!important;display:inline-block;font:normal 20px/1.3em 'Helvetica Neue',sans-serif;line-height:normal;letter-spacing:0!important;margin:0 0 10px 0;padding:0;overflow:hidden;text-shadow:none!important;text-transform:none!important;color:var(--jp-carousel-primary-color)}.jp-carousel-info-footer .jp-carousel-photo-caption{text-align:center;font-size:15px;white-space:nowrap;color:var(--jp-carousel-primary-subtle-color);margin:0;text-overflow:ellipsis}.jp-carousel-photo-title{font-size:32px;margin-bottom:2px}.jp-carousel-photo-description{color:var(--jp-carousel-primary-subtle-color);font-size:16px;margin:25px 0;width:100%}.jp-carousel-photo-description{overflow:hidden;overflow-wrap:break-word}.jp-carousel-caption{font-size:14px;font-weight:400;margin:0}.jp-carousel-image-meta{color:var(--jp-carousel-primary-color);font-size:13px;font:12px/1.4 'Helvetica Neue',sans-serif!important;width:100%;display:none}.jp-carousel-image-meta ul{margin:0!important;padding:0!important;list-style:none!important}a.jp-carousel-image-download{display:inline-block;clear:both;color:var(--jp-carousel-primary-subtle-color);line-height:1;font-weight:400;font-size:14px;text-decoration:none}a.jp-carousel-image-download svg{display:inline-block;vertical-align:middle;margin:0 3px;padding-bottom:2px}.jp-carousel-comments{font:15px/1.7 'Helvetica Neue',sans-serif!important;font-weight:400;background:none transparent;width:100%;bottom:10px;margin-top:20px}#jp-carousel-comment-form{margin:0 0 10px!important;width:100%}textarea#jp-carousel-comment-form-comment-field{background:var(--jp-carousel-bg-faded-color);border:1px solid var(--jp-carousel-border-color);color:var(--jp-carousel-primary-subtle-color);font:16px/1.4 'Helvetica Neue',sans-serif!important;width:100%;padding:10px 10px 5px;margin:0;float:none;height:147px;box-shadow:inset 2px 2px 2px rgba(0,0,0,.1);border-radius:3px;overflow:hidden;box-sizing:border-box}textarea#jp-carousel-comment-form-comment-field::-webkit-input-placeholder{color:#555}#jp-carousel-loading-overlay{display:none;position:fixed;top:0;bottom:0;left:0;right:0}#jp-carousel-loading-wrapper{display:flex;align-items:center;justify-content:center;height:100vh;width:100vw}#jp-carousel-library-loading,#jp-carousel-library-loading:after{border-radius:50%;width:40px;height:40px}#jp-carousel-library-loading{float:left;margin:22px 0 0 10px;font-size:10px;position:relative;text-indent:-9999em;border-top:8px solid rgba(255,255,255,.2);border-right:8px solid rgba(255,255,255,.2);border-bottom:8px solid rgba(255,255,255,.2);border-left:8px solid var(--jp-carousel-primary-color);transform:translateZ(0)}#jp-carousel-comment-form-spinner,#jp-carousel-comment-form-spinner:after{border-radius:50%;width:20px;height:20px}#jp-carousel-comment-form-spinner{display:none;float:left;margin:22px 0 0 10px;font-size:10px;position:absolute;text-indent:-9999em;border-top:4px solid rgba(255,255,255,.2);border-right:4px solid rgba(255,255,255,.2);border-bottom:4px solid rgba(255,255,255,.2);border-left:4px solid var(--jp-carousel-primary-color);transform:translateZ(0);margin:0 auto;top:calc(50% - 15px);left:0;bottom:0;right:0}.jp-carousel-info-content-wrapper{max-width:800px;margin:auto}#jp-carousel-comment-form-submit-and-info-wrapper{display:none;overflow:hidden;width:100%}#jp-carousel-comment-form-commenting-as input{background:var(--jp-carousel-bg-color);border:1px solid var(--jp-carousel-border-color);color:var(--jp-carousel-primary-subtle-color);font:16px/1.4 'Helvetica Neue',sans-serif!important;padding:10px;float:left;box-shadow:inset 2px 2px 2px rgba(0,0,0,.2);border-radius:2px;width:285px}#jp-carousel-comment-form-commenting-as fieldset{float:left;border:none;margin:20px 0 0 0;padding:0;clear:both}#jp-carousel-comment-form-commenting-as label{font:400 13px/1.7 'Helvetica Neue',sans-serif!important;margin:0 20px 3px 0;float:left;width:100px}#jp-carousel-comment-form-button-submit{margin-top:20px;margin-left:auto;display:block;border:solid 1px var(--jp-carousel-primary-color);background:var(--jp-carousel-bg-color);border-radius:3px;padding:8px 16px;font-size:14px;color:var(--jp-carousel-primary-color)}#jp-carousel-comment-form-container{margin-bottom:15px;width:100%;margin-top:20px;color:var(--jp-carousel-primary-subtle-color);position:relative;overflow:hidden}#jp-carousel-comment-post-results{display:none;overflow:auto;width:100%}#jp-carousel-comments-loading{font:400 15px/1.7 'Helvetica Neue',sans-serif!important;display:none;color:var(--jp-carousel-primary-subtle-color);text-align:left;margin-bottom:20px;width:100%;bottom:10px;margin-top:20px}.jp-carousel-photo-icons-container{flex:1;display:block;text-align:right;margin:0 20px 0 30px;white-space:nowrap}.jp-carousel-icon-btn{padding:16px;text-decoration:none;border:none;background:0 0;display:inline-block;height:64px}.jp-carousel-icon{border:none;display:inline-block;line-height:0;font-weight:400;font-style:normal;border-radius:4px;width:31px;padding:4px 3px 3px}.jp-carousel-icon svg{display:inline-block}.jp-carousel-overlay rect{fill:var(--jp-carousel-primary-color)}.jp-carousel-icon .jp-carousel-has-comments-indicator{display:none;font-size:12px;vertical-align:top;margin-left:-16px;line-height:1;padding:2px 4px;border-radius:4px;background:var(--jp-carousel-primary-color);color:var(--jp-carousel-bg-color);font-weight:400;font-family:'Helvetica Neue',sans-serif!important;position:relative}@media only screen and (max-width:760px){.jp-carousel-overlay .swiper-container .swiper-button-next,.jp-carousel-overlay .swiper-container .swiper-button-prev{display:none!important}.jp-carousel-image-meta{float:none!important;width:100%!important;box-sizing:border-box;margin-left:0}.jp-carousel-close-hint{font-size:26px!important;position:fixed!important;top:10px;right:10px}.jp-carousel-wrap{background-color:var(--jp-carousel-bg-color)}.jp-carousel-caption{overflow:visible!important}.jp-carousel-info-footer .jp-carousel-photo-title-container{display:none}.jp-carousel-photo-icons-container{margin:0 10px 0 0;white-space:nowrap}.jp-carousel-icon-btn{padding-left:20px}.jp-carousel-pagination{padding-left:5px}.jp-carousel-pagination-container{margin-left:25px}#jp-carousel-comment-form-commenting-as fieldset,#jp-carousel-comment-form-commenting-as input{width:100%;float:none}}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute!important;width:1px;word-wrap:normal!important}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute!important;width:1px;word-wrap:normal!important}}@media all{.hustle-ui.hustle-popup{width:100%;height:100vh;overflow-x:hidden;overflow-y:hidden;display:none;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:fixed;top:0;left:0;z-index:999991}.hustle-ui.hustle-popup .hustle-popup-mask{width:100%;height:100%;display:block;position:fixed;top:0;left:0}@supports (-webkit-touch-callout:none){.hustle-ui.hustle-popup .hustle-popup-mask{z-index:-1!important}}.hustle-ui.hustle-popup .hustle-popup-content{width:100%;position:relative;margin:auto}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.hustle-ui.hustle-popup{-webkit-box-align:baseline;-ms-flex-align:baseline;align-items:baseline}}}@media all{@charset "UTF-8";.aligncenter{clear:both}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);-webkit-clip-path:inset(50%);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}}@media all{@font-face{font-family:dashicons;font-weight:400;font-style:normal}.dashicons{font-family:dashicons;display:inline-block;line-height:1;font-weight:400;font-style:normal;speak:never;text-decoration:inherit;text-transform:none;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;width:20px;height:20px;font-size:20px;vertical-align:top;text-align:center}.dashicons-search:before{content:"\f179"}}</style><style id="jetpack-custom-fonts-css"></style>
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<!-- Jetpack Site Verification Tags -->
+<meta name="google-site-verification" content="UA-101652650-1" />
+<meta name="msvalidate.01" content="B55EFAED9E57C013A3FBC1CC503F10F1" />
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v17.7 (Yoast SEO v17.7.1) - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>9News KUSA - Media Bias/Fact Check</title>
+	<link rel="canonical" href="https://mediabiasfactcheck.com/9news-kusa/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="9News KUSA" />
+	<meta property="og:description" content="LEAST BIASED These sources have minimal bias and use very few loaded words (wording that attempts to influence an audience by appeals to emotion or" />
+	<meta property="og:url" content="https://mediabiasfactcheck.com/9news-kusa/" />
+	<meta property="og:site_name" content="Media Bias/Fact Check" />
+	<meta property="article:publisher" content="https://www.facebook.com/mediabiasfactcheck/" />
+	<meta property="article:modified_time" content="2021-10-28T17:28:01+00:00" />
+	<meta property="og:image" content="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2019/09/70982153_683576715489993_3036728782363820032_n-e1608491429724.jpg?fit=200%2C200&#038;ssl=1" />
+	<meta property="og:image:width" content="200" />
+	<meta property="og:image:height" content="200" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@MBFC_News" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="2 minutes" />
+	
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='//secure.gravatar.com' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel='dns-prefetch' href='//v0.wordpress.com' />
+<link rel='dns-prefetch' href='//widgets.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//0.gravatar.com' />
+<link rel='dns-prefetch' href='//1.gravatar.com' />
+<link rel='dns-prefetch' href='//2.gravatar.com' />
+<link rel='dns-prefetch' href='//jetpack.wordpress.com' />
+<link rel='dns-prefetch' href='//public-api.wordpress.com' />
+<link rel='dns-prefetch' href='//i0.wp.com' />
+<link rel='dns-prefetch' href='//c0.wp.com' />
+<link rel="alternate" type="application/rss+xml" title="Media Bias/Fact Check &raquo; Feed" href="https://mediabiasfactcheck.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Media Bias/Fact Check &raquo; Comments Feed" href="https://mediabiasfactcheck.com/comments/feed/" />
+		
+		<!-- mediabiasfactcheck.com is managing ads with Advanced Ads – https://wpadvancedads.com/ -->
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<noscript><link rel='stylesheet' id='wp-block-library-css'  href='https://c0.wp.com/c/5.8.2/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+</noscript><link rel='stylesheet' id='wp-block-library-css'  href='https://c0.wp.com/c/5.8.2/wp-includes/css/dist/block-library/style.min.css' type='text/css' media="not all" data-media="all" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" />
+<style id='wp-block-library-inline-css' type='text/css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<noscript><link rel='stylesheet' id='mediaelement-css'  href='https://c0.wp.com/c/5.8.2/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css' type='text/css' media='all' />
+</noscript><link rel='stylesheet' id='mediaelement-css'  href='https://c0.wp.com/c/5.8.2/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css' type='text/css' media="not all" data-media="all" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" />
+<noscript><link rel='stylesheet' id='wp-mediaelement-css'  href='https://c0.wp.com/c/5.8.2/wp-includes/js/mediaelement/wp-mediaelement.min.css' type='text/css' media='all' />
+</noscript><link rel='stylesheet' id='wp-mediaelement-css'  href='https://c0.wp.com/c/5.8.2/wp-includes/js/mediaelement/wp-mediaelement.min.css' type='text/css' media="not all" data-media="all" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" />
+<noscript><link rel='stylesheet' id='wpcom-text-widget-styles-css'  href='https://mediabiasfactcheck.com/wp-content/mu-plugins/wpcomsh/vendor/automattic/text-media-widget-styles/css/widget-text.css?ver=20170607' type='text/css' media='all' />
+</noscript><link rel='stylesheet' id='wpcom-text-widget-styles-css'  href='https://mediabiasfactcheck.com/wp-content/mu-plugins/wpcomsh/vendor/automattic/text-media-widget-styles/css/widget-text.css?ver=20170607' type='text/css' media="not all" data-media="all" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" />
+<noscript><link rel='stylesheet' id='pmpro_frontend-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/paid-memberships-pro/css/frontend.css?ver=2.6.6' type='text/css' media='screen' />
+</noscript><link rel='stylesheet' id='pmpro_frontend-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/paid-memberships-pro/css/frontend.css?ver=2.6.6' type='text/css' media="not all" data-media="screen" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" />
+<noscript><link rel='stylesheet' id='pmpro_print-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/paid-memberships-pro/css/print.css?ver=2.6.6' type='text/css' media='print' />
+</noscript><link rel='stylesheet' id='pmpro_print-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/paid-memberships-pro/css/print.css?ver=2.6.6' type='text/css' media="not all" data-media="print" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" />
+<noscript><link rel='stylesheet' id='pmpro-add-paypal-express-styles-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/pmpro-add-paypal-express/css/pmpro-add-paypal-express.css?ver=5.8.2' type='text/css' media='all' />
+</noscript><link rel='stylesheet' id='pmpro-add-paypal-express-styles-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/pmpro-add-paypal-express/css/pmpro-add-paypal-express.css?ver=5.8.2' type='text/css' media="not all" data-media="all" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" />
+<noscript><link rel='stylesheet' id='megamenu-css'  href='https://mediabiasfactcheck.com/wp-content/uploads/maxmegamenu/style.css?ver=e352fc' type='text/css' media='all' />
+</noscript><link rel='stylesheet' id='megamenu-css'  href='https://mediabiasfactcheck.com/wp-content/uploads/maxmegamenu/style.css?ver=e352fc' type='text/css' media="not all" data-media="all" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" />
+<noscript><link rel='stylesheet' id='dashicons-css'  href='https://c0.wp.com/c/5.8.2/wp-includes/css/dashicons.min.css' type='text/css' media='all' />
+</noscript><link rel='stylesheet' id='dashicons-css'  href='https://c0.wp.com/c/5.8.2/wp-includes/css/dashicons.min.css' type='text/css' media="not all" data-media="all" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" />
+<noscript><link rel='stylesheet' id='megamenu-genericons-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/megamenu-pro/icons/genericons/genericons/genericons.css?ver=2.2.4' type='text/css' media='all' />
+</noscript><link rel='stylesheet' id='megamenu-genericons-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/megamenu-pro/icons/genericons/genericons/genericons.css?ver=2.2.4' type='text/css' media="not all" data-media="all" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" />
+<noscript><link rel='stylesheet' id='megamenu-fontawesome-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/megamenu-pro/icons/fontawesome/css/font-awesome.min.css?ver=2.2.4' type='text/css' media='all' />
+</noscript><link rel='stylesheet' id='megamenu-fontawesome-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/megamenu-pro/icons/fontawesome/css/font-awesome.min.css?ver=2.2.4' type='text/css' media="not all" data-media="all" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" />
+<noscript><link rel='stylesheet' id='megamenu-fontawesome5-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/megamenu-pro/icons/fontawesome5/css/all.min.css?ver=2.2.4' type='text/css' media='all' />
+</noscript><link rel='stylesheet' id='megamenu-fontawesome5-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/megamenu-pro/icons/fontawesome5/css/all.min.css?ver=2.2.4' type='text/css' media="not all" data-media="all" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" />
+<noscript><link rel='stylesheet' id='wpforms-full-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/wpforms/assets/css/wpforms-full.min.css?ver=1.7.1.2' type='text/css' media='all' />
+</noscript><link rel='stylesheet' id='wpforms-full-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/wpforms/assets/css/wpforms-full.min.css?ver=1.7.1.2' type='text/css' media="not all" data-media="all" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" />
+<noscript><link rel='stylesheet' id='mh-style-css'  href='https://mediabiasfactcheck.com/wp-content/themes/mh-newsdesk/style.css?ver=1.5.4' type='text/css' media='all' />
+</noscript><link rel='stylesheet' id='mh-style-css'  href='https://mediabiasfactcheck.com/wp-content/themes/mh-newsdesk/style.css?ver=1.5.4' type='text/css' media="not all" data-media="all" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" />
+<noscript><link rel='stylesheet' id='mh-font-awesome-css'  href='https://mediabiasfactcheck.com/wp-content/themes/mh-newsdesk/includes/font-awesome.min.css' type='text/css' media='all' />
+</noscript><link rel='stylesheet' id='mh-font-awesome-css'  href='https://mediabiasfactcheck.com/wp-content/themes/mh-newsdesk/includes/font-awesome.min.css' type='text/css' media="not all" data-media="all" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" />
+<noscript><link crossorigin="anonymous" rel='stylesheet' id='mh-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto' type='text/css' media='all' />
+</noscript><link crossorigin=media="not all" data-media="all" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" rel='stylesheet' id='mh-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto' type='text/css' media="not all" data-media="all" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" />
+<noscript><link rel='stylesheet' id='srpw-style-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/smart-recent-posts-widget/assets/css/srpw-frontend.css?ver=5.8.2' type='text/css' media='all' />
+</noscript><link rel='stylesheet' id='srpw-style-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/smart-recent-posts-widget/assets/css/srpw-frontend.css?ver=5.8.2' type='text/css' media="not all" data-media="all" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" />
+<noscript><link rel='stylesheet' id='jetpack_css-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/jetpack/css/jetpack.css?ver=10.5-a.1' type='text/css' media='all' />
+</noscript><link rel='stylesheet' id='jetpack_css-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/jetpack/css/jetpack.css?ver=10.5-a.1' type='text/css' media="not all" data-media="all" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" />
+<script data-jetpack-boost="ignore" type='text/javascript' src='https://c0.wp.com/c/5.8.2/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+
+
+
+
+
+
+
+<!-- Google Analytics snippet added by Site Kit -->
+
+
+
+<!-- End Google Analytics snippet added by Site Kit -->
+<link rel="https://api.w.org/" href="https://mediabiasfactcheck.com/wp-json/" /><link rel="alternate" type="application/json" href="https://mediabiasfactcheck.com/wp-json/wp/v2/pages/102490" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://mediabiasfactcheck.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://mediabiasfactcheck.com/wp-includes/wlwmanifest.xml" /> 
+
+<link rel='shortlink' href='https://wp.me/P4oNKt-qF4' />
+<link rel="alternate" type="application/json+oembed" href="https://mediabiasfactcheck.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmediabiasfactcheck.com%2F9news-kusa%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://mediabiasfactcheck.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmediabiasfactcheck.com%2F9news-kusa%2F&#038;format=xml" />
+<meta name="generator" content="Site Kit by Google 1.47.0" /><!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+<meta name="google-site-verification" content="8tV9jQyDOJrqgSl02fbs9NCkbEbR36eNnMg2VmjCR8Y" />
+<meta name="pocket-site-verification" content="64413ce5d0fd6d4f8e00e6d8cfa5b3" />
+<meta name="yandex-verification" content="8f21e854ade35f72" />
+<meta name="msvalidate.01" content="8086B3E898B617E92F6D9671AC8AAD9C" />
+
+
+	
+		<meta name="jetpack-boost-ready" content="true" />
+		
+		<style type='text/css'>img#wpstats{display:none}</style>
+			<style type="text/css">
+    	    		.social-nav a:hover, .logo-title, .entry-content a, a:hover, .entry-meta .entry-meta-author, .entry-meta a, .comment-info, blockquote, .pagination a:hover .pagelink { color: #dd3333; }
+			.main-nav li:hover, .slicknav_menu, .ticker-title, .breadcrumb a, .breadcrumb .bc-text, .button span, .widget-title span, input[type=submit], table th, .comment-section-title .comment-count, #cancel-comment-reply-link:hover, .pagination .current, .pagination .pagelink { background: #dd3333; }
+			blockquote, input[type=text]:hover, input[type=email]:hover, input[type=tel]:hover, input[type=url]:hover, textarea:hover { border-color: #dd3333; }
+    	    				.widget-title, .pagination a.page-numbers:hover, .dots:hover, .pagination a:hover .pagelink, .comment-section-title { background: #dd3333; }
+			.commentlist .depth-1, .commentlist .bypostauthor .avatar { border-color: #dd3333; }
+    	    	    	    	    		</style>
+    <!--[if lt IE 9]>
+<script data-jetpack-boost="ignore" src="https://mediabiasfactcheck.com/wp-content/themes/mh-newsdesk/js/css3-mediaqueries.js"></script>
+<![endif]-->
+<style type="text/css">
+.entry-content p { font-size: 15px; font-size: 0.9375rem; }
+.header-nav, .header-sub, h1, h2, h3, h4, h5, h6, .breadcrumb, .footer-bottom, .widget-list li, .cat-item, .page_item, .menu-item, .button, .submit, .commentlist .vcard, .pagination, .mh-share-buttons { font-family: "Roboto"; }
+body { font-family: "Roboto"; }
+</style>
+
+<!-- Google AdSense snippet added by Site Kit -->
+<meta name="google-adsense-platform-account" content="ca-host-pub-2644536267352236">
+<meta name="google-adsense-platform-domain" content="sitekit.withgoogle.com">
+<!-- End Google AdSense snippet added by Site Kit -->
+<link rel="amphtml" href="https://mediabiasfactcheck.com/9news-kusa/?amp=1">			<style type="text/css">
+				/* If html does not have either class, do not show lazy loaded images. */
+				html:not( .jetpack-lazy-images-js-enabled ):not( .js ) .jetpack-lazy-image {
+					display: none;
+				}
+			</style>
+			
+		<link rel="icon" href="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2020/12/cropped-transparent-MBFC-Square512.png?fit=32%2C32&#038;ssl=1" sizes="32x32" />
+<link rel="icon" href="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2020/12/cropped-transparent-MBFC-Square512.png?fit=192%2C192&#038;ssl=1" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2020/12/cropped-transparent-MBFC-Square512.png?fit=180%2C180&#038;ssl=1" />
+<meta name="msapplication-TileImage" content="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2020/12/cropped-transparent-MBFC-Square512.png?fit=270%2C270&#038;ssl=1" />
+<style type="text/css">/** Mega Menu CSS: fs **/</style>
+</head>
+<body class="page-template-default page page-id-102490 pmpro-body-has-access mega-menu-header-nav mega-menu-main-nav mega-menu-social-nav mh-right-sb mh-loop-layout2 aa-prefix-media-" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+	<div class="header-top">
+		<div class="wrapper-inner clearfix">
+							<nav class="header-nav clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+					<div id="mega-menu-wrap-header_nav" class="mega-menu-wrap"><div class="mega-menu-toggle"><div class="mega-toggle-blocks-left"></div><div class="mega-toggle-blocks-center"></div><div class="mega-toggle-blocks-right"><div class='mega-toggle-block mega-menu-toggle-animated-block mega-toggle-block-0' id='mega-toggle-block-0'><button aria-label="Toggle Menu" class="mega-toggle-animated mega-toggle-animated-slider" type="button" aria-expanded="false">
+                  <span class="mega-toggle-animated-box">
+                    <span class="mega-toggle-animated-inner"></span>
+                  </span>
+                </button></div></div></div><ul id="mega-menu-header_nav" class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js" data-event="hover_intent" data-effect="fade_up" data-effect-speed="200" data-effect-mobile="disabled" data-effect-speed-mobile="0" data-mobile-force-width="false" data-second-click="go" data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="768" data-unbind="true" data-mobile-state="collapse_all" data-hover-intent-timeout="300" data-hover-intent-interval="100" data-sticky-enabled="true" data-sticky-desktop="true" data-sticky-mobile="false" data-sticky-offset="0" data-sticky-expand="false" data-sticky-expand-mobile="false" data-sticky-transition="false"><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-menu-item-115957' id='mega-menu-item-115957'><a class="mega-menu-link" href="https://www.facebook.com/mediabiasfactcheck" tabindex="0">Facebook</a></li><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-menu-item-115926' id='mega-menu-item-115926'><a class="mega-menu-link" href="https://twitter.com/MBFC_News" tabindex="0">Twitter</a></li><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-megamenu mega-align-bottom-left mega-menu-megamenu mega-has-icon mega-icon-left mega-menu-item-22627' id='mega-menu-item-22627'><div class='mega-search-wrap mega-static'><form class='mega-search mega-search-open' role='search' action='https://mediabiasfactcheck.com/'>
+						<span class='dashicons dashicons-search search-icon'></span>
+						<input type='submit' value='Search'>
+						<input type='text' aria-label='SEARCH ONLY MEDIA SOURCES (best results)' data-placeholder='SEARCH ONLY MEDIA SOURCES (best results)' placeholder='SEARCH ONLY MEDIA SOURCES (best results)' name='s'>
+						
+					</form></div></li></ul></div>				</nav>
+										<nav class="social-nav clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+					<div id="mega-menu-wrap-social_nav" class="mega-menu-wrap"><div class="mega-menu-toggle"><div class="mega-toggle-blocks-left"></div><div class="mega-toggle-blocks-center"></div><div class="mega-toggle-blocks-right"><div class='mega-toggle-block mega-menu-toggle-animated-block mega-toggle-block-0' id='mega-toggle-block-0'><button aria-label="Search Menu" class="mega-toggle-animated mega-toggle-animated-slider" type="button" aria-expanded="false">
+                  <span class="mega-toggle-animated-box">
+                    <span class="mega-toggle-animated-inner"></span>
+                  </span>
+                </button></div></div></div><ul id="mega-menu-social_nav" class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js" data-event="hover_intent" data-effect="fade_up" data-effect-speed="200" data-effect-mobile="disabled" data-effect-speed-mobile="0" data-mobile-force-width="false" data-second-click="go" data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="600" data-unbind="true" data-mobile-state="collapse_all" data-hover-intent-timeout="300" data-hover-intent-interval="100" data-sticky-enabled="true" data-sticky-desktop="true" data-sticky-mobile="false" data-sticky-offset="0" data-sticky-expand="false" data-sticky-expand-mobile="false" data-sticky-transition="false"><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-menu-item-115930' id='mega-menu-item-115930'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/membership-account/membership-levels/" tabindex="0">Ad-Free Signup</a></li><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-menu-item-115924' id='mega-menu-item-115924'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/support-media-bias-fact-check/" tabindex="0">Donate</a></li><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-menu-item-115923' id='mega-menu-item-115923'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/filtered-search/" tabindex="0">Filtered Search</a></li><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-menu-item-115931' id='mega-menu-item-115931'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/login/" tabindex="0">Ad-Free Log In</a></li></ul></div>				</nav>
+					</div>
+	</div>
+<div id="mh-wrapper">
+<header class="mh-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+	<div class="header-wrap clearfix">
+				<div class="mh-col mh-1-3 header-logo">
+			<a href="https://mediabiasfactcheck.com/" title="Media Bias/Fact Check" rel="home">
+<div class="logo-wrap" role="banner">
+<img src="https://mediabiasfactcheck.com/wp-content/uploads/2020/12/cropped-cropped-cropped-Media-Bias-Logo-3.png" height="115" width="300" alt="Media Bias/Fact Check" />
+</div>
+</a>
+		</div>
+		<aside id="text-79" class="mh-col mh-2-3 widget_text"><div class="header-ad">			<div class="textwidget"><a href="https://mediabiasfactcheck.com/membership-account/membership-levels/"><img loading="lazy" class="aligncenter wp-image-116604 size-full" src="https://mediabiasfactcheck.com/wp-content/uploads/2021/01/bannerad3.png" alt="" width="728" height="90" /></a>
+</div>
+		</div></aside>	</div>
+	<div class="header-menu clearfix">
+		<nav class="main-nav clearfix" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+			<div id="mega-menu-wrap-main_nav" class="mega-menu-wrap"><div class="mega-menu-toggle"><div class="mega-toggle-blocks-left"></div><div class="mega-toggle-blocks-center"><div class='mega-toggle-block mega-menu-toggle-block mega-toggle-block-1' id='mega-toggle-block-1' tabindex='0'><span class='mega-toggle-label' role='button' aria-expanded='false'><span class='mega-toggle-label-closed'></span><span class='mega-toggle-label-open'></span></span></div></div><div class="mega-toggle-blocks-right"></div></div><ul id="mega-menu-main_nav" class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js" data-event="hover_intent" data-effect="fade_up" data-effect-speed="200" data-effect-mobile="disabled" data-effect-speed-mobile="0" data-mobile-force-width="false" data-second-click="go" data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="600" data-unbind="true" data-mobile-state="collapse_all" data-hover-intent-timeout="300" data-hover-intent-interval="100"><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-home mega-align-bottom-left mega-menu-flyout mega-menu-item-53' id='mega-menu-item-53'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/" tabindex="0">Home</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-496' id='mega-menu-item-496'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/about/" aria-haspopup="true" aria-expanded="false" tabindex="0">Transparency<span class="mega-indicator"></span></a>
+<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-110813' id='mega-menu-item-110813'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/about/">About</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-101265' id='mega-menu-item-101265'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/funding/">Funding</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-5860' id='mega-menu-item-5860'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/methodology/">Methodology</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-51424' id='mega-menu-item-51424'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/corrections-policy/">Corrections Policy</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-63515' id='mega-menu-item-63515'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/changes-corrections/">Changes/Corrections</a></li></ul>
+</li><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-menu-item-8173' id='mega-menu-item-8173'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/news/" tabindex="0">News</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-20060' id='mega-menu-item-20060'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/search/" aria-haspopup="true" aria-expanded="false" tabindex="0">Search<span class="mega-indicator"></span></a>
+<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-43365' id='mega-menu-item-43365'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/filtered-search/">Filtered Search</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-40179' id='mega-menu-item-40179'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/factual-news-search/">Factual News Search</a></li></ul>
+</li><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-menu-item-115838' id='mega-menu-item-115838'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/pseudoscience-dictionary/" tabindex="0">Pseudoscience</a></li><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-menu-item-115839' id='mega-menu-item-115839'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/country-profiles/" tabindex="0">Country Profiles</a></li><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-menu-item-115944' id='mega-menu-item-115944'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/appsextensions/" tabindex="0">Extensions</a></li><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-menu-item-115967' id='mega-menu-item-115967'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/feed/" tabindex="0">RSS</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-115834' id='mega-menu-item-115834'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/re-evaluated-sources/" tabindex="0">Re-Evaluated Sources</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-115833' id='mega-menu-item-115833'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/re-evaluated-sources/" aria-haspopup="true" aria-expanded="false" tabindex="0">MORE<span class="mega-indicator"></span></a>
+<ul class="mega-sub-menu">
+<li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-115835' id='mega-menu-item-115835'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/sources-pending/">Sources Pending</a></li><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-115836' id='mega-menu-item-115836'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/submit-source/">Submit Source</a></li><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-115837' id='mega-menu-item-115837'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/retired-sites/">Retired Sources</a></li><li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-115875' id='mega-menu-item-115875'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/help-us-fact-check/">Help Us Fact Check</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-117176' id='mega-menu-item-117176'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/left-vs-right-bias-how-we-rate-the-bias-of-media-sources/">Left vs. Right Bias: How we rate the bias of media sources</a></li></ul>
+</li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-115823' id='mega-menu-item-115823'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/center/" tabindex="0">Least Biased</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-115824' id='mega-menu-item-115824'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/left/" tabindex="0">Left Bias</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-115825' id='mega-menu-item-115825'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/leftcenter/" tabindex="0">Left-Center Bias</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-115826' id='mega-menu-item-115826'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/right-center/" tabindex="0">Right-Center Bias</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-115827' id='mega-menu-item-115827'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/right/" tabindex="0">Right Bias</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-115828' id='mega-menu-item-115828'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/conspiracy/" tabindex="0">Conspiracy-Pseudoscience</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-115829' id='mega-menu-item-115829'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/fake-news/" tabindex="0">Questionable Sources</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-115830' id='mega-menu-item-115830'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/pro-science/" tabindex="0">Pro-Science</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-115831' id='mega-menu-item-115831'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/satire/" tabindex="0">Satire</a></li><li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-align-bottom-left mega-menu-flyout mega-menu-item-121865' id='mega-menu-item-121865'><a class="mega-menu-link" href="https://mediabiasfactcheck.com/journalist-bias/" tabindex="0">Journalists</a></li></ul></div>		</nav>
+		<div class="header-sub clearfix">
+							<div id="ticker" class="news-ticker mh-col mh-2-3 clearfix">
+			<span class="ticker-title">
+			MBFC News		</span>
+		<ul class="ticker-content">			<li class="ticker-item">
+				<a class="ticker-item-link" href="https://mediabiasfactcheck.com/2021/12/09/the-latest-fact-checks-curated-by-media-bias-fact-check-12-09-2021/" title="The Latest Fact Checks curated by Media Bias Fact Check 12/09/2021">
+					<span class="ticker-item-date">December 9, 2021</span>
+					<span class="ticker-item-separator">|</span>
+					<span class="ticker-item-title">The Latest Fact Checks curated by Media Bias Fact Check 12/09/2021</span>
+				</a>
+			</li>			<li class="ticker-item">
+				<a class="ticker-item-link" href="https://mediabiasfactcheck.com/2021/12/09/daily-source-bias-check-techstartups-2/" title="Daily Source Bias Check: TechStartups">
+					<span class="ticker-item-date">December 9, 2021</span>
+					<span class="ticker-item-separator">|</span>
+					<span class="ticker-item-title">Daily Source Bias Check: TechStartups</span>
+				</a>
+			</li>			<li class="ticker-item">
+				<a class="ticker-item-link" href="https://mediabiasfactcheck.com/2021/12/08/the-latest-fact-checks-curated-by-media-bias-fact-check-12-08-2021/" title="The Latest Fact Checks curated by Media Bias Fact Check 12/08/2021">
+					<span class="ticker-item-date">December 8, 2021</span>
+					<span class="ticker-item-separator">|</span>
+					<span class="ticker-item-title">The Latest Fact Checks curated by Media Bias Fact Check 12/08/2021</span>
+				</a>
+			</li>			<li class="ticker-item">
+				<a class="ticker-item-link" href="https://mediabiasfactcheck.com/2021/12/08/daily-source-bias-check-kdvr-tv/" title="Daily Source Bias Check: KDVR-TV">
+					<span class="ticker-item-date">December 8, 2021</span>
+					<span class="ticker-item-separator">|</span>
+					<span class="ticker-item-title">Daily Source Bias Check: KDVR-TV</span>
+				</a>
+			</li>			<li class="ticker-item">
+				<a class="ticker-item-link" href="https://mediabiasfactcheck.com/2021/12/07/the-latest-fact-checks-curated-by-media-bias-fact-check-12-07-2021/" title="The Latest Fact Checks curated by Media Bias Fact Check 12/07/2021">
+					<span class="ticker-item-date">December 7, 2021</span>
+					<span class="ticker-item-separator">|</span>
+					<span class="ticker-item-title">The Latest Fact Checks curated by Media Bias Fact Check 12/07/2021</span>
+				</a>
+			</li>	</ul>
+</div>						<aside class="mh-col mh-1-3 header-search">
+				<form role="search" method="get" class="search-form" action="https://mediabiasfactcheck.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form>			</aside>
+		</div>
+	</div>
+</header><div class="mh-section mh-group">
+	<div id="main-content" class="mh-content" role="main" itemprop="mainContentOfPage"><nav class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="https://mediabiasfactcheck.com" itemprop="item" class="bc-home"><span itemprop="name">Home</span></a><meta itemprop="position" content="1" /></span> <span class="bc-text">9News KUSA</span></nav>
+<article id="post-102490" class="post-102490 page type-page status-publish has-post-thumbnail hentry pmpro-has-access">
+	<header class="entry-header">
+		<h1 class="entry-title page-title">
+			9News KUSA		</h1>
+	</header>
+	<div class="entry-content clearfix">
+		<p class="last-updated">Last updated on October 28th, 2021 at 01:28 pm</p><amp-ad width="300" height="250" layout="fixed" type="doubleclick" data-slot="/124067137/mediabiasfactcheck300x250FL_2"></amp-ad><ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-6505602311060910" 
+data-ad-slot="2554123025" 
+data-ad-format="auto"></ins>
+
+
+
+<header class="entry-header">
+<h2><img data-attachment-id="7647" data-permalink="https://mediabiasfactcheck.com/al-arabiya/leastbiased03/" data-orig-file="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2016/12/leastbiased031.png?fit=600%2C67&amp;ssl=1" data-orig-size="600,67" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="leastbiased03" data-image-description data-image-caption data-medium-file="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2016/12/leastbiased031.png?fit=150%2C17&amp;ssl=1" data-large-file="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2016/12/leastbiased031.png?fit=250%2C28&amp;ssl=1" loading="lazy" class="aligncenter wp-image-7647 size-full jetpack-lazy-image" src="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2016/12/leastbiased031.png?resize=600%2C67&#038;ssl=1" alt="9enews.com - KUSA - Least Biased - Credible - Reliable" width="600" height="67" data-recalc-dims="1" data-lazy-srcset="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2016/12/leastbiased031.png?w=600&amp;ssl=1 600w, https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2016/12/leastbiased031.png?resize=300%2C34&amp;ssl=1 300w" data-lazy-sizes="(max-width: 600px) 100vw, 600px" data-lazy-src="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2016/12/leastbiased031.png?resize=600%2C67&amp;is-pending-load=1#038;ssl=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-attachment-id="7647" data-permalink="https://mediabiasfactcheck.com/al-arabiya/leastbiased03/" data-orig-file="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2016/12/leastbiased031.png?fit=600%2C67&amp;ssl=1" data-orig-size="600,67" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="leastbiased03" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2016/12/leastbiased031.png?fit=150%2C17&amp;ssl=1" data-large-file="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2016/12/leastbiased031.png?fit=250%2C28&amp;ssl=1" loading="lazy" class="aligncenter wp-image-7647 size-full" src="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2016/12/leastbiased031.png?resize=600%2C67&#038;ssl=1" alt="9enews.com - KUSA - Least Biased - Credible - Reliable" width="600" height="67" srcset="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2016/12/leastbiased031.png?w=600&amp;ssl=1 600w, https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2016/12/leastbiased031.png?resize=300%2C34&amp;ssl=1 300w" sizes="(max-width: 600px) 100vw, 600px" data-recalc-dims="1" /></noscript><img data-attachment-id="98231" data-permalink="https://mediabiasfactcheck.com/new-york-observer/mbfchigh/" data-orig-file="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2020/02/MBFCHigh.png?fit=357%2C120&amp;ssl=1" data-orig-size="357,120" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="MBFCHigh" data-image-description data-image-caption data-medium-file="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2020/02/MBFCHigh.png?fit=150%2C51&amp;ssl=1" data-large-file="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2020/02/MBFCHigh.png?fit=250%2C84&amp;ssl=1" loading="lazy" class="aligncenter size-full wp-image-98231 jetpack-lazy-image" src="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2020/02/MBFCHigh.png?resize=357%2C120&#038;ssl=1" alt="Factual Reporting: High - Credible - Reliable" width="357" height="120" data-recalc-dims="1" data-lazy-srcset="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2020/02/MBFCHigh.png?w=357&amp;ssl=1 357w, https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2020/02/MBFCHigh.png?resize=300%2C101&amp;ssl=1 300w" data-lazy-sizes="(max-width: 357px) 100vw, 357px" data-lazy-src="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2020/02/MBFCHigh.png?resize=357%2C120&amp;is-pending-load=1#038;ssl=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><noscript><img data-attachment-id="98231" data-permalink="https://mediabiasfactcheck.com/new-york-observer/mbfchigh/" data-orig-file="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2020/02/MBFCHigh.png?fit=357%2C120&amp;ssl=1" data-orig-size="357,120" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="MBFCHigh" data-image-description="" data-image-caption="" data-medium-file="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2020/02/MBFCHigh.png?fit=150%2C51&amp;ssl=1" data-large-file="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2020/02/MBFCHigh.png?fit=250%2C84&amp;ssl=1" loading="lazy" class="aligncenter size-full wp-image-98231" src="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2020/02/MBFCHigh.png?resize=357%2C120&#038;ssl=1" alt="Factual Reporting: High - Credible - Reliable" width="357" height="120" srcset="https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2020/02/MBFCHigh.png?w=357&amp;ssl=1 357w, https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2020/02/MBFCHigh.png?resize=300%2C101&amp;ssl=1 300w" sizes="(max-width: 357px) 100vw, 357px" data-recalc-dims="1" /></noscript></h2>
+<hr />
+<h2 style="text-align: center;"><span style="text-decoration: underline;">LEAST BIASED</span></h2>
+</header>
+<div class="entry-content">
+<p>These sources have minimal bias and use very few loaded words (wording that attempts to influence an audience by appeals to emotion or stereotypes).  The reporting is factual and usually sourced.  These are the most credible media sources. <a href="http://mediabiasfactcheck.com/center/">See all Least Biased Sources.</a></p><div class="ftSxC8Yl" style="clear:both;float:left;width:100%;margin:0 0 20px 0;"><Center><amp-ad width="100vw" height=320
+     type="adsense"
+     data-ad-client="ca-pub-6505602311060910"
+     data-ad-slot="2554123025"
+     data-auto-format="rspv"
+     data-full-width>
+  <div overflow></div>
+</amp-ad></center></div>
+<ul>
+<li><strong>Overall, we rate 9News.com &#8211; KUSA-TV Least Biased based on minimal editorializing. We also rate them High for factual reporting due to proper sourcing and clean fact check record.</strong></li>
+</ul>
+<hr />
+</div>
+<h3 style="text-align: center;"><span style="text-decoration: underline;">Detailed Report</span></h3>
+<p>Bias Rating: <span style="color: #0000ff;"><strong>LEAST BIASED</strong><strong><br />
+</strong></span>Factual Reporting: <span style="color: #ff6600;"><strong><span style="color: #008000;">HIGH</span><br />
+</strong></span>Country: <strong>USA (44/180 Press Freedom)<br />
+</strong>Media Type: <strong>TV Station<br />
+</strong>Traffic/Popularity: <strong>High Traffic</strong><br />
+MBFC Credibility Rating: <span style="color: #008000;"><strong>HIGH CREDIBILITY</strong></span></p><div class="8kEdDrqL" style="clear:both;float:left;width:100%;margin:0 0 20px 0;"><div style="width: 728px; height: 90px; " id="media-1495431183"><div id="waldo-tag-10489"></div></div></div>
+<h4><em><strong>History</strong></em></h4>
+<p><a href="https://en.wikipedia.org/wiki/KUSA_(TV)" target="_blank" rel="noopener noreferrer">Founded in 1952</a>, KUSA-TV is an <a href="https://mediabiasfactcheck.com/nbc-news/">NBC-affiliated</a> television station licensed to Denver, Colorado, United States. 9News.com is the TV station website that reports on news and programming.</p>
+<p><a href="https://mediabiasfactcheck.com/united-states-media-profile/">Read our profile on the United States government and media.</a></p>
+<h4><em><strong>Funded by / Ownership</strong></em></h4>
+<p>9News KUSA-TV is owned and operated by TEGNA Inc., which operates 66 television stations in 54 markets. They state TEGNA&#8217;s purpose is to serve the greater good of our communities. Revenue is based on advertising and sponsored content.</p><div class="FzQiIwnC" style="clear:both;float:left;width:100%;margin:0 0 20px 0;"><amp-ad width="100vw" height="320"
+     type="adsense"
+     data-ad-client="ca-pub-6505602311060910"
+     data-ad-slot="8209912331"
+     data-auto-format="rspv"
+     data-full-width="">
+  <div overflow=""></div>
+</amp-ad></div>
+<h4><em><strong>Analysis / Bias</strong></em></h4>
+<p>In review, 9News covers news, sports, traffic, weather, and crime for the Denver area. Articles and headlines rarely use load language such as this: <a href="https://www.9news.com/article/news/health/coronavirus/mayor-hancock-update-covid-19-response/73-46e7db37-9e66-416b-b112-3fc0627eb67a" target="_blank" rel="noopener noreferrer">&#8216;This will be a different summer in Denver:&#8217; Mayor planning for life after stay-at-home order</a>. A video accompanies many news stories from the TV station. National and international news is written by staff reporters as well as the <a href="https://mediabiasfactcheck.com/associated-press/">Associated Press</a>.</p><div class="DFnANffR" style="clear:both;float:left;width:100%;margin:0 0 20px 0;"><div style="width: 728px; height: 90px; " id="media-717142842"><div id="waldo-tag-10488"></div></div></div>
+<p>Editorially, 9News does not publish opinion pieces; however, they cover politics with minimal bias: <a href="https://www.9news.com/article/news/health/coronavirus/trump-uses-pandemic-virus-briefing-to-air-laudatory-video/73-ea7b12c3-b90e-44aa-b140-9899cc1d5569" target="_blank" rel="noopener noreferrer">Trump uses daily coronavirus briefing to air complimentary video</a>. In general, the news is reported factually and with minimal bias.</p>
+<h4><em><strong>Failed Fact Checks</strong></em></h4>
+<ul>
+<li>None in the last 5 years.</li>
+</ul>
+<p>Overall, we rate 9News.com &#8211; KUSA-TV Least Biased based on minimal editorializing. We also rate them High for factual reporting due to proper sourcing and clean fact check record. (D. Van Zandt 4/20/20) Updated (10/28/2021)</p>
+<p>Source: <a href="https://www.9news.com/" target="_blank" rel="noopener noreferrer">https://www.9news.com/</a></p><div class="pfW9KS5T" style="clear:both;float:left;width:100%;margin:0 0 20px 0;"><center><amp-ad width="100vw" height="320"
+     type="adsense"
+     data-ad-client="ca-pub-6505602311060910"
+     data-ad-slot="4871456643"
+     data-auto-format="rspv"
+     data-full-width="">
+  <div overflow=""></div>
+</amp-ad></center></div>
+<p style="text-align: center;"><div class="wpforms-container wpforms-container-full" id="wpforms-116020"><form id="wpforms-form-116020" class="wpforms-validate wpforms-form" data-formid="116020" method="post" enctype="multipart/form-data" action="/9news-kusa/" data-token="cc9e80ec86860cd922939879604221d1"><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript><div class="wpforms-field-container"><div id="wpforms-116020-field_1-container" class="wpforms-field wpforms-field-radio wpforms-list-inline" data-field-id="1"><label class="wpforms-field-label" for="wpforms-116020-field_1">Rate the Bias of 9News KUSA <span class="wpforms-required-label">*</span></label><ul id="wpforms-116020-field_1" class="wpforms-field-required"><li class="choice-1 depth-1"><input type="radio" id="wpforms-116020-field_1_1" name="wpforms[fields][1]" value="Left" required ><label class="wpforms-field-label-inline" for="wpforms-116020-field_1_1">Left</label></li><li class="choice-2 depth-1"><input type="radio" id="wpforms-116020-field_1_2" name="wpforms[fields][1]" value="Left-Center" required ><label class="wpforms-field-label-inline" for="wpforms-116020-field_1_2">Left-Center</label></li><li class="choice-3 depth-1"><input type="radio" id="wpforms-116020-field_1_3" name="wpforms[fields][1]" value="Least Biased" required ><label class="wpforms-field-label-inline" for="wpforms-116020-field_1_3">Least Biased</label></li><li class="choice-4 depth-1"><input type="radio" id="wpforms-116020-field_1_4" name="wpforms[fields][1]" value="Right-Center" required ><label class="wpforms-field-label-inline" for="wpforms-116020-field_1_4">Right-Center</label></li><li class="choice-5 depth-1"><input type="radio" id="wpforms-116020-field_1_5" name="wpforms[fields][1]" value="Right" required ><label class="wpforms-field-label-inline" for="wpforms-116020-field_1_5">Right</label></li></ul><div class="wpforms-field-description">This poll is for entertainment purposes and does not change our overall rating.</div></div></div><div class="wpforms-field wpforms-field-hp"><label for="wpforms-116020-field-hp" class="wpforms-field-label">Website</label><input type="text" name="wpforms[hp]" id="wpforms-116020-field-hp" class="wpforms-field-medium"></div><div class="wpforms-recaptcha-container wpforms-is-recaptcha"><div class="g-recaptcha" data-sitekey="6LdiBuIUAAAAAMImpbKrtzwg6_RcuSGQHFYkkM1P"></div><input type="text" name="g-recaptcha-hidden" class="wpforms-recaptcha-hidden" style="position:absolute!important;clip:rect(0,0,0,0)!important;height:1px!important;width:1px!important;border:0!important;overflow:hidden!important;padding:0!important;margin:0!important;" required></div><div class="wpforms-submit-container"><input type="hidden" name="wpforms[id]" value="116020"><input type="hidden" name="wpforms[author]" value="1"><input type="hidden" name="wpforms[post_id]" value="102490"><button type="submit" name="wpforms[submit]" id="wpforms-submit-116020" class="wpforms-submit" data-alt-text="Sending..." data-submit-text="Vote" aria-live="assertive" value="wpforms-submit">Vote</button></div></form></div>  <!-- .wpforms-container --></p><div class="CtZbaCly" style="clear:both;float:left;width:100%;margin:0 0 20px 0;"><amp-ad width="100vw" height="320"
+     type="adsense"
+     data-ad-client="ca-pub-6505602311060910"
+     data-ad-slot="4570050223"
+     data-auto-format="rspv"
+     data-full-width="">
+  <div overflow=""></div>
+</amp-ad></div>
+<p style="text-align: center;">Video Advertisement</p>
+<div id='waldo-tag-7703'>
+ 
+</div></p><center><amp-ad width="100vw" height="320"
+     type="adsense"
+     data-ad-client="ca-pub-6505602311060910"
+     data-ad-slot="8046731662"
+     data-auto-format="rspv"
+     data-full-width="">
+  <div overflow=""></div>
+</amp-ad></center>
+<center><amp-ad width="300" height="250" layout="fixed" type="doubleclick" data-slot="/124067137/mediabiasfactcheck300x250FL_4"></center><p class="entry-title page-title" style="text-align: center;"><span style="text-decoration: underline;"><strong><a href="https://mediabiasfactcheck.com/left-vs-right-bias-how-we-rate-the-bias-of-media-sources/">Left vs. Right Bias: How we rate the bias of media sources</a></strong></span></p>
+
+<p class="entry-title page-title" style="text-align: center;"><span style="text-decoration: underline;"><strong><a href="https://newsfactsnetwork.com/" target="_blank" rel="noopener noreferrer">NFN-Low Biased Factual News</a></strong></span></p>
+<ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-6505602311060910" 
+data-ad-slot="8046731662" 
+data-ad-format="auto"></ins>
+
+<br style="clear: both; display: block; float: none;"/></p>	</div>
+</article>	</div>
+	<aside class="mh-sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+	<div id="srpw_widget-2" class="sb-widget clearfix widget_smart_recent_entries smart_recent_posts"><h4 class="widget-title"><span>Recently Added Sources or Pages</span></h4><div class="srpw-block srpw-classic-style "><ul class="srpw-ul"><li class="srpw-li srpw-clearfix"><div class="srpw-content"><a class="srpw-title" href="https://mediabiasfactcheck.com/north-wichita-news/" target="_self">North Wichita News</a><div class="srpw-meta"><time class="srpw-time published" datetime="2021-12-09T16:42:13-05:00">December 9, 2021</time></div></div></li><li class="srpw-li srpw-clearfix"><div class="srpw-content"><a class="srpw-title" href="https://mediabiasfactcheck.com/freedom-fictions/" target="_self">Freedom Fictions</a><div class="srpw-meta"><time class="srpw-time published" datetime="2021-12-08T15:25:53-05:00">December 8, 2021</time></div></div></li><li class="srpw-li srpw-clearfix"><div class="srpw-content"><a class="srpw-title" href="https://mediabiasfactcheck.com/wmc-memphis-news-bias/" target="_self">WMC &#8211; Memphis News</a><div class="srpw-meta"><time class="srpw-time published" datetime="2021-12-08T10:29:21-05:00">December 8, 2021</time></div></div></li><li class="srpw-li srpw-clearfix"><div class="srpw-content"><a class="srpw-title" href="https://mediabiasfactcheck.com/wdky-lexington-news/" target="_self">WDKY &#8211; Lexington News</a><div class="srpw-meta"><time class="srpw-time published" datetime="2021-12-07T19:10:48-05:00">December 7, 2021</time></div></div></li><li class="srpw-li srpw-clearfix"><div class="srpw-content"><a class="srpw-title" href="https://mediabiasfactcheck.com/dothan-eagle-bias/" target="_self">Dothan Eagle</a><div class="srpw-meta"><time class="srpw-time published" datetime="2021-12-07T16:36:29-05:00">December 7, 2021</time></div></div></li><li class="srpw-li srpw-clearfix"><div class="srpw-content"><a class="srpw-title" href="https://mediabiasfactcheck.com/wric-richmond-news-bias/" target="_self">WRIC &#8211; Richmond News</a><div class="srpw-meta"><time class="srpw-time published" datetime="2021-12-06T16:44:44-05:00">December 6, 2021</time></div></div></li><li class="srpw-li srpw-clearfix"><div class="srpw-content"><a class="srpw-title" href="https://mediabiasfactcheck.com/gadsden-times-bias/" target="_self">Gadsden Times</a><div class="srpw-meta"><time class="srpw-time published" datetime="2021-12-06T15:45:40-05:00">December 6, 2021</time></div></div></li><li class="srpw-li srpw-clearfix"><div class="srpw-content"><a class="srpw-title" href="https://mediabiasfactcheck.com/ne-kansas-news-bias/" target="_self">NE Kansas News</a><div class="srpw-meta"><time class="srpw-time published" datetime="2021-12-05T09:26:39-05:00">December 5, 2021</time></div></div></li></ul></div><!-- Generated by http://wordpress.org/plugins/smart-recent-posts-widget/ --></div><div id="text-77" class="sb-widget clearfix widget_text">			<div class="textwidget"><div style="margin-left: auto; margin-right: auto; width: 300px; height: 600px; " id="media-1598991552">
+<!-- Fixed Top -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6505602311060910"
+     data-ad-slot="7586383737"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+</div>
+</div>
+		</div><div id="top-posts-4" class="sb-widget clearfix widget_top-posts"><h4 class="widget-title"><span>Today&#8217;s Top Page Views</span></h4><ul>				<li>
+					<a href="https://mediabiasfactcheck.com/" class="bump-view" data-bump-view="tp">Media Bias/Fact Check News</a>					</li>
+								<li>
+					<a href="https://mediabiasfactcheck.com/center/" class="bump-view" data-bump-view="tp">Least Biased</a>					</li>
+								<li>
+					<a href="https://mediabiasfactcheck.com/left/cnn-bias/" class="bump-view" data-bump-view="tp">CNN</a>					</li>
+								<li>
+					<a href="https://mediabiasfactcheck.com/fox-news-bias/" class="bump-view" data-bump-view="tp">Fox News (foxnews.com)</a>					</li>
+								<li>
+					<a href="https://mediabiasfactcheck.com/new-york-times/" class="bump-view" data-bump-view="tp">New York Times</a>					</li>
+								<li>
+					<a href="https://mediabiasfactcheck.com/the-hill/" class="bump-view" data-bump-view="tp">The Hill</a>					</li>
+								<li>
+					<a href="https://mediabiasfactcheck.com/the-atlantic/" class="bump-view" data-bump-view="tp">The Atlantic</a>					</li>
+								<li>
+					<a href="https://mediabiasfactcheck.com/the-epoch-times/" class="bump-view" data-bump-view="tp">The Epoch Times</a>					</li>
+								<li>
+					<a href="https://mediabiasfactcheck.com/the-guardian/" class="bump-view" data-bump-view="tp">The Guardian</a>					</li>
+								<li>
+					<a href="https://mediabiasfactcheck.com/1440-newsletter/" class="bump-view" data-bump-view="tp">1440 Newsletter</a>					</li>
+				</ul></div><div id="text-81" class="sb-widget clearfix widget_text">			<div class="textwidget"><div style="margin-left: auto; margin-right: auto; width: 300px; height: 600px; " id="media-386899153"><div id="waldo-tag-3722"></div>
+</div>
+		</div><div id="text-73" class="sb-widget clearfix widget_text"><h4 class="widget-title"><span>Recently Updated Pages</span></h4>			<div class="textwidget"><!--W4PL_List_119004-->
+<div id="w4pl-list-119004" class="w4pl">
+	<div id="w4pl-inner-119004" class="w4pl-inner">
+		<ul>
+<li>
+<a class="post_title w4pl_post_title" href="https://mediabiasfactcheck.com/fake-news/" title="View Questionable Sources">Questionable Sources</a>
+ - December 9, 2021
+<p>
+</li>
+
+<li>
+<a class="post_title w4pl_post_title" href="https://mediabiasfactcheck.com/north-wichita-news/" title="View North Wichita News">North Wichita News</a>
+ - December 9, 2021
+<p>
+</li>
+
+<li>
+<a class="post_title w4pl_post_title" href="https://mediabiasfactcheck.com/being-libertarian/" title="View Being Libertarian">Being Libertarian</a>
+ - December 9, 2021
+<p>
+</li>
+
+<li>
+<a class="post_title w4pl_post_title" href="https://mediabiasfactcheck.com/digital-journal/" title="View Digital Journal">Digital Journal</a>
+ - December 8, 2021
+<p>
+</li>
+
+<li>
+<a class="post_title w4pl_post_title" href="https://mediabiasfactcheck.com/re-evaluated-sources/" title="View Re-Evaluated Sources">Re-Evaluated Sources</a>
+ - December 8, 2021
+<p>
+</li>
+
+<li>
+<a class="post_title w4pl_post_title" href="https://mediabiasfactcheck.com/conspiracy-daily-update/" title="View Conspiracy Daily Update">Conspiracy Daily Update</a>
+ - December 8, 2021
+<p>
+</li>
+
+<li>
+<a class="post_title w4pl_post_title" href="https://mediabiasfactcheck.com/conservative-free-press/" title="View Conservative Free Press">Conservative Free Press</a>
+ - December 8, 2021
+<p>
+</li>
+
+<li>
+<a class="post_title w4pl_post_title" href="https://mediabiasfactcheck.com/citizens-responsibility-ethics-washington-crew/" title="View Citizens for Responsibility and Ethics in Washington (CREW)">Citizens for Responsibility and Ethics in Washington (CREW)</a>
+ - December 8, 2021
+<p>
+</li>
+
+<li>
+<a class="post_title w4pl_post_title" href="https://mediabiasfactcheck.com/campaign-for-liberty/" title="View Campaign for Liberty">Campaign for Liberty</a>
+ - December 8, 2021
+<p>
+</li>
+
+<li>
+<a class="post_title w4pl_post_title" href="https://mediabiasfactcheck.com/satire/" title="View Satire">Satire</a>
+ - December 8, 2021
+<p>
+</li>
+</ul>
+	</div><!--#w4pl-inner-119004-->
+</div><!--#w4pl-119004-->
+<!--END_W4PL_List_119004-->
+
+</div>
+		</div><div id="text-82" class="sb-widget clearfix widget_text">			<div class="textwidget"><div style="margin-left: auto; margin-right: auto; width: 300px; height: 600px; " id="media-1231288234"><div id="waldo-tag-3720"></div>
+<p>&nbsp;</p>
+</div>
+		</div><div id="blog_subscription-5" class="sb-widget clearfix widget_blog_subscription jetpack_subscription_widget"><h4 class="widget-title"><span>Subscribe via Email</span></h4>
+			<form action="#" method="post" accept-charset="utf-8" id="subscribe-blog-blog_subscription-5">
+				                    <div id="subscribe-text"><p>Enter your email address to subscribe to MBFC and receive notifications of new posts by email. For Ad-Free Subscriptions go here: https://mediabiasfactcheck.com/membership-account/membership-levels/</p>
+</div>					<div class="jetpack-subscribe-count">
+						<p>
+						Join 21,573 other subscribers						</p>
+					</div>
+					                    <p id="subscribe-email">
+                        <label id="jetpack-subscribe-label"
+							class="screen-reader-text"
+							for="subscribe-field-blog_subscription-5">
+							Email Address                        </label>
+                        <input type="email" name="email" required="required"
+                        			                                                value=""
+							id="subscribe-field-blog_subscription-5"
+                            placeholder="Email Address"
+                        />
+                    </p>
+
+					<p id="subscribe-submit"
+											>
+                        <input type="hidden" name="action" value="subscribe"/>
+                        <input type="hidden" name="source" value="https://mediabiasfactcheck.com/9news-kusa/"/>
+                        <input type="hidden" name="sub-type" value="widget"/>
+						<input type="hidden" name="redirect_fragment" value="subscribe-blog-blog_subscription-5"/>
+						                        <button type="submit"
+	                        	                            class="wp-block-button__link"
+                            		                    	                        name="jetpack_subscriptions_widget"
+	                    >
+	                        Subscribe                        </button>
+                    </p>
+				            </form>
+		
+</div><div id="text-80" class="sb-widget clearfix widget_text">			<div class="textwidget">
+<div style="margin-left: auto; margin-right: auto; width: 728px; height: 90px; " id="media-470622557"><div id="waldo-tag-4264"></div>
+</div>
+		</div></aside></div>
+</div>
+<footer class="mh-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+		<div class="wrapper-inner clearfix">
+					<div class="mh-section mh-group footer-widgets">
+									<div class="mh-col mh-1-3 footer-1">
+						<div id="text-7" class="footer-widget widget_text">			<div class="textwidget"><p><a href="http://mediabiasfactcheck.com/terms-and-conditions/">Terms and Conditions</a><br />
+<a href="https://mediabiasfactcheck.com/fair-use-policy/">Fair Use Policy</a><br />
+<a href="https://mediabiasfactcheck.com/funding/">Funding</a></p>
+</div>
+		</div>					</div>
+													<div class="mh-col mh-1-3 footer-2">
+						<div id="text-8" class="footer-widget widget_text">			<div class="textwidget"><p><a href="https://mediabiasfactcheck.com/about/">About MBFC</a><br />
+<a href="http://mediabiasfactcheck.com/disclaimer/">Disclaimer</a><br />
+<a href="https://mediabiasfactcheck.com/membership-account/membership-cancel/">Cancel Ad Free</a></p>
+</div>
+		</div>					</div>
+													<div class="mh-col mh-1-3 footer-3">
+						<div id="text-9" class="footer-widget widget_text">			<div class="textwidget"><p><a href="http://mediabiasfactcheck.com/links/">Links/FAQ</a><br />
+<a href="https://mediabiasfactcheck.com/contact/">Contact</a><br />
+<a href="https://mediabiasfactcheck.com/feed/" target="_blank" rel="noopener">RSS</a></p>
+</div>
+		</div>					</div>
+							</div>
+			</div>
+	<div class="footer-bottom">
+		<div class="wrapper-inner clearfix">
+						<div class="copyright-wrap">
+				<p class="copyright">
+					Copyright 2021 Media Bias Fact Check LLC				</p>
+			</div>
+		</div>
+	</div>
+</footer>
+<div
+				class="hustle-ui hustle-popup hustle-palette--gray_slate hustle_module_id_1 module_id_1  "
+				
+			data-id="1"
+			data-render-id="0"
+			data-tracking="disabled"
+			
+				data-intro="no_animation"
+				data-outro="no_animation"
+				data-overlay-close="1"
+				data-close-delay="false"
+				
+				style="opacity: 0;"
+			><div class="hustle-popup-mask hustle-optin-mask" aria-hidden="true"></div><div class="hustle-popup-content"><div class="hustle-info hustle-info--compact"><button class="hustle-button-icon hustle-button-close has-background">
+			<span class="hustle-icon-close" aria-hidden="true"></span>
+			<span class="hustle-screen-reader">Close this module</span>
+		</button><div class="hustle-layout"><div class="hustle-content"><div class="hustle-content-wrap"><div class="hustle-group-title"><span class="hustle-title">Ad-Free</span><span class="hustle-subtitle">Media Bias Fact Check offers a number of membership plans to fit your budget!</span></div><div class="hustle-group-content"><p style="text-align: center">All plans give access to our growing exclusive content!</p><p style="text-align: center"><strong>Join today for $1 to $5 per Month</strong></p><p style="text-align: center"><span style="font-size: 12pt"><strong>Your Support is Essential</strong></span></p></div><div class="hustle-cta-container"><a class="hustle-button hustle-button-cta " href="https://mediabiasfactcheck.com/membership-account/membership-levels/" target="_self" data-cta-type="cta">See all of our Plans</a></div></div></div></div><p class="hustle-nsa-link"><a href="#">Never see this message again</a></p></div></div></div><!--  -->
+
+		<!-- Memberships powered by Paid Memberships Pro v2.6.6.
+ -->
+			
+				<div id="jp-carousel-loading-overlay">
+			<div id="jp-carousel-loading-wrapper">
+				<span id="jp-carousel-library-loading">&nbsp;</span>
+			</div>
+		</div>
+		<div class="jp-carousel-overlay jp-carousel-light" style="display: none;">
+
+		<div class="jp-carousel-container jp-carousel-light">
+			<!-- The Carousel Swiper -->
+			<div
+				class="jp-carousel-wrap swiper-container jp-carousel-swiper-container jp-carousel-transitions"
+				itemscope
+				itemtype="https://schema.org/ImageGallery">
+				<div class="jp-carousel swiper-wrapper"></div>
+				<div class="jp-swiper-button-prev swiper-button-prev">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskPrev" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="9" height="12">
+							<path d="M16.2072 16.59L11.6496 12L16.2072 7.41L14.8041 6L8.8335 12L14.8041 18L16.2072 16.59Z" fill="white"/>
+						</mask>
+						<g mask="url(#maskPrev)">
+							<rect x="0.579102" width="23.8823" height="24" fill="#FFFFFF"/>
+						</g>
+					</svg>
+				</div>
+				<div class="jp-swiper-button-next swiper-button-next">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskNext" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="8" height="12">
+							<path d="M8.59814 16.59L13.1557 12L8.59814 7.41L10.0012 6L15.9718 12L10.0012 18L8.59814 16.59Z" fill="white"/>
+						</mask>
+						<g mask="url(#maskNext)">
+							<rect x="0.34375" width="23.8822" height="24" fill="#FFFFFF"/>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<!-- The main close buton -->
+			<div class="jp-carousel-close-hint">
+				<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<mask id="maskClose" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="5" width="15" height="14">
+						<path d="M19.3166 6.41L17.9135 5L12.3509 10.59L6.78834 5L5.38525 6.41L10.9478 12L5.38525 17.59L6.78834 19L12.3509 13.41L17.9135 19L19.3166 17.59L13.754 12L19.3166 6.41Z" fill="white"/>
+					</mask>
+					<g mask="url(#maskClose)">
+						<rect x="0.409668" width="23.8823" height="24" fill="#FFFFFF"/>
+					</g>
+				</svg>
+			</div>
+			<!-- Image info, comments and meta -->
+			<div class="jp-carousel-info">
+				<div class="jp-carousel-info-footer">
+					<div class="jp-carousel-pagination-container">
+						<div class="jp-swiper-pagination swiper-pagination"></div>
+						<div class="jp-carousel-pagination"></div>
+					</div>
+					<div class="jp-carousel-photo-title-container">
+						<h2 class="jp-carousel-photo-caption"></h2>
+					</div>
+					<div class="jp-carousel-photo-icons-container">
+						<a href="#" class="jp-carousel-icon-btn jp-carousel-icon-info" aria-label="Toggle photo metadata visibility">
+							<span class="jp-carousel-icon">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="maskInfo" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M12.7537 2C7.26076 2 2.80273 6.48 2.80273 12C2.80273 17.52 7.26076 22 12.7537 22C18.2466 22 22.7046 17.52 22.7046 12C22.7046 6.48 18.2466 2 12.7537 2ZM11.7586 7V9H13.7488V7H11.7586ZM11.7586 11V17H13.7488V11H11.7586ZM4.79292 12C4.79292 16.41 8.36531 20 12.7537 20C17.142 20 20.7144 16.41 20.7144 12C20.7144 7.59 17.142 4 12.7537 4C8.36531 4 4.79292 7.59 4.79292 12Z" fill="white"/>
+									</mask>
+									<g mask="url(#maskInfo)">
+										<rect x="0.8125" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+							</span>
+						</a>
+												<a href="#" class="jp-carousel-icon-btn jp-carousel-icon-comments" aria-label="Toggle photo comments visibility">
+							<span class="jp-carousel-icon">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="maskComments" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M4.3271 2H20.2486C21.3432 2 22.2388 2.9 22.2388 4V16C22.2388 17.1 21.3432 18 20.2486 18H6.31729L2.33691 22V4C2.33691 2.9 3.2325 2 4.3271 2ZM6.31729 16H20.2486V4H4.3271V18L6.31729 16Z" fill="white"/>
+									</mask>
+									<g mask="url(#maskComments)">
+										<rect x="0.34668" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+
+								<span class="jp-carousel-has-comments-indicator" aria-label="This image has comments."></span>
+							</span>
+						</a>
+											</div>
+				</div>
+				<div class="jp-carousel-info-extra">
+					<div class="jp-carousel-info-content-wrapper">
+						<div class="jp-carousel-photo-title-container">
+							<h2 class="jp-carousel-photo-title"></h2>
+						</div>
+						<div class="jp-carousel-comments-wrapper">
+															<div id="jp-carousel-comments-loading">
+									<span>Loading Comments...</span>
+								</div>
+								<div class="jp-carousel-comments"></div>
+								<div id="jp-carousel-comment-form-container">
+									<span id="jp-carousel-comment-form-spinner">&nbsp;</span>
+									<div id="jp-carousel-comment-post-results"></div>
+																														<form id="jp-carousel-comment-form">
+												<label for="jp-carousel-comment-form-comment-field" class="screen-reader-text">Write a Comment...</label>
+												<textarea
+													name="comment"
+													class="jp-carousel-comment-form-field jp-carousel-comment-form-textarea"
+													id="jp-carousel-comment-form-comment-field"
+													placeholder="Write a Comment..."
+												></textarea>
+												<div id="jp-carousel-comment-form-submit-and-info-wrapper">
+													<div id="jp-carousel-comment-form-commenting-as">
+																													<fieldset>
+																<label for="jp-carousel-comment-form-email-field">Email</label>
+																<input type="text" name="email" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-email-field" />
+															</fieldset>
+															<fieldset>
+																<label for="jp-carousel-comment-form-author-field">Name</label>
+																<input type="text" name="author" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-author-field" />
+															</fieldset>
+															<fieldset>
+																<label for="jp-carousel-comment-form-url-field">Website</label>
+																<input type="text" name="url" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-url-field" />
+															</fieldset>
+																											</div>
+													<input
+														type="submit"
+														name="submit"
+														class="jp-carousel-comment-form-button"
+														id="jp-carousel-comment-form-button-submit"
+														value="Post Comment" />
+												</div>
+											</form>
+																											</div>
+													</div>
+						<div class="jp-carousel-image-meta">
+							<div class="jp-carousel-title-and-caption">
+								<div class="jp-carousel-photo-info">
+									<h3 class="jp-carousel-caption" itemprop="caption description"></h3>
+								</div>
+
+								<div class="jp-carousel-photo-description"></div>
+							</div>
+							<ul class="jp-carousel-image-exif" style="display: none;"></ul>
+							<a class="jp-carousel-image-download" target="_blank" style="display: none;">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="19" height="18">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M5.84615 5V19H19.7775V12H21.7677V19C21.7677 20.1 20.8721 21 19.7775 21H5.84615C4.74159 21 3.85596 20.1 3.85596 19V5C3.85596 3.9 4.74159 3 5.84615 3H12.8118V5H5.84615ZM14.802 5V3H21.7677V10H19.7775V6.41L9.99569 16.24L8.59261 14.83L18.3744 5H14.802Z" fill="white"/>
+									</mask>
+									<g mask="url(#mask0)">
+										<rect x="0.870605" width="23.8823" height="24" fill="#FFFFFF"/>
+									</g>
+								</svg>
+								<span class="jp-carousel-download-text"></span>
+							</a>
+							<div class="jp-carousel-image-map" style="display: none;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+		<noscript><link rel='stylesheet' id='hustle_icons-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/wordpress-popup/assets/hustle-ui/css/hustle-icons.min.css?ver=4.4.7' type='text/css' media='all' />
+</noscript><link rel='stylesheet' id='hustle_icons-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/wordpress-popup/assets/hustle-ui/css/hustle-icons.min.css?ver=4.4.7' type='text/css' media="not all" data-media="all" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" />
+<noscript><link rel='stylesheet' id='hustle_global-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/wordpress-popup/assets/hustle-ui/css/hustle-global.min.css?ver=4.4.7' type='text/css' media='all' />
+</noscript><link rel='stylesheet' id='hustle_global-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/wordpress-popup/assets/hustle-ui/css/hustle-global.min.css?ver=4.4.7' type='text/css' media="not all" data-media="all" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" />
+<noscript><link rel='stylesheet' id='hustle_info-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/wordpress-popup/assets/hustle-ui/css/hustle-info.min.css?ver=4.4.7' type='text/css' media='all' />
+</noscript><link rel='stylesheet' id='hustle_info-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/wordpress-popup/assets/hustle-ui/css/hustle-info.min.css?ver=4.4.7' type='text/css' media="not all" data-media="all" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" />
+<noscript><link rel='stylesheet' id='hustle_popup-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/wordpress-popup/assets/hustle-ui/css/hustle-popup.min.css?ver=4.4.7' type='text/css' media='all' />
+</noscript><link rel='stylesheet' id='hustle_popup-css'  href='https://mediabiasfactcheck.com/wp-content/plugins/wordpress-popup/assets/hustle-ui/css/hustle-popup.min.css?ver=4.4.7' type='text/css' media="not all" data-media="all" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" />
+<noscript><link crossorigin="anonymous" rel='stylesheet' id='hustle-fonts-css'  href='https://fonts.googleapis.com/css?family=Titillium+Web%3A700%7CRoboto%3A700%2Cregular%2C500&#038;display=swap&#038;ver=1.0' type='text/css' media='all' />
+</noscript><link crossorigin=media="not all" data-media="all" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" rel='stylesheet' id='hustle-fonts-css'  href='https://fonts.googleapis.com/css?family=Titillium+Web%3A700%7CRoboto%3A700%2Cregular%2C500&#038;display=swap&#038;ver=1.0' type='text/css' media="not all" data-media="all" onload="this.media=this.dataset.media; delete this.dataset.media; this.removeAttribute( 'onload' );" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+
+<style type="text/css" id="hustle-module-1-0-styles" class="hustle-module-styles hustle-module-styles-1">.hustle-ui.module_id_1 .hustle-popup-content {max-width: 800px;} .hustle-ui.module_id_1  {padding-right: 15px;padding-left: 15px;}.hustle-ui.module_id_1  .hustle-popup-content .hustle-info,.hustle-ui.module_id_1  .hustle-popup-content .hustle-optin {padding-top: 15px;padding-bottom: 15px;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_1  {padding-right: 15px;padding-left: 15px;}.hustle-ui:not(.hustle-size--small).module_id_1  .hustle-popup-content .hustle-info,.hustle-ui:not(.hustle-size--small).module_id_1  .hustle-popup-content .hustle-optin {padding-top: 15px;padding-bottom: 15px;}} .hustle-ui.module_id_1 .hustle-layout {margin: 0px 0px 0px 0px;padding: 90px 30px 90px 30px;border-width: 0px 0px 0px 0px;border-style: solid;border-color: rgba(0,0,0,0);border-radius: 0px 0px 0px 0px;overflow: hidden;background-color: #0d0d0d;-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout {margin: 0px 0px 0px 0px;padding: 90px 90px 90px 90px;border-width: 0px 0px 0px 0px;border-style: solid;border-radius: 0px 0px 0px 0px;-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);}} .hustle-ui.module_id_1 .hustle-layout .hustle-layout-content {padding: 0px 0px 0px 0px;border-width: 0px 0px 0px 0px;border-style: solid;border-radius: 0px 0px 0px 0px;border-color: rgba(0,0,0,0);background-color: rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-layout-content {padding: 0px 0px 0px 0px;border-width: 0px 0px 0px 0px;border-style: solid;border-radius: 0px 0px 0px 0px;-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);}}  .hustle-ui.module_id_1 .hustle-layout .hustle-content {margin: 0px 0px 0px 0px;padding: 0 0px 0 0px;border-width: 0px 0px 0px 0px;border-style: solid;border-radius: 0px 0px 0px 0px;border-color: rgba(0,0,0,0);background-color: rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);}.hustle-ui.module_id_1 .hustle-layout .hustle-content .hustle-content-wrap {padding: 0px 0 0px 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-content {margin: 0px 0px 0px 0px;padding: 0 0px 0 0px;border-width: 0px 0px 0px 0px;border-style: solid;border-radius: 0px 0px 0px 0px;-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);}.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-content .hustle-content-wrap {padding: 0px 0 0px 0;}} .hustle-ui.module_id_1 .hustle-layout .hustle-title {display: block;margin: 0px 0px 0px 0px;padding: 0px 0px 0px 0px;border-width: 0px 0px 0px 0px;border-style: solid;border-color: rgba(0,0,0,0);border-radius: 0px 0px 0px 0px;background-color: rgba(0,0,0,0);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);color: #FFFFFF;font: 700 64px/78px Titillium Web;font-style: normal;letter-spacing: 18px;text-transform: uppercase;text-decoration: none;text-align: center;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-title {margin: 0px 0px 0px 0px;padding: 0px 0px 0px 0px;border-width: 0px 0px 0px 0px;border-style: solid;border-radius: 0px 0px 0px 0px;box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);font: 700 64px/78px Titillium Web;font-style: normal;letter-spacing: 18px;text-transform: uppercase;text-decoration: none;text-align: center;}} .hustle-ui.module_id_1 .hustle-layout .hustle-subtitle {display: block;margin: 0px 0px 0px 0px;padding: 0px 0px 0px 0px;border-width: 0px 0px 0px 0px;border-style: solid;border-color: rgba(0,0,0,0);border-radius: 0px 0px 0px 0px;background-color: rgba(0,0,0,0);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);color: #FFFFFF;font: 700 14px/18px Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;text-align: left;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-subtitle {margin: 0px 0px 0px 0px;padding: 0px 0px 0px 0px;border-width: 0px 0px 0px 0px;border-style: solid;border-radius: 0px 0px 0px 0px;box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);font: 700 14px/18px Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;text-align: left;}} .hustle-ui.module_id_1 .hustle-layout .hustle-group-content {margin: 30px 0px 0px 0px;padding: 0px 0px 0px 0px;border-color: rgba(0,0,0,0);border-width: 0px 0px 0px 0px;border-style: solid;color: #eaeaea;}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content b,.hustle-ui.module_id_1 .hustle-layout .hustle-group-content strong {font-weight: bold;}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content a,.hustle-ui.module_id_1 .hustle-layout .hustle-group-content a:visited {color: #38C5B5;}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content a:hover {color: #2DA194;}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content a:focus,.hustle-ui.module_id_1 .hustle-layout .hustle-group-content a:active {color: #2DA194;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-group-content {margin: 30px 0px 0px 0px;padding: 0px 0px 0px 0px;border-width: 0px 0px 0px 0px;border-style: solid;}}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content {color: #eaeaea;font-size: 16px;line-height: 26px;font-family: Roboto;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-group-content {font-size: 16px;line-height: 26px;}}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content p:not([class*="forminator-"]) {margin: 0 0 10px;color: #eaeaea;font: normal 16px/26px Roboto;font-style: normal;letter-spacing: -0.25px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content p:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-group-content p:not([class*="forminator-"]) {margin: 0 0 10px;font: normal 16px/26px Roboto;font-style: normal;letter-spacing: -0.25px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-group-content p:not([class*="forminator-"]):last-child {margin-bottom: 0;}}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content h1:not([class*="forminator-"]) {margin: 0 0 10px;color: #eaeaea;font: 700 28px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content h1:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-group-content h1:not([class*="forminator-"]) {margin: 0 0 10px;font: 700 28px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-group-content h1:not([class*="forminator-"]):last-child {margin-bottom: 0;}}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content h2:not([class*="forminator-"]) {margin: 0 0 10px;color: #eaeaea;font: 700 22px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content h2:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-group-content h2:not([class*="forminator-"]) {margin: 0 0 10px;font: 700 22px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-group-content h2:not([class*="forminator-"]):last-child {margin-bottom: 0;}}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content h3:not([class*="forminator-"]) {margin: 0 0 10px;color: #eaeaea;font: 700 18px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content h3:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-group-content h3:not([class*="forminator-"]) {margin: 0 0 10px;font: 700 18px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-group-content h3:not([class*="forminator-"]):last-child {margin-bottom: 0;}}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content h4:not([class*="forminator-"]) {margin: 0 0 10px;color: #eaeaea;font: 700 16px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content h4:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-group-content h4:not([class*="forminator-"]) {margin: 0 0 10px;font: 700 16px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-group-content h4:not([class*="forminator-"]):last-child {margin-bottom: 0;}}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content h5:not([class*="forminator-"]) {margin: 0 0 10px;color: #eaeaea;font: 700 14px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content h5:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-group-content h5:not([class*="forminator-"]) {margin: 0 0 10px;font: 700 14px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-group-content h5:not([class*="forminator-"]):last-child {margin-bottom: 0;}}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content h6:not([class*="forminator-"]) {margin: 0 0 10px;color: #eaeaea;font: 700 12px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: uppercase;text-decoration: none;}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content h6:not([class*="forminator-"]):last-child {margin-bottom: 0;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-group-content h6:not([class*="forminator-"]) {margin: 0 0 10px;font: 700 12px/1.4em Roboto;font-style: normal;letter-spacing: 0px;text-transform: uppercase;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-group-content h6:not([class*="forminator-"]):last-child {margin-bottom: 0;}}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content ol:not([class*="forminator-"]),.hustle-ui.module_id_1 .hustle-layout .hustle-group-content ul:not([class*="forminator-"]) {margin: 0 0 10px;}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content ol:not([class*="forminator-"]):last-child,.hustle-ui.module_id_1 .hustle-layout .hustle-group-content ul:not([class*="forminator-"]):last-child {margin-bottom: 0;}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content li:not([class*="forminator-"]) {margin: 0 0 5px;color: #eaeaea;font: 400 14px/1.45em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content li:not([class*="forminator-"]):last-child {margin-bottom: 0;}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content ol:not([class*="forminator-"]) li:before {color: #ADB5B7}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content ul:not([class*="forminator-"]) li:before {background-color: #ADB5B7}@media screen and (min-width: 783px) {.hustle-ui.module_id_1 .hustle-layout .hustle-group-content ol:not([class*="forminator-"]),.hustle-ui.module_id_1 .hustle-layout .hustle-group-content ul:not([class*="forminator-"]) {margin: 0 0 20px;}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content ol:not([class*="forminator-"]):last-child,.hustle-ui.module_id_1 .hustle-layout .hustle-group-content ul:not([class*="forminator-"]):last-child {margin: 0;}}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-group-content li:not([class*="forminator-"]) {margin: 0 0 5px;font: 400 14px/1.45em Roboto;font-style: normal;letter-spacing: 0px;text-transform: none;text-decoration: none;}.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-group-content li:not([class*="forminator-"]):last-child {margin-bottom: 0;}}.hustle-ui.module_id_1 .hustle-layout .hustle-group-content blockquote {margin-right: 0;margin-left: 0;} .hustle-ui.module_id_1 .hustle-layout .hustle-cta-container {margin: 20px 0px 0px 0px;padding: 0px 0px 0px 0px;border-color: rgba(0,0,0,0);border-width: 0px 0px 0px 0px;border-style: solid;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-cta-container {margin: 20px 0px 0px 0px;padding: 0px 0px 0px 0px;border-width: 0px 0px 0px 0px;border-style: solid;}} .hustle-ui.module_id_1 .hustle-layout a.hustle-button-cta {margin: 0;padding: 9px 46px 9px 46px;border-width: 2px 2px 2px 2px;border-style: solid;border-color: #dfa161;border-radius: 0px 0px 0px 0px;background-color: #dfa161;-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);color: #FFFFFF;font: 500 14px/22px Roboto;font-style: normal;letter-spacing: 1.5px;text-transform: uppercase;text-decoration: none;text-align: center;}.hustle-ui.module_id_1 .hustle-layout a.hustle-button-cta:hover {border-color: #c9853d;background-color: #c9853d;color: #FFFFFF;}.hustle-ui.module_id_1 .hustle-layout a.hustle-button-cta:focus {border-color: #4d99f7;background-color: #dfa161;color: #FFFFFF;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout a.hustle-button-cta {padding: 9px 46px 9px 46px;border-width: 2px 2px 2px 2px;border-style: solid;border-radius: 0px 0px 0px 0px;box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);font: 500 14px/22px Roboto;font-style: normal;letter-spacing: 1.5px;text-transform: uppercase;text-decoration: none;text-align: center;}} .hustle-ui.module_id_1 .hustle-layout .hustle-cta-container {text-align: center;}.hustle-ui.module_id_1 .hustle-layout .hustle-cta-container .hustle-button-cta {width: auto;display: inline-block;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-cta-container {text-align: center;}.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-layout .hustle-cta-container .hustle-button-cta {width: auto;display: inline-block;}} .hustle-ui.module_id_1 .hustle-nsa-link {margin: 10px 0px 0px 0px;text-align: center;}.hustle-ui.module_id_1 .hustle-nsa-link {font-size: 14px;line-height: 22px;font-family: Roboto;letter-spacing: -0.22px;}.hustle-ui.module_id_1 .hustle-nsa-link a,.hustle-ui.module_id_1 .hustle-nsa-link a:visited {color: #414141;font-weight: normal;font-style: normal;text-transform: none;text-decoration: none;}.hustle-ui.module_id_1 .hustle-nsa-link a:hover {color: #0d0d0d;}.hustle-ui.module_id_1 .hustle-nsa-link a:focus,.hustle-ui.module_id_1 .hustle-nsa-link a:active {color: #0d0d0d;}@media screen and (min-width: 783px) {.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-nsa-link {margin: 15px 0px 0px 0px;text-align: center;}.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-nsa-link {font-size: 14px;line-height: 22px;letter-spacing: -0.22px;}.hustle-ui:not(.hustle-size--small).module_id_1 .hustle-nsa-link a {font-weight: normal;font-style: normal;text-transform: none;text-decoration: none;}}.hustle-ui.module_id_1 button.hustle-button-close {color: #565656;}.hustle-ui.module_id_1 button.hustle-button-close:hover {color: #0d0d0d;}.hustle-ui.module_id_1 button.hustle-button-close:focus {color: #0d0d0d;}.hustle-ui.module_id_1 .hustle-popup-mask {background-color: rgba(255,255,255,0.85);} .hustle-ui.module_id_1 .hustle-layout .hustle-group-content blockquote {border-left-color: #38C5B5;}</style><script type="text/javascript">
+  WebFontConfig = {"google":{"families":["Open+Sans:600:latin,latin-ext","Open+Sans:r,i,b,bi:latin,latin-ext"]}};
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://mediabiasfactcheck.com/wp-content/mu-plugins/wpcomsh/vendor/automattic/custom-fonts/js/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+	})();
+</script><script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://mediabiasfactcheck.com/#organization","name":"Media Bias Fact Check","url":"https://mediabiasfactcheck.com/","sameAs":["https://www.facebook.com/mediabiasfactcheck/","https://www.instagram.com/mediabiasfactcheck/","https://www.linkedin.com/in/media-bias-fact-check-09421b169/","https://en.wikipedia.org/wiki/Media_Bias/Fact_Check","https://twitter.com/MBFC_News"],"logo":{"@type":"ImageObject","@id":"https://mediabiasfactcheck.com/#logo","inLanguage":"en-US","url":"https://i1.wp.com/mediabiasfactcheck.com/wp-content/uploads/2020/12/cropped-transparent-MBFC-Square512.png?fit=512%2C512&ssl=1","contentUrl":"https://i1.wp.com/mediabiasfactcheck.com/wp-content/uploads/2020/12/cropped-transparent-MBFC-Square512.png?fit=512%2C512&ssl=1","width":512,"height":512,"caption":"Media Bias Fact Check"},"image":{"@id":"https://mediabiasfactcheck.com/#logo"}},{"@type":"WebSite","@id":"https://mediabiasfactcheck.com/#website","url":"https://mediabiasfactcheck.com/","name":"Media Bias/Fact Check","description":"Rating the Bias and Credibility of Media Sources","publisher":{"@id":"https://mediabiasfactcheck.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://mediabiasfactcheck.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://mediabiasfactcheck.com/9news-kusa/#primaryimage","inLanguage":"en-US","url":"https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2019/09/70982153_683576715489993_3036728782363820032_n-e1608491429724.jpg?fit=200%2C200&ssl=1","contentUrl":"https://i0.wp.com/mediabiasfactcheck.com/wp-content/uploads/2019/09/70982153_683576715489993_3036728782363820032_n-e1608491429724.jpg?fit=200%2C200&ssl=1","width":200,"height":200},{"@type":"WebPage","@id":"https://mediabiasfactcheck.com/9news-kusa/#webpage","url":"https://mediabiasfactcheck.com/9news-kusa/","name":"9News KUSA - Media Bias/Fact Check","isPartOf":{"@id":"https://mediabiasfactcheck.com/#website"},"primaryImageOfPage":{"@id":"https://mediabiasfactcheck.com/9news-kusa/#primaryimage"},"datePublished":"2020-04-20T22:01:17+00:00","dateModified":"2021-10-28T17:28:01+00:00","breadcrumb":{"@id":"https://mediabiasfactcheck.com/9news-kusa/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://mediabiasfactcheck.com/9news-kusa/"]}]},{"@type":"BreadcrumbList","@id":"https://mediabiasfactcheck.com/9news-kusa/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Media Bias Fact Check","item":"https://mediabiasfactcheck.com/"},{"@type":"ListItem","position":2,"name":"9News KUSA"}]}]}</script><script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/mediabiasfactcheck.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.2"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script id="media-ready">
+			window.advanced_ads_ready=function(e,a){a=a||"complete";var d=function(e){return"interactive"===a?"loading"!==e:"complete"===e};d(document.readyState)?e():document.addEventListener("readystatechange",(function(a){d(a.target.readyState)&&e()}),{once:"interactive"===a})},window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[];		</script><script type='text/javascript' src='https://c0.wp.com/c/5.8.2/wp-includes/js/jquery/jquery-migrate.min.js' id='jquery-migrate-js'></script><script type='text/javascript' id='advanced-ads-advanced-js-js-extra'>
+/* <![CDATA[ */
+var advads_options = {"blog_id":"1","privacy":{"enabled":false,"state":"not_needed"}};
+/* ]]> */
+</script><script type='text/javascript' src='https://mediabiasfactcheck.com/wp-content/plugins/advanced-ads/public/assets/js/advanced.min.js?ver=1.30.4' id='advanced-ads-advanced-js-js'></script><script type='text/javascript' id='advanced_ads_pro/visitor_conditions-js-extra'>
+/* <![CDATA[ */
+var advanced_ads_pro_visitor_conditions = {"referrer_cookie_name":"advanced_ads_pro_visitor_referrer","referrer_exdays":"365","page_impr_cookie_name":"advanced_ads_page_impressions","page_impr_exdays":"3650"};
+/* ]]> */
+</script><script type='text/javascript' src='https://mediabiasfactcheck.com/wp-content/plugins/advanced-ads-pro/modules/advanced-visitor-conditions/inc/conditions.min.js?ver=2.15.0' id='advanced_ads_pro/visitor_conditions-js'></script><script type='text/javascript' src='https://mediabiasfactcheck.com/wp-content/themes/mh-newsdesk/js/scripts.js?ver=5.8.2' id='mh-scripts-js'></script><script type='text/javascript' src='https://www.googletagmanager.com/gtag/js?id=G-QB82EM7H04' id='google_gtagjs-js' async></script><script type='text/javascript' id='google_gtagjs-js-after'>
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "G-QB82EM7H04");
+</script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-101652650-1"></script><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-101652650-1');
+</script><script type="text/javascript" src="//cdn.thisiswaldo.com/static/js/3719.js"></script><script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script><script>
+		function getFilteredBias() {
+			return "";
+		}
+	</script><script type="text/javascript">
+		var advadsCfpQueue = [];
+		var advadsCfpAd = function( adID ){
+			if ( 'undefined' == typeof advadsProCfp ) { advadsCfpQueue.push( adID ) } else { advadsProCfp.addElement( adID ) }
+		};
+		</script><script>
+				document.documentElement.classList.add(
+					'jetpack-lazy-images-js-enabled'
+				);
+			</script><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6505602311060910" crossorigin="anonymous"></script><script> 
+(adsbygoogle = window.adsbygoogle || []).push({}); 
+</script><script>
+   googletag.cmd.push(function() { googletag.display('waldo-tag-7703'); });
+ </script><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6505602311060910" crossorigin="anonymous"></script><script> 
+(adsbygoogle = window.adsbygoogle || []).push({}); 
+</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6505602311060910"
+     crossorigin="anonymous"></script><script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script><script>window.advanced_ads_check_adblocker=function(t){var n=[],e=null;function i(t){(window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||function(t){return setTimeout(t,16)}).call(window,t)}return i((function(){var t=document.createElement("div");t.innerHTML="&nbsp;",t.setAttribute("class","ad_unit ad-unit text-ad text_ad pub_300x250"),t.setAttribute("style","width: 1px !important; height: 1px !important; position: absolute !important; left: 0px !important; top: 0px !important; overflow: hidden !important;"),document.body.appendChild(t),i((function(){var i=window.getComputedStyle&&window.getComputedStyle(t),o=i&&i.getPropertyValue("-moz-binding");e=i&&"none"===i.getPropertyValue("display")||"string"==typeof o&&-1!==o.indexOf("about:");for(var a=0,r=n.length;a<r;a++)n[a](e);n=[]}))})),function(t){null!==e?t(e):n.push(t)}}();</script><script defer id='bilmur' data-provider='wordpress.com' data-service='atomic' src='https://s0.wp.com/wp-content/js/bilmur.min.js?m=202149'></script><script>window.addEventListener('load', function() {
+				document.querySelectorAll('link').forEach(function(e) {'not all' === e.media && e.dataset.media && (e.media=e.dataset.media,delete e.dataset.media)});
+				var e = document.getElementById('jetpack-boost-critical-css');
+				e && (e.media = 'not all');
+			});</script><script type='text/javascript' src='https://mediabiasfactcheck.com/wp-content/plugins/jetpack/_inc/build/photon/photon.min.js?ver=20191001' id='jetpack-photon-js'></script><script type='text/javascript' id='advanced-ads-sticky-footer-js-js-extra'>
+/* <![CDATA[ */
+var advanced_ads_sticky_settings = {"check_position_fixed":"1","sticky_class":"media-sticky","placements":[]};
+/* ]]> */
+</script><script type='text/javascript' src='https://mediabiasfactcheck.com/wp-content/plugins/advanced-ads-sticky-ads/public/assets/js/sticky.js?ver=1.8.1' id='advanced-ads-sticky-footer-js-js'></script><script type='text/javascript' src='https://c0.wp.com/c/5.8.2/wp-includes/js/jquery/ui/core.min.js' id='jquery-ui-core-js'></script><script type='text/javascript' src='https://c0.wp.com/c/5.8.2/wp-includes/js/jquery/ui/datepicker.min.js' id='jquery-ui-datepicker-js'></script><script type='text/javascript' id='jquery-ui-datepicker-js-after'>
+jQuery(document).ready(function(jQuery){jQuery.datepicker.setDefaults({"closeText":"Close","currentText":"Today","monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Previous","dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"dateFormat":"MM d, yy","firstDay":1,"isRTL":false});});
+</script><script type='text/javascript' src='https://mediabiasfactcheck.com/wp-content/plugins/wordpress-popup/assets/hustle-ui/js/hustle-ui.min.js?ver=4.4.7' id='hui_scripts-js'></script><script type='text/javascript' src='https://c0.wp.com/c/5.8.2/wp-includes/js/underscore.min.js' id='underscore-js'></script><script type='text/javascript' id='hustle_front-js-extra'>
+/* <![CDATA[ */
+var Modules = [{"settings":{"auto_close_success_message":"0","triggers":{"on_time_delay":"0","on_time_unit":"seconds","on_scroll":"scrolled","on_scroll_page_percent":20,"on_scroll_css_selector":"","enable_on_click_element":"1","on_click_element":"","enable_on_click_shortcode":"1","on_exit_intent_per_session":"1","on_exit_intent_delayed_time":"0","on_exit_intent_delayed_unit":"seconds","on_adblock_delay":"0","on_adblock_delay_unit":"seconds","trigger":["time"]},"animation_in":"no_animation","animation_out":"no_animation","after_close":"no_show_all","expiration":"14","expiration_unit":"days","on_submit":"nothing","on_submit_delay":"5","on_submit_delay_unit":"seconds","close_cta":"0","close_cta_time":"0","close_cta_unit":"seconds","hide_after_cta":"no_show_all","hide_after_subscription":"keep_show","is_schedule":"0","schedule":{"not_schedule_start":"1","start_date":"07\/10\/2021","start_hour":"12","start_minute":"00","start_meridiem_offset":"am","not_schedule_end":"1","end_date":"07\/16\/2021","end_hour":"11","end_minute":"59","end_meridiem_offset":"pm","active_days":"all","week_days":[],"is_active_all_day":"1","day_start_hour":"00","day_start_minute":"00","day_start_meridiem_offset":"am","day_end_hour":"11","day_end_minute":"59","day_end_meridiem_offset":"pm","time_to_use":"server","custom_timezone":"UTC"},"allow_scroll_page":"0","close_on_background_click":"1","auto_hide":"0","auto_hide_unit":"seconds","auto_hide_time":"5","after_close_trigger":["click_close_icon"]},"module_id":"1","blog_id":"0","module_name":"All Access - Ad-Free Memberships","module_type":"popup","active":"1","module_mode":"informational"}];
+var incOpt = {"is_admin":"","native_share_enpoints":{"facebook":"https:\/\/www.facebook.com\/sharer\/sharer.php?u=https%3A%2F%2Fmediabiasfactcheck.com%2F9news-kusa","twitter":"https:\/\/twitter.com\/intent\/tweet?url=https%3A%2F%2Fmediabiasfactcheck.com%2F9news-kusa&text=9News%20KUSA","pinterest":"https:\/\/www.pinterest.com\/pin\/create\/button\/?url=https%3A%2F%2Fmediabiasfactcheck.com%2F9news-kusa","reddit":"https:\/\/www.reddit.com\/submit?url=https%3A%2F%2Fmediabiasfactcheck.com%2F9news-kusa","linkedin":"https:\/\/www.linkedin.com\/shareArticle?mini=true&url=https%3A%2F%2Fmediabiasfactcheck.com%2F9news-kusa","vkontakte":"https:\/\/vk.com\/share.php?url=https%3A%2F%2Fmediabiasfactcheck.com%2F9news-kusa","whatsapp":"https:\/\/api.whatsapp.com\/send?text=https%3A%2F%2Fmediabiasfactcheck.com%2F9news-kusa","email":"mailto:?subject=9News%20KUSA&body=https%3A%2F%2Fmediabiasfactcheck.com%2F9news-kusa"},"ajaxurl":"https:\/\/mediabiasfactcheck.com\/wp-admin\/admin-ajax.php","page_id":"102490","page_slug":"9news-kusa","is_upfront":"","script_delay":"3000"};
+/* ]]> */
+</script><script type='text/javascript' src='https://mediabiasfactcheck.com/wp-content/plugins/wordpress-popup/assets/js/front.min.js?ver=4.4.7' id='hustle_front-js'></script><script type='text/javascript' src='https://mediabiasfactcheck.com/wp-content/plugins/advanced-ads-pro/assets/js/advanced-ads-pro.min.js?ver=2.15.0' id='advanced-ads-pro/front-js'></script><script type='text/javascript' id='advanced-ads-pro/cache_busting-js-extra'>
+/* <![CDATA[ */
+var advanced_ads_pro_ajax_object = {"ajax_url":"https:\/\/mediabiasfactcheck.com\/wp-admin\/admin-ajax.php","lazy_load_module_enabled":"","lazy_load":{"default_offset":0,"offsets":[]},"moveintohidden":"","wp_timezone_offset":"-18000"};
+/* ]]> */
+</script><script type='text/javascript' src='https://mediabiasfactcheck.com/wp-content/plugins/advanced-ads-pro/assets/js/base.min.js?ver=2.15.0' id='advanced-ads-pro/cache_busting-js'></script><script type='text/javascript' src='https://mediabiasfactcheck.com/wp-content/plugins/jetpack/vendor/automattic/jetpack-lazy-images/dist/intersection-observer.js?minify=false&#038;ver=2d4bf43f398489795f1893179047a63c' id='jetpack-lazy-images-polyfill-intersectionobserver-js'></script><script type='text/javascript' id='jetpack-lazy-images-js-extra'>
+/* <![CDATA[ */
+var jetpackLazyImagesL10n = {"loading_warning":"Images are still loading. Please cancel your print and try again."};
+/* ]]> */
+</script><script type='text/javascript' src='https://mediabiasfactcheck.com/wp-content/plugins/jetpack/vendor/automattic/jetpack-lazy-images/dist/lazy-images.js?minify=false&#038;ver=1c8bb5930b723e669774487342a8fa98' id='jetpack-lazy-images-js'></script><script type='text/javascript' src='https://c0.wp.com/c/5.8.2/wp-includes/js/hoverIntent.min.js' id='hoverIntent-js'></script><script type='text/javascript' id='megamenu-js-extra'>
+/* <![CDATA[ */
+var megamenu = {"timeout":"300","interval":"100"};
+/* ]]> */
+</script><script type='text/javascript' src='https://mediabiasfactcheck.com/wp-content/plugins/megamenu/js/maxmegamenu.js?ver=2.9.5' id='megamenu-js'></script><script type='text/javascript' src='https://mediabiasfactcheck.com/wp-content/plugins/megamenu-pro/assets/public.js?ver=2.2.4' id='megamenu-pro-js'></script><script type='text/javascript' src='https://c0.wp.com/c/5.8.2/wp-includes/js/wp-embed.min.js' id='wp-embed-js'></script><script type='text/javascript' id='jetpack-carousel-js-extra'>
+/* <![CDATA[ */
+var jetpackSwiperLibraryPath = {"url":"https:\/\/mediabiasfactcheck.com\/wp-content\/plugins\/jetpack\/_inc\/build\/carousel\/swiper-bundle.min.js"};
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https:\/\/mediabiasfactcheck.com\/wp-admin\/admin-ajax.php","nonce":"abd10f4147","display_exif":"1","display_comments":"1","display_geo":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"white","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","download_original":"View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","copyright":"Copyright","comment_registration":"0","require_name_email":"0","login_url":"https:\/\/mediabiasfactcheck.com\/wp-login.php?redirect_to=https%3A%2F%2Fmediabiasfactcheck.com%2F9news-kusa%2F","blog_id":"1","meta_data":["camera","aperture","shutter_speed","focal_length","copyright"]};
+/* ]]> */
+</script><script type='text/javascript' src='https://mediabiasfactcheck.com/wp-content/plugins/jetpack/_inc/build/carousel/jetpack-carousel.min.js?ver=10.5-a.1' id='jetpack-carousel-js'></script><script type='text/javascript' src='https://mediabiasfactcheck.com/wp-content/plugins/wpforms/assets/js/jquery.validate.min.js?ver=1.19.3' id='wpforms-validation-js'></script><script type='text/javascript' src='https://mediabiasfactcheck.com/wp-content/plugins/wpforms/assets/js/wpforms.js?ver=1.7.1.2' id='wpforms-js'></script><script type='text/javascript' src='https://www.google.com/recaptcha/api.js?onload=wpformsRecaptchaLoad&#038;render=explicit' id='wpforms-recaptcha-js'></script><script type='text/javascript' id='wpforms-recaptcha-js-after'>
+var wpformsDispatchEvent = function (el, ev, custom) {
+			    var e = document.createEvent(custom ? "CustomEvent" : "HTMLEvents");
+			    custom ? e.initCustomEvent(ev, true, true, false) : e.initEvent(ev, true, true);
+			    el.dispatchEvent(e);
+			};
+		var wpformsRecaptchaCallback = function (el) {
+			    var hdn = el.parentNode.querySelector(".wpforms-recaptcha-hidden");
+			    var err = el.parentNode.querySelector("#g-recaptcha-hidden-error");
+			    hdn.value = "1";
+			    wpformsDispatchEvent(hdn, "change", false);
+			    hdn.classList.remove("wpforms-error");
+			    err && hdn.parentNode.removeChild(err);
+			};
+		var wpformsRecaptchaLoad = function () {
+				    Array.prototype.forEach.call(document.querySelectorAll(".g-recaptcha"), function (el) {
+				        try {
+				            var recaptchaID = grecaptcha.render(el, {
+				                callback: function () {
+				                    wpformsRecaptchaCallback(el);
+				                }
+				            });
+				            el.setAttribute("data-recaptcha-id", recaptchaID);
+				        } catch (error) {}
+				    });
+				    wpformsDispatchEvent(document, "wpformsRecaptchaLoaded", true);
+				};
+			
+</script><script>window.advads_admin_bar_items = [{"title":"Membership Test","type":"ad"},{"title":"Newor AMP 1","type":"ad"},{"title":"Very Top of Content","type":"ad"},{"title":"Google Top Amp","type":"ad"},{"title":"Newor Mid-Content Banner","type":"ad"},{"title":"Google AMP Mid Content","type":"ad"},{"title":"Newor Top Banner","type":"ad"},{"title":"Google AMP Top","type":"ad"},{"title":"Google AMP In Content 2","type":"ad"},{"title":"Video Ad","type":"ad"},{"title":"Google AMP Below Content","type":"ad"},{"title":"Newor AMP Below Content","type":"ad"},{"title":"Adsense Bottom Content","type":"ad"},{"title":"Adsense top side bar fixed","type":"ad"},{"title":"Newor 2nd bar new","type":"ad"},{"title":"Newor Top Side Bar","type":"ad"},{"title":"Newor 6 Sticky Footer","type":"ad"}];</script><script>window.advads_ajax_queries = [{"id":"auto-ads","method":"placement","params":{"item_adblocker":"id_120134","placement_conditions":{"display":[{"type":"pmp_membership_level","operator":"is_not","value":["1","2","3","4","5","6","7","8","9","10","11","12","13"]}],"visitors":[{"type":"pmp_user_level","operator":"is_not","value":["1","2","3","4","5","6","7","8","9","10","11","12","13"]},{"type":"role","operator":"is","value":"advanced_ads_user"}]},"cache-busting":"auto","previous_method":"placement","previous_id":"auto-ads","post":"r0","url_parameter":"\/9news-kusa\/","placement_type":"header","output":{"placement_id":"auto-ads"},"change-ad":{"visitors":[{"type":"pmp_user_level","operator":"is_not","value":["1","2","3","4","5","6","7","8","9","10","11","12","13"],"connector":"and"},{"type":"role","operator":"is","value":"advanced_ads_user"}],"conditions":[{"type":"pmp_membership_level","operator":"is_not","value":["1","2","3","4","5","6","7","8","9","10","11","12","13"],"connector":"and"}]}},"blog_id":1}];
+window.advads_has_ads = [["116596","ad","Membership Test","off"],["116624","ad","Newor AMP 1","off"],["83134","ad","Very Top of Content","off"],["116348","ad","Google Top Amp","off"],["120075","ad","Newor Mid-Content Banner","off"],["116359","ad","Google AMP Mid Content","off"],["120074","ad","Newor Top Banner","off"],["116358","ad","Google AMP Top","off"],["116360","ad","Google AMP In Content 2","off"],["101563","ad","Video Ad","off"],["116357","ad","Google AMP Below Content","off"],["116625","ad","Newor AMP Below Content","off"],["86458","ad","Adsense Bottom Content","off"],["120157","ad","Adsense top side bar fixed","off"],["86443","ad","Newor 2nd bar new","off"],["86439","ad","Newor Top Side Bar","off"],["86448","ad","Newor 6 Sticky Footer","off"]];
+window.advads_ajax_queries_args = {"r0":{"id":102490,"author":"1","post_type":"page"}};
+( window.advanced_ads_ready || jQuery( document ).ready ).call( null, function() {if ( !window.advanced_ads_pro ) {console.log("Advanced Ads Pro: cache-busting can not be initialized");} });</script><script type='text/javascript'>
+/* <![CDATA[ */
+var wpforms_settings = {"val_required":"This field is required.","val_email":"Please enter a valid email address.","val_email_suggestion":"Did you mean {suggestion}?","val_email_suggestion_title":"Click to accept this suggestion.","val_email_restricted":"This email address is not allowed.","val_number":"Please enter a valid number.","val_number_positive":"Please enter a valid positive number.","val_confirm":"Field values do not match.","val_checklimit":"You have exceeded the number of allowed selections: {#}.","val_limit_characters":"{count} of {limit} max characters.","val_limit_words":"{count} of {limit} max words.","val_recaptcha_fail_msg":"Google reCAPTCHA verification failed, please try again later.","val_empty_blanks":"Please fill out all blanks.","uuid_cookie":"1","locale":"en","wpforms_plugin_url":"https:\/\/mediabiasfactcheck.com\/wp-content\/plugins\/wpforms\/","gdpr":"","ajaxurl":"https:\/\/mediabiasfactcheck.com\/wp-admin\/admin-ajax.php","mailcheck_enabled":"1","mailcheck_domains":[],"mailcheck_toplevel_domains":["dev"],"is_ssl":"1","currency_code":"USD","currency_thousands":",","currency_decimals":"2","currency_decimal":".","currency_symbol":"$","currency_symbol_pos":"left","val_requiredpayment":"Payment is required.","val_creditcard":"Please enter a valid credit card number.","val_post_max_size":"The total size of the selected files {totalSize} Mb exceeds the allowed limit {maxSize} Mb.","val_time12h":"Please enter time in 12-hour AM\/PM format (eg 8:45 AM).","val_time24h":"Please enter time in 24-hour format (eg 22:45).","val_time_limit":"Please enter time between {minTime} and {maxTime}.","val_url":"Please enter a valid URL.","val_fileextension":"File type is not allowed.","val_filesize":"File exceeds max size allowed. File was not uploaded.","post_max_size":"2146435072","val_unique":"The value must be unique.","val_password_strength":"A stronger password is required. Consider using upper and lower case letters, numbers, and symbols.","val_phone":"Please enter a valid phone number.","richtext_add_media_button":"","entry_preview_iframe_styles":["https:\/\/mediabiasfactcheck.com\/wp-includes\/js\/tinymce\/skins\/lightgray\/content.min.css?ver=5.8.2","https:\/\/mediabiasfactcheck.com\/wp-includes\/css\/dashicons.min.css?ver=5.8.2","https:\/\/mediabiasfactcheck.com\/wp-includes\/js\/tinymce\/skins\/wordpress\/wp-content.css?ver=5.8.2"]}
+/* ]]> */
+</script><script type="text/javascript">
+                var images = new Array()
+                function preload() {
+                    for (i = 0; i < preload.arguments.length; i++) {
+                        images[i] = new Image()
+                        images[i].src = preload.arguments[i]
+                    }
+                }
+                preload("https://mediabiasfactcheck.com/wp-content/uploads/2020/12/cropped-cropped-cropped-Media-Bias-Logo-3.png"
+)
+            </script><script>!function(){window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[],advanced_ads_ready_queue.push=window.advanced_ads_ready;for(var d=0,a=advanced_ads_ready_queue.length;d<a;d++)advanced_ads_ready(advanced_ads_ready_queue[d])}();</script><script src='https://stats.wp.com/e-202149.js' defer></script><script>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:10.5-a.1',blog:'65016453',post:'102490',tz:'-5',srv:'mediabiasfactcheck.com'} ]);
+	_stq.push([ 'clickTrackerInit', '65016453', '102490' ]);
+</script></body>
+</html>
+<!--
+	generated 21 seconds ago
+	generated in 0.625 seconds
+	served from batcache in 0.002 seconds
+	expires in 279 seconds
+-->
