@@ -26,38 +26,56 @@ class Source {
 const source = new Source()
 source.create()
 
-const sources = db.prepare('SELECT source FROM articles LIMIT 1').pluck().all()
+const publishers = db.prepare('SELECT DISTINCT source FROM articles LIMIT 2').pluck().all()
 
-const uniqueUrls = new Set()
-const urls = []
-for (const source of sources) uniqueUrls.add(getUrlFromSource(source))
-for (let url of uniqueUrls) urls.push(url)
+console.log('publishers', publishers)
+console.log('----')
 
-const scrapper = new MediaBiasFactCheck()
+const placesToScrape = []
+
+for (const name of publishers) {
+  placesToScrape.push({
+    name: name,
+    url: getUrlFromSource(name),
+  })
+}
 
 const insert = db.prepare(
   'INSERT OR IGNORE INTO sources (name, bias_rating, factual_reporting, country, media_type, popularity, mbfc_credibility_rating) VALUES (@name, @bias_rating, @factual_reporting, @country, @media_type, @popularity, @mbfc_credibility_rating)'
 )
 
-const insertBiasDetails = db.transaction((biasDetails) => {
-  for (const details of biasDetails) insert.run(details)
+const insertMany = db.transaction((scrappedData) => {
+  console.log('saving...')
+  console.log('scrappedData', scrappedData)
+  for (const details of scrappedData) insert.run(details)
+  console.log('saving done')
 })
 
-async function doWork(scrapper, url) {
+let scrappedData = []
+
+console.log(`setting up scrapper...`)
+
+const scrapper = new MediaBiasFactCheck()
+
+async function doScrapping(scrapper, place) {
+  const { name, url } = place
+
   const data = await scrapper.fetchText(url)
-
+  console.log(`scrapping ${name}...`)
   scrapper.clean(data)
-  const biasDetails = await scrapper.scrapeDetails(data)
-
-  console.log(`Saving url: ${url}`)
-  console.log(biasDetails)
-  console.log('')
-  insertBiasDetails(biasDetails)
+  const details = await scrapper.scrapeHTML(data, name)
+  // console.log(details)
+  scrappedData.push(details)
 }
 
-for (const url of uniqueUrls) {
-  doWork(scrapper, url)
-  await sleep(1000)
-}
+placesToScrape.forEach((place) => {
+  doScrapping(scrapper, place)
+  sleep(3000)
+})
+
+console.log('scrapping done')
+console.log(scrappedData)
+
+insertMany(scrappedData)
 
 db.close()

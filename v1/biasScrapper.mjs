@@ -23,8 +23,8 @@ class MediaBiasFactCheck extends Scrapper {
     return data.slice(beginIdx, endIdx)
   }
 
-  async scrapeDetails(data) {
-    return await scrapeHTML(data, {
+  async scrapeHTML(data, websiteName) {
+    const response = await scrapeHTML(data, {
       bias_rating: {
         selector: 'span strong',
         eq: 0,
@@ -50,6 +50,11 @@ class MediaBiasFactCheck extends Scrapper {
         eq: 3,
       },
     })
+
+    return {
+      name: websiteName,
+      ...response,
+    }
   }
 }
 
