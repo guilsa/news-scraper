@@ -26,7 +26,7 @@ class Source {
 const source = new Source()
 source.create()
 
-const publishers = db.prepare('SELECT DISTINCT source FROM articles LIMIT 2').pluck().all()
+const publishers = db.prepare('SELECT DISTINCT source FROM articles').pluck().all()
 
 console.log('publishers', publishers)
 console.log('----')
@@ -64,14 +64,16 @@ async function doScrapping(scrapper, place) {
   console.log(`scrapping ${name}...`)
   scrapper.clean(data)
   const details = await scrapper.scrapeHTML(data, name)
-  // console.log(details)
+  console.log(details)
   scrappedData.push(details)
 }
 
-placesToScrape.forEach((place) => {
-  doScrapping(scrapper, place)
-  sleep(3000)
-})
+await Promise.all(
+  placesToScrape.map(async (place) => {
+    await doScrapping(scrapper, place)
+    sleep(3000)
+  })
+)
 
 console.log('scrapping done')
 console.log(scrappedData)
