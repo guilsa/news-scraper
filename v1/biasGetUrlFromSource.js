@@ -4,6 +4,8 @@ function getUrlFromSource(source) {
   return `https://mediabiasfactcheck.com/${source}/`
 }
 
+export { getUrlFromSource }
+
 const sources = [
   'Politico',
   'CNN',
@@ -56,6 +58,6 @@ const sources = [
   'Wall Street Journal',
 ]
 
-for (source of sources) {
-  console.log(getUrlFromSource(source));
+for (const source of sources) {
+  console.log(getUrlFromSource(source))
 }
