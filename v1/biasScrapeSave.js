@@ -4,6 +4,7 @@ const db = new Database('news.db')
 // TODO: move this stuff out of here
 import { MediaBiasFactCheck } from './biasScrapper.mjs'
 import { getUrlFromSource } from './biasGetUrlFromSource.js'
+import { sleep } from './util.mjs'
 
 class DatabaseModel {}
 
@@ -22,44 +23,37 @@ class Source {
   }
 }
 
-export { Source }
-
 const source = new Source()
 source.create()
 
-const sources = db.prepare('SELECT source FROM articles').pluck().all()
+const sources = db.prepare('SELECT source FROM articles LIMIT 1').pluck().all()
 
+const uniqueUrls = new Set()
 const urls = []
-let i = 1
-
-for (const source of sources) {
-  urls.push(getUrlFromSource(source))
-}
+for (const source of sources) uniqueUrls.add(getUrlFromSource(source))
+for (let url of uniqueUrls) urls.push(url)
 
 const scrapper = new MediaBiasFactCheck()
 
-for (const url of urls) {
-  setTimeout(() => {
-    const data = scrapper.fetchText(url)
-    scrapper.clean(data)
+function doWork(scrapper, url) {
+  const data = scrapper.fetchText(url)
+  scrapper.clean(data)
+  const sourceDetails = scrapper.scrapeDetails(data)
+  const insert = db.prepare(
+    'INSERT OR IGNORE INTO sources (name, bias_rating, factual_reporting, country, media_type, popularity, mbfc_credibility_rating) VALUES (@name, @bias_rating, @factual_reporting, @country, @media_type, @popularity, @mbfc_credibility_rating)'
+  )
+  const insertMany = db.transaction((sources) => {
+    for (const source of sources) insert.run(source)
+  })
+  console.log(`Saving url: ${url}`)
+  console.log(sourceDetails)
+  console.log('')
+  insertMany(sourceDetails)
+}
 
-    const sourceDetails = scrapper.scrapeDetails(data)
-
-    const insert = db.prepare(
-      'INSERT OR IGNORE INTO sources (name, bias_rating, factual_reporting, country, media_type, popularity, mbfc_credibility_rating) VALUES (@name, @bias_rating, @factual_reporting, @country, @media_type, @popularity, @mbfc_credibility_rating)'
-    )
-
-    const insertMany = db.transaction((sources) => {
-      for (const source of sources) insert.run(source)
-    })
-
-    console.log(`Inserting source url #${i}`)
-    console.log(sourceDetails)
-    console.log('')
-
-    insertMany(sourceDetails)
-    i++
-  }, 3000)
+for (const url of uniqueUrls) {
+  doWork(scrapper, url)
+  await sleep(1000)
 }
 
 db.close()

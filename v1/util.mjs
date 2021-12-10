@@ -1,5 +1,4 @@
 function findPrecedingString(data, beginStr, precedingStr, precedeLimit = 100) {
-  console.log('data', data);
   if (!data) return
   let beginIdx = data.indexOf(beginStr)
   const limit = beginIdx - precedeLimit
@@ -15,4 +14,10 @@ function findPrecedingString(data, beginStr, precedingStr, precedeLimit = 100) {
   return beginIdx
 }
 
-export default findPrecedingString
+function sleep(ms) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, ms)
+  })
+}
+
+export { findPrecedingString, sleep }

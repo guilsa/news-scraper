@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 import scrapeIt from 'scrape-it'
-import findPrecedingString from './util.mjs'
+import { findPrecedingString } from './util.mjs'
 
 const { scrapeHTML } = scrapeIt
 
