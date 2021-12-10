@@ -1,7 +1,7 @@
-const scrapeIt = require('scrape-it')
-const crypto = require('crypto')
+import scrapeIt from 'scrape-it'
+import crypto from 'crypto'
 
-const Database = require('better-sqlite3')
+import Database from 'better-sqlite3'
 const db = new Database('news.db')
 
 db.exec(`CREATE TABLE IF NOT EXISTS articles
@@ -19,6 +19,7 @@ const insert = db.prepare(
 )
 
 const insertArticles = db.transaction((articles) => {
+  console.log(articles)
   for (const article of articles) insert.run(article)
 })
 
@@ -69,7 +70,7 @@ scrapeIt('https://www.memeorandum.com', {
   })
 
 function insertDateInArticles(articles, date) {
-  for (article of articles) {
+  for (const article of articles) {
     article['date'] = date
   }
   return articles
