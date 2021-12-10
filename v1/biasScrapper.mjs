@@ -7,6 +7,9 @@ const { scrapeHTML } = scrapeIt
 class Scrapper {
   async fetchText(url) {
     const response = await fetch(url)
+    if (!response.ok) {
+      throw Error('Network response was not OK')
+    }
     const webPageAsText = await response.text()
     return webPageAsText
   }
