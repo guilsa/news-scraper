@@ -35,20 +35,24 @@ for (let url of uniqueUrls) urls.push(url)
 
 const scrapper = new MediaBiasFactCheck()
 
-function doWork(scrapper, url) {
-  const data = scrapper.fetchText(url)
+const insert = db.prepare(
+  'INSERT OR IGNORE INTO sources (name, bias_rating, factual_reporting, country, media_type, popularity, mbfc_credibility_rating) VALUES (@name, @bias_rating, @factual_reporting, @country, @media_type, @popularity, @mbfc_credibility_rating)'
+)
+
+const insertBiasDetails = db.transaction((biasDetails) => {
+  for (const details of biasDetails) insert.run(details)
+})
+
+async function doWork(scrapper, url) {
+  const data = await scrapper.fetchText(url)
+
   scrapper.clean(data)
-  const sourceDetails = scrapper.scrapeDetails(data)
-  const insert = db.prepare(
-    'INSERT OR IGNORE INTO sources (name, bias_rating, factual_reporting, country, media_type, popularity, mbfc_credibility_rating) VALUES (@name, @bias_rating, @factual_reporting, @country, @media_type, @popularity, @mbfc_credibility_rating)'
-  )
-  const insertMany = db.transaction((sources) => {
-    for (const source of sources) insert.run(source)
-  })
+  const biasDetails = await scrapper.scrapeDetails(data)
+
   console.log(`Saving url: ${url}`)
-  console.log(sourceDetails)
+  console.log(biasDetails)
   console.log('')
-  insertMany(sourceDetails)
+  insertBiasDetails(biasDetails)
 }
 
 for (const url of uniqueUrls) {
