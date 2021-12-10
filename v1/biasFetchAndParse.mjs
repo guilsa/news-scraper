@@ -4,7 +4,15 @@ import findPrecedingString from './util.mjs'
 
 const { scrapeHTML } = scrapeIt
 
-class MediaBiasFactCheck {
+class Scrapper {
+  async fetchText(url) {
+    const response = await fetch(url)
+    const webPageAsText = await response.text()
+    return webPageAsText
+  }
+}
+
+class MediaBiasFactCheck extends Scrapper {
   clean(data) {
     const beginIdx = findPrecedingString(data, 'Detailed Report<', '<h3')
     const endIdx = data.indexOf('>History') - 15
@@ -12,7 +20,7 @@ class MediaBiasFactCheck {
     return data.slice(beginIdx, endIdx)
   }
 
-  scrape(data) {
+  scrapeDetails(data) {
     return scrapeHTML(data, {
       bias_rating: {
         selector: 'span strong',
@@ -42,12 +50,15 @@ class MediaBiasFactCheck {
   }
 }
 
-fetch('https://mediabiasfactcheck.com/11-news-kkco/')
-  .then((res) => res.text())
-  .then((data) => {
-    const scrapper = new MediaBiasFactCheck()
-    scrapper.clean(data)
-    const biasDetails = scrapper.scrape(data)
+const url = 'https://mediabiasfactcheck.com/11-news-kkco/'
 
-    console.log(biasDetails)
-  })
+const scrapper = new MediaBiasFactCheck()
+
+const data = await scrapper.fetchText(url)
+
+scrapper.clean(data)
+const biasDetails = scrapper.scrapeDetails(data)
+
+console.log(biasDetails)
+
+setTimeout(() => {}, 3000)
