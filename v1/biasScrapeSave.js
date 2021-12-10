@@ -22,12 +22,15 @@ class Source {
   }
 }
 
+export { Source }
+
 const source = new Source()
 source.create()
 
 const sources = db.prepare('SELECT source FROM articles').pluck().all()
 
 const urls = []
+let i = 1
 
 for (const source of sources) {
   urls.push(getUrlFromSource(source))
@@ -37,22 +40,26 @@ const scrapper = new MediaBiasFactCheck()
 
 for (const url of urls) {
   setTimeout(() => {
-    console.log('url', url)
-    // const data = await scrapper.fetchText(url)
-    // scrapper.clean(data)
+    const data = scrapper.fetchText(url)
+    scrapper.clean(data)
 
-    // const biasDetails = scrapper.scrapeDetails(data)
-  }, 50)
+    const sourceDetails = scrapper.scrapeDetails(data)
+
+    const insert = db.prepare(
+      'INSERT OR IGNORE INTO sources (name, bias_rating, factual_reporting, country, media_type, popularity, mbfc_credibility_rating) VALUES (@name, @bias_rating, @factual_reporting, @country, @media_type, @popularity, @mbfc_credibility_rating)'
+    )
+
+    const insertMany = db.transaction((sources) => {
+      for (const source of sources) insert.run(source)
+    })
+
+    console.log(`Inserting source url #${i}`)
+    console.log(sourceDetails)
+    console.log('')
+
+    insertMany(sourceDetails)
+    i++
+  }, 3000)
 }
-
-// const insert = db.prepare(
-//   'INSERT OR IGNORE INTO sources (name, bias_rating, factual_reporting, country, media_type, popularity, mbfc_credibility_rating) VALUES (@name, @bias_rating, @factual_reporting, @country, @media_type, @popularity, @mbfc_credibility_rating)'
-// )
-
-// const insertMany = db.transaction((sources) => {
-//   for (const source of sources) insert.run(source)
-// })
-
-// insertMany(sources)
 
 db.close()

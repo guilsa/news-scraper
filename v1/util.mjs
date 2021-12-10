@@ -1,4 +1,6 @@
 function findPrecedingString(data, beginStr, precedingStr, precedeLimit = 100) {
+  console.log('data', data);
+  if (!data) return
   let beginIdx = data.indexOf(beginStr)
   const limit = beginIdx - precedeLimit
 
