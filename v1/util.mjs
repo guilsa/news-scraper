@@ -20,4 +20,8 @@ function sleep(ms) {
   })
 }
 
-export { findPrecedingString, sleep }
+function hash(url) {
+  return crypto.createHash('sha256').update(url.trim()).digest('base64')
+}
+
+export { findPrecedingString, sleep, hash }

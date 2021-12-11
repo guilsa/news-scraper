@@ -1,6 +1,6 @@
 import fetch from 'node-fetch'
 import scrapeIt from 'scrape-it'
-import { findPrecedingString } from './util.mjs'
+import { findPrecedingString, hash } from './util.mjs'
 
 const { scrapeHTML } = scrapeIt
 
@@ -52,6 +52,7 @@ class MediaBiasFactCheck extends Scrapper {
     })
 
     return {
+      id: hash(websiteName),
       name: websiteName,
       ...response,
     }

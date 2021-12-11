@@ -1,7 +1,9 @@
+import Database from 'better-sqlite3'
 import scrapeIt from 'scrape-it'
 import crypto from 'crypto'
 
-import Database from 'better-sqlite3'
+import { hash } from './util.mjs'
+
 const db = new Database('news.db')
 
 db.exec(`CREATE TABLE IF NOT EXISTS articles
@@ -74,8 +76,4 @@ function insertDateInArticles(articles, date) {
     article['date'] = date
   }
   return articles
-}
-
-function hash(url) {
-  return crypto.createHash('sha256').update(url.trim()).digest('base64')
 }

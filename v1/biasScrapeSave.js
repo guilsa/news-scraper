@@ -1,9 +1,11 @@
 import Database from 'better-sqlite3'
+
 const db = new Database('news.db')
 
 // TODO: move this stuff out of here
 import { MediaBiasFactCheck } from './biasScrapper.mjs'
 import { getUrlFromSource } from './biasGetUrlFromSource.js'
+
 import { sleep } from './util.mjs'
 
 class DatabaseModel {}
@@ -28,7 +30,7 @@ source.create()
 
 const publishers = db.prepare('SELECT DISTINCT source FROM articles LIMIT 2').pluck().all()
 
-console.log('publishers', publishers)
+// console.log('publishers', publishers)
 console.log('----')
 
 const placesToScrape = []
@@ -41,12 +43,11 @@ for (const name of publishers) {
 }
 
 const insert = db.prepare(
-  'INSERT OR IGNORE INTO sources (name, bias_rating, factual_reporting, country, media_type, popularity, mbfc_credibility_rating) VALUES (@name, @bias_rating, @factual_reporting, @country, @media_type, @popularity, @mbfc_credibility_rating)'
+  'INSERT OR IGNORE INTO sources (id, name, bias_rating, factual_reporting, country, media_type, popularity, mbfc_credibility_rating) VALUES (@id, @name, @bias_rating, @factual_reporting, @country, @media_type, @popularity, @mbfc_credibility_rating)'
 )
 
 const insertMany = db.transaction((scrappedData) => {
   console.log('saving...')
-  console.log('scrappedData', scrappedData)
   for (const details of scrappedData) insert.run(details)
   console.log('saving done')
 })
@@ -60,27 +61,31 @@ const scrapper = new MediaBiasFactCheck()
 async function doScrapping(scrapper, place) {
   const { name, url } = place
 
-  const data = await scrapper.fetchText(url)
   console.log(`scrapping ${name}...`)
+  const data = await scrapper.fetchText(url)
+
   scrapper.clean(data)
   const details = await scrapper.scrapeHTML(data, name)
   // console.log(details)
   scrappedData.push(details)
 }
 
-await Promise.all(
-  placesToScrape.map(async (place) => {
+const run = async () => {
+  for (const place of placesToScrape) {
     try {
-      await doScrapping(scrapper, place)
-      sleep(3000)
+      doScrapping(scrapper, place)
+      await sleep(3000)
     } catch (err) {
       console.log(err) // Continue map loop on exception
     }
-  })
-)
+  }
+}
 
-console.log('scrapping done')
+run().then(() => {
+  console.log('scrapping done')
 
-insertMany(scrappedData)
+  insertMany(scrappedData)
 
-db.close()
+  db.close()
+  console.log('db closed')
+})
