@@ -7,7 +7,7 @@ const db = new Database('news.db')
 
 db.exec(`CREATE TABLE IF NOT EXISTS articles
 (
-    hash TEXT NOT NULL UNIQUE PRIMARY KEY,
+    id TEXT NOT NULL UNIQUE PRIMARY KEY,
     title TEXT NOT NULL,
     source TEXT NOT NULL,
     description TEXT NOT NULL,
@@ -16,7 +16,7 @@ db.exec(`CREATE TABLE IF NOT EXISTS articles
 )`)
 
 const insert = db.prepare(
-  'INSERT OR IGNORE INTO articles (hash, title, source, description, url, date) VALUES (@hash, @title, @source, @description, @url, @date)'
+  'INSERT OR IGNORE INTO articles (id, title, source, description, url, date) VALUES (@id, @title, @source, @description, @url, @date)'
 )
 
 const insertArticles = db.transaction((articles) => {
@@ -28,7 +28,7 @@ scrapeIt('https://www.memeorandum.com', {
   articles: {
     listItem: '.clus .item',
     data: {
-      hash: {
+      id: {
         selector: 'a',
         attr: 'href',
         convert: (url) => hash(url),
