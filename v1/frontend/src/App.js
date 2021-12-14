@@ -10,6 +10,13 @@ function reMap(key, arr) {
   return map
 }
 
+function renderBias(bias, source) {
+  if (bias.get(source) === undefined) return
+  if (bias.get(source)?.bias_rating === '') return
+
+  return <>({bias.get(source)?.bias_rating.toLowerCase()})</>
+}
+
 function App() {
   const [articles, setArticles] = useState([])
   const [bias, setBias] = useState(new Map())
@@ -57,8 +64,8 @@ function App() {
             <div style={{ fontSize: '1em', color: 'gray' }}>
               <span>{article.source}</span>
               <span style={{ textTransform: 'capitalize' }}>
-                &nbsp;({bias.get(article.source)?.bias_rating.toLowerCase()})
-                {/* {bias.get(article.source)?.factual_reporting.toLowerCase()}) */}
+                &nbsp;
+                {renderBias(bias, article.source)}
               </span>
             </div>
           </div>
