@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import './App.css'
 
 function reMap(key, arr) {
   const map = new Map()
@@ -52,15 +53,16 @@ function App() {
   }, [])
 
   return (
-    <div className='App' style={{ marginTop: 50, marginLeft: 450, marginRight: 450 }}>
-      <header>{articles.length} articles</header>
+    <div className='App'>
+      <header style={{ marginLeft: 20 }}>{articles.length} articles</header>
+
       {articles.map((article) => {
         return (
-          <div key={article.id} style={{ textAlign: 'left', paddingBottom: 10 }}>
+          <div className='box' key={article.id} style={{ textAlign: 'left', paddingBottom: 10 }}>
             <h3>
               <a href={article.url}>{article.title}</a>
             </h3>
-            <p>{article.description}</p>
+            <p style={{ fontSize: '0.9em' }}>{article.description}</p>
             <div style={{ fontSize: '1em', color: 'gray' }}>
               <span>{article.source}</span>
               <span style={{ textTransform: 'capitalize' }}>
