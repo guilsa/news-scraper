@@ -41,8 +41,12 @@ scrapeIt('https://www.memeorandum.com', {
         how: 'html',
         convert: (s) => {
           const nyt = 'The New York Times Company'
+          const yaf = 'Young America&apos;s Foundation'
+
           if (s === nyt) {
             return 'New York Times'
+          } else if (s === yaf) {
+            return 'Young America’s Foundation (YAF)'
           } else {
             return s
           }
