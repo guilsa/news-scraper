@@ -19,11 +19,11 @@ function App() {
   }, [])
 
   return (
-    <div className='App' style={{ marginTop: 50, marginLeft: 600, marginRight: 600 }}>
+    <div className='App' style={{ marginTop: 50, marginLeft: 450, marginRight: 450 }}>
       <header>{articles.length} articles</header>
       {articles.map((article) => {
         return (
-          <div key={article.id} style={{ textAlign: 'left' }}>
+          <div key={article.id} style={{ textAlign: 'left', paddingBottom: 10 }}>
             <h3>
               <a href={article.url}>{article.title}</a>
             </h3>
