@@ -14,7 +14,8 @@ class Source {
   create() {
     db.exec(`CREATE TABLE IF NOT EXISTS sources
       (
-          name TEXT NOT NULL UNIQUE PRIMARY KEY,
+          id TEXT NOT NULL UNIQUE PRIMARY KEY,
+          name TEXT NOT NULL UNIQUE,
           bias_rating TEXT,
           factual_reporting TEXT,
           country TEXT,
@@ -28,7 +29,7 @@ class Source {
 const source = new Source()
 source.create()
 
-const publishers = db.prepare('SELECT DISTINCT source FROM articles LIMIT 2').pluck().all()
+const publishers = db.prepare('SELECT DISTINCT source FROM articles').pluck().all()
 
 // console.log('publishers', publishers)
 console.log('----')
@@ -47,7 +48,7 @@ const insert = db.prepare(
 )
 
 const insertMany = db.transaction((scrappedData) => {
-  console.log('saving...')
+  console.log('saving...', scrappedData)
   for (const details of scrappedData) insert.run(details)
   console.log('saving done')
 })
@@ -62,30 +63,36 @@ async function doScrapping(scrapper, place) {
   const { name, url } = place
 
   console.log(`scrapping ${name}...`)
-  const data = await scrapper.fetchText(url)
+  try {
+    const data = await scrapper.fetchText(url)
 
-  scrapper.clean(data)
-  const details = await scrapper.scrapeHTML(data, name)
-  // console.log(details)
-  scrappedData.push(details)
+    scrapper.clean(data)
+    const details = await scrapper.scrapeHTML(data, name)
+    console.log(details)
+    scrappedData.push(details)
+  } catch (err) {
+    throw err
+  }
 }
 
 const run = async () => {
   for (const place of placesToScrape) {
     try {
       doScrapping(scrapper, place)
-      await sleep(3000)
-    } catch (err) {
+      // await sleep(2000)
+    } catch ({ errorMessage, cause }) {
       console.log(err) // Continue map loop on exception
+      console.log('Cause: ' + cause)
     }
   }
 }
 
-run().then(() => {
-  console.log('scrapping done')
+run()
+  .then(() => {
+    console.log('scrapping done')
 
-  insertMany(scrappedData)
+    insertMany(scrappedData)
 
-  db.close()
-  console.log('db closed')
-})
+    console.log('db closed')
+  })
+  .finally(() => db.close())

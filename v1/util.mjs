@@ -1,3 +1,5 @@
+import crypto from 'crypto'
+
 function findPrecedingString(data, beginStr, precedingStr, precedeLimit = 100) {
   if (!data) return
   let beginIdx = data.indexOf(beginStr)

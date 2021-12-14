@@ -1,6 +1,5 @@
 import Database from 'better-sqlite3'
 import scrapeIt from 'scrape-it'
-import crypto from 'crypto'
 
 import { hash } from './util.mjs'
 
@@ -40,6 +39,14 @@ scrapeIt('https://www.memeorandum.com', {
       source: {
         selector: 'cite a',
         how: 'html',
+        convert: (s) => {
+          const nyt = 'The New York Times Company'
+          if (s === nyt) {
+            return 'New York Times'
+          } else {
+            return s
+          }
+        },
       },
       description: {
         selector: '.ii',

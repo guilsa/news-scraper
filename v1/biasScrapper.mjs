@@ -5,17 +5,26 @@ import { findPrecedingString, hash } from './util.mjs'
 const { scrapeHTML } = scrapeIt
 
 class Scrapper {
+  constructor(urlName = null) {
+    this.urlName = urlName
+  }
+
   async fetchText(url) {
     const response = await fetch(url)
-    if (!response.ok) {
-      throw Error('Network response was not OK')
-    }
+    // if (!response.ok) {
+      // throw { errorMessage: 'Network response was not OK', cause: this.urlName }
+      // throw Error('Network response was not OK')
+    // }
     const webPageAsText = await response.text()
     return webPageAsText
   }
 }
 
 class MediaBiasFactCheck extends Scrapper {
+  constructor(urlName) {
+    super(urlName)
+  }
+
   clean(data) {
     const beginIdx = findPrecedingString(data, 'Detailed Report<', '<h3')
     const endIdx = data.indexOf('>History') - 15
@@ -24,6 +33,8 @@ class MediaBiasFactCheck extends Scrapper {
   }
 
   async scrapeHTML(data, websiteName) {
+    this.urlName = websiteName
+
     const response = await scrapeHTML(data, {
       bias_rating: {
         selector: 'span strong',
