@@ -71,7 +71,7 @@
 {
   id: 'kAHLj0ikO2GGqcUQeFlJx/bMgFenABWCJ3UiSlJvZgk=',
   name: 'Press Watch',
-  bias_rating: 'Your Support is Essential',
+  bias_rating: '',
   factual_reporting: '',
   country: '',
   media_type: '',
@@ -81,7 +81,7 @@
 {
   id: 'XIjezQpqK0mDJIHsXc7IlDa728qMgrwHghyn5LTqYtg=',
   name: 'CT Insider',
-  bias_rating: 'Your Support is Essential',
+  bias_rating: '',
   factual_reporting: '',
   country: '',
   media_type: '',
@@ -89,9 +89,9 @@
   mbfc_credibility_rating: ''
 }
 {
-  id: '6QK5Hep1GW4McX2rGOFUBvg2RoWnEtaexOLMQ8Vx3ZA=',
-  name: 'News Blog, Riverfront Times',
-  bias_rating: 'Your Support is Essential',
+  id: '38h38GiXm9N8QxrI4RQnqvvVhC3x1yaIYea7fQtm9mk=',
+  name: 'Riverfront Times',
+  bias_rating: 'LEFT',
   factual_reporting: '',
   country: '',
   media_type: '',
@@ -101,17 +101,17 @@
 {
   id: 'wH5ol0JOaIbwZV6JLP7IhmAtHLafFYIp7b7Pi/ESluU=',
   name: 'The Daily Signal',
-  bias_rating: 'Your Support is Essential',
-  factual_reporting: '',
-  country: '',
-  media_type: '',
-  popularity: '',
-  mbfc_credibility_rating: ''
+  bias_rating: 'RIGHT',
+  factual_reporting: 'MOSTLY FACTUAL',
+  country: 'USA (45/180 Press Freedom)',
+  media_type: 'Website',
+  popularity: 'Medium Traffic',
+  mbfc_credibility_rating: 'HIGH CREDIBILITY'
 }
 {
   id: 'qa86VagjqfKfzteZJJl0HKU9GtTyOXv0Tvm3GlbAzl8=',
   name: 'Kellyforalaska',
-  bias_rating: 'Your Support is Essential',
+  bias_rating: '',
   factual_reporting: '',
   country: '',
   media_type: '',
@@ -122,11 +122,11 @@
   id: 'hPGwP/5EZNV43MUSzprzVJ9d03ZNG7d7QOF6KyiDU9k=',
   name: 'Commentary Magazine',
   bias_rating: 'MOSTLY FACTUAL',
-  factual_reporting: 'Left vs. Right Bias: How we rate the bias of media sources',
+  factual_reporting: '',
   country: 'USA 45/180',
-  media_type: 'History',
-  popularity: 'Funded by / Ownership',
-  mbfc_credibility_rating: 'NFN-Low Biased Factual News'
+  media_type: '',
+  popularity: '',
+  mbfc_credibility_rating: ''
 }
 {
   id: 'Jp90KpH45/GqSTynNaIoa8J4tCChR2P1GiUg7eaW76E=',
@@ -146,7 +146,7 @@
   country: 'USA (44/180 Press Freedom)',
   media_type: 'Newspaper',
   popularity: 'Medium Traffic',
-  mbfc_credibility_rating: 'Newspaper'
+  mbfc_credibility_rating: 'HIGH CREDIBILITY'
 }
 {
   id: 'pNtMJFT1A7BdRzQibAJqqRMyxjdEDqvXiG+vUzBKhVE=',
@@ -162,11 +162,11 @@
   id: '01gzRBqZBhFewPc7ioAeObN+XWKpIJe1zsvCL+C7vZE=',
   name: 'Mediaite',
   bias_rating: 'LEFT',
-  factual_reporting: 'HIGH CREDIBILITY',
+  factual_reporting: 'MOSTLY FACTUAL',
   country: 'USA (44/180 Press Freedom)',
   media_type: 'Website',
   popularity: 'High Traffic',
-  mbfc_credibility_rating: 'Left vs. Right Bias: How we rate the bias of media sources'
+  mbfc_credibility_rating: 'HIGH CREDIBILITY'
 }
 {
   id: 'M7k0ds9ZejMwZTtmpliYPYkqwmS11gKaLcZCubHzCHA=',
@@ -221,12 +221,12 @@
 {
   id: '2JdhzR6h4D5PpnY46cS8ZjN4ZVZosQ5r/sRDF7ZBmn0=',
   name: 'Media Matters for America',
-  bias_rating: 'Your Support is Essential',
-  factual_reporting: '',
-  country: '',
-  media_type: '',
-  popularity: '',
-  mbfc_credibility_rating: ''
+  bias_rating: 'LEFT',
+  factual_reporting: 'HIGH',
+  country: 'USA (44/180 Press Freedom)',
+  media_type: 'Organization/Foundation',
+  popularity: 'Medium Traffic',
+  mbfc_credibility_rating: 'HIGH CREDIBILITY'
 }
 {
   id: 'fXYqRXOa2VCeCTeIm52WfEf4MTbatkhwWTnzMQWEIHk=',
@@ -311,9 +311,9 @@
 {
   id: 'sIhClvM82z0Ub6Qi2qiH9vNJ/322iKqfaRl/joLpGLg=',
   name: 'The White House',
-  bias_rating: 'Left vs. Right Bias: How we rate the bias of media sources',
-  factual_reporting: 'Your Support is Essential',
-  country: 'Your Support is Essential',
+  bias_rating: 'LEFT-CENTER',
+  factual_reporting: 'MOSTLY FACTUAL',
+  country: '',
   media_type: '',
   popularity: '',
   mbfc_credibility_rating: ''
@@ -321,9 +321,9 @@
 {
   id: '+3rM//jG+OqbA8ke5VdtDQgIDpujWRjYAarrYCDbyIw=',
   name: 'YouTube',
-  bias_rating: 'Left vs. Right Bias: How we rate the bias of media sources',
-  factual_reporting: 'Your Support is Essential',
-  country: 'Your Support is Essential',
+  bias_rating: '',
+  factual_reporting: '',
+  country: '',
   media_type: '',
   popularity: '',
   mbfc_credibility_rating: ''
@@ -331,22 +331,22 @@
 {
   id: '17C76jqTUiLEGYw44wsus+ER0R3qh/pTVH6sHIpP8Ds=',
   name: 'WORLD',
-  bias_rating: 'VERY LOW',
-  factual_reporting: 'Left vs. Right Bias: How we rate the bias of media sources',
-  country: 'USA 45/180',
-  media_type: 'History',
-  popularity: 'Funded by / Ownership',
-  mbfc_credibility_rating: 'NFN-Low Biased Factual News'
+  bias_rating: '',
+  factual_reporting: '',
+  country: '',
+  media_type: '',
+  popularity: '',
+  mbfc_credibility_rating: ''
 }
 {
-  id: '2ss8qEy0HKtjz6VQCnaKbHJShSo8SQqJNyJlBA/LdRk=',
-  name: 'Young America&apos;s Foundation',
-  bias_rating: 'HIGH',
-  factual_reporting: 'Left vs. Right Bias: How we rate the bias of media sources',
+  id: 'u5IyPM9rx1R9uc4QzzgynPB5xbR+8RQkHk4jBZGYnI0=',
+  name: 'Young America’s Foundation (YAF)',
+  bias_rating: 'RIGHT',
+  factual_reporting: 'HIGH',
   country: 'USA 48/180',
-  media_type: 'History',
-  popularity: 'Funded by / Ownership',
-  mbfc_credibility_rating: 'NFN-Low Biased Factual News'
+  media_type: '',
+  popularity: '',
+  mbfc_credibility_rating: ''
 }
 {
   id: 'Hz1H2swaGaXvoirCfWk23L9XKVvQMFk/93mlJ71I2wI=',
@@ -356,7 +356,7 @@
   country: 'MIXED',
   media_type: 'USA (44/180 Press Freedom)',
   popularity: 'TV Station',
-  mbfc_credibility_rating: 'Left vs. Right Bias: How we rate the bias of media sources'
+  mbfc_credibility_rating: 'MEDIUM CREDIBILITY'
 }
 {
   id: 'v8rcDASOTrFPWhsq8UIVyG6VLqr36rjXG6UCa49Ydl8=',
