@@ -10,4 +10,11 @@ router.get('/', function (req, res) {
   db.close()
 })
 
+router.get('/sources', function (req, res) {
+  const db = new Database('news.db')
+  const sources = db.prepare('SELECT * FROM sources').all()
+  res.send(sources)
+  db.close()
+})
+
 module.exports = router
