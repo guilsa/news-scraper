@@ -2,12 +2,19 @@
 
 - Then add timestamp to articles scrape + table
   - Then partition off articles into sections for each day and ensure they are ordered
+- System folder structure should be
+  - cron
+  - scripts (for backup)
+    - utils
+  - data
+  - backend
+    - db
+  - frontend
 
 # Ideas
 
 - infinite scroll
 - daily cron
-- saving to a database
 - extract keywords and key phrases using tensorfloe (ie retext-keywords)
 - sentiment analysis (npm natural, python pattern)
 - use puppeteer as a blacklist prevention measure [1]
