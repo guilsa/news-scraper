@@ -3,13 +3,13 @@ import Database from 'better-sqlite3'
 const db = new Database('news.db')
 
 // TODO: move this stuff out of here
-import { MediaBiasFactCheck } from './biasScrapper.mjs'
-import { getUrlFromSource } from './biasGetUrlFromSource.mjs'
-import { hash } from './util.mjs'
+import { MediaBiasFactCheck } from './utils/biasScrapper.mjs'
+import { sleep } from './utils/util.mjs'
 
-import { sleep } from './util.mjs'
-
-class DatabaseModel {}
+function getUrlFromSource(source) {
+  source = source.toLowerCase().split(' ').join('-')
+  return `https://mediabiasfactcheck.com/${source}/`
+}
 
 class Source {
   create() {
@@ -85,7 +85,7 @@ const run = async () => {
         doScrapping(scrapper, place)
         await sleep(1000)
       } else {
-        console.log(`Skipping ${place.name}, already included`);
+        console.log(`Skipping ${place.name}, already included`)
       }
     } catch ({ errorMessage, cause }) {
       console.log(err) // Continue map loop on exception
