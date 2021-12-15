@@ -1,3 +1,8 @@
+# Todo
+- Create backup script for sources table (csv export?)
+  - Then add timestamp to articles scrape + table
+    - Then partition off articles into sections for each day and ensure they are ordered
+
 # Ideas
 - infinite scroll
 - daily cron
