@@ -1,12 +1,10 @@
 #!/bin/bash
 
-
 # README
-# -- More info:
-# -- https://www.prisma.io/dataguide/sqlite/importing-and-exporting-data-in-sqlite
-
-
-# Begin script
+# Q: How to call this file?
+# A: bash ./scripts/backup/filename.sh
+# More info:
+# https://www.prisma.io/dataguide/sqlite/importing-and-exporting-data-in-sqlite
 
 echo What table do you want to backup?
 read tablename
