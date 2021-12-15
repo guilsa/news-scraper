@@ -1,7 +1,9 @@
 import Database from 'better-sqlite3'
 import scrapeIt from 'scrape-it'
 
-import { hash } from './util.mjs'
+import { hash } from './utils/util.mjs'
+
+import { sleep } from './utils/util.mjs'
 
 const db = new Database('news.db')
 
@@ -12,11 +14,12 @@ db.exec(`CREATE TABLE IF NOT EXISTS articles
     source TEXT NOT NULL,
     description TEXT NOT NULL,
     url TEXT NOT NULL,
-    date TEXT
+    date TEXT NOT NULL,
+    createdAt TEXT NOT NULL
 )`)
 
 const insert = db.prepare(
-  'INSERT OR IGNORE INTO articles (id, title, source, description, url, date) VALUES (@id, @title, @source, @description, @url, @date)'
+  'INSERT OR IGNORE INTO articles (id, title, source, description, url, date, createdAt) VALUES (@id, @title, @source, @description, @url, @date, @createdAt)'
 )
 
 const insertArticles = db.transaction((articles) => {
@@ -60,6 +63,9 @@ scrapeIt('https://www.memeorandum.com', {
       url: {
         selector: 'a',
         attr: 'href',
+      },
+      createdAt: {
+        convert: () => new Date().toISOString(),
       },
     },
   },

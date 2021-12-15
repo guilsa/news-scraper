@@ -5,7 +5,7 @@ const Database = require('better-sqlite3')
 
 router.get('/', function (req, res) {
   const db = new Database('news.db')
-  const articles = db.prepare('SELECT * FROM articles').all()
+  const articles = db.prepare('SELECT * FROM articles order by createdAt').all()
   res.send(articles)
   db.close()
 })
