@@ -4,7 +4,8 @@ const db = new Database('news.db')
 
 // TODO: move this stuff out of here
 import { MediaBiasFactCheck } from './biasScrapper.mjs'
-import { getUrlFromSource } from './biasGetUrlFromSource.js'
+import { getUrlFromSource } from './biasGetUrlFromSource.mjs'
+import { hash } from './util.mjs'
 
 import { sleep } from './util.mjs'
 
@@ -14,8 +15,8 @@ class Source {
   create() {
     db.exec(`CREATE TABLE IF NOT EXISTS sources
       (
-          id TEXT NOT NULL UNIQUE PRIMARY KEY,
-          name TEXT NOT NULL UNIQUE,
+          id TEXT UNIQUE PRIMARY KEY,
+          name TEXT UNIQUE,
           bias_rating TEXT,
           factual_reporting TEXT,
           country TEXT,
@@ -30,6 +31,8 @@ const source = new Source()
 source.create()
 
 const publishers = db.prepare('SELECT DISTINCT source FROM articles').pluck().all()
+
+const biasSourceNames = db.prepare('SELECT name FROM sources').pluck().all()
 
 // console.log('publishers', publishers)
 console.log('----')
@@ -78,8 +81,12 @@ async function doScrapping(scrapper, place) {
 const run = async () => {
   for (const place of placesToScrape) {
     try {
-      doScrapping(scrapper, place)
-      // await sleep(2000)
+      if (!biasSourceNames.includes(place.name)) {
+        doScrapping(scrapper, place)
+        await sleep(1000)
+      } else {
+        console.log(`Skipping ${place.name}, already included`);
+      }
     } catch ({ errorMessage, cause }) {
       console.log(err) // Continue map loop on exception
       console.log('Cause: ' + cause)
