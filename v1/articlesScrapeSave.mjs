@@ -43,11 +43,14 @@ scrapeIt('https://www.memeorandum.com', {
         convert: (s) => {
           const nyt = 'The New York Times Company'
           const yaf = 'Young America&apos;s Foundation'
+          const raleigh = 'Raleigh News &amp; Observer'
 
           if (s === nyt) {
             return 'New York Times'
           } else if (s === yaf) {
             return 'Young America’s Foundation (YAF)'
+          } else if (s === raleigh) {
+            return 'Raleigh News Observer'
           } else {
             return s
           }

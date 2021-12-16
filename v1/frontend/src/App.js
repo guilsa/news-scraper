@@ -2,72 +2,54 @@ import React from 'react'
 import { useState } from 'react'
 import './App.css'
 
+import { groupBy } from './utils/groupBy'
 import { useFetch } from './hooks/useFetch'
-
-function renderArticles(value, key, map) {
-  // console.log('value', value)
-  return value?.map((article) => {
-    console.log('article', article)
-    return (
-      <div key={article.id}>
-        <div className='box' style={{ textAlign: 'left', paddingBottom: 10 }}>
-          <h3>
-            <a href={article.url}>{article.title}</a>
-          </h3>
-          <p style={{ fontSize: '0.9em' }}>{article.description}</p>
-          <div style={{ fontSize: '1em', color: 'gray' }}>
-            <span>{article.source}</span>
-            <span style={{ textTransform: 'capitalize' }}>&nbsp;{renderBiasRating(article.bias_rating)}</span>
-          </div>
-        </div>
-      </div>
-    )
-  })
-}
 
 function App() {
   const { status, data, error } = useFetch('/articles')
-  const [articleGroup, setArticleGroup] = useState([])
+  const [group, setGroup] = useState({})
 
   React.useEffect(() => {
-    const groups = new Map()
-    data.forEach((article) => {
-      if (!groups.has(article.date)) {
-        groups.set(article.date, [article])
-      } else {
-        const stack = groups.get(article.date)
-        stack.push(article)
-      }
-      setArticleGroup(groups)
-    })
+    data.sort((a, b) => a.date < b.date)
+    setGroup(groupBy(data, 'date'))
   }, [data])
 
   return (
     <div>
       <header style={{ marginLeft: 20 }}>{data?.length} articles</header>
-      <div className='App'>
+      <div>
         {status === 'error' && <div>{error}</div>}
         {status === 'fetching' && <span>Loading.....</span>}
-        {status === 'fetched' && articleGroup.forEach(renderArticles)}
-        {/* {status === 'fetched' &&
-          articleGroups?.map((article) => {
+        {status === 'fetched' &&
+          Object.keys(group)?.map((category) => {
             return (
-              <div key={article.id}>
-                <div className='box' style={{ textAlign: 'left', paddingBottom: 10 }}>
-                  <h3>
-                    <a href={article.url}>{article.title}</a>
-                  </h3>
-                  <p style={{ fontSize: '0.9em' }}>{article.description}</p>
-                  <div style={{ fontSize: '1em', color: 'gray' }}>
-                    <span>{article.source}</span>
-                    <span style={{ textTransform: 'capitalize' }}>
-                      &nbsp;{renderBiasRating(article.bias_rating)}
-                    </span>
-                  </div>
+              <div>
+                <h1 style={{ marginLeft: 20, marginRight: 20, textAlign: 'center', marginBottom: 20 }}>
+                  {category}
+                </h1>
+                <div key={category} className='grid'>
+                  {group[category].map((article) => {
+                    return (
+                      <div key={article.id} className='box'>
+                        <div style={{ textAlign: 'left', paddingBottom: 10 }}>
+                          <h3>
+                            <a href={article.url}>{article.title}</a>
+                          </h3>
+                          <p style={{ fontSize: '0.9em' }}>{article.description}</p>
+                          <div style={{ fontSize: '1em', color: 'gray' }}>
+                            <span>{article.source}</span>
+                            <span style={{ textTransform: 'capitalize' }}>
+                              &nbsp;{renderBiasRating(article.bias_rating)}
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    )
+                  })}
                 </div>
               </div>
             )
-          })} */}
+          })}
       </div>
     </div>
   )
