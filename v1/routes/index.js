@@ -12,7 +12,11 @@ router.get('/', function (req, res) {
 
 router.get('/sources', function (req, res) {
   const db = new Database('news.db')
-  const sources = db.prepare('SELECT * FROM sources').all()
+  try {
+    const sources = db.prepare('SELECT * FROM sources').all()
+  } catch (err) {
+    return res.status(202).send('No Content')
+  }
   res.send(sources)
   db.close()
 })

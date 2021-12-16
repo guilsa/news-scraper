@@ -4,6 +4,7 @@ import './App.css'
 
 function reMap(key, arr) {
   const map = new Map()
+
   arr.forEach((item) => {
     const { name, ...others } = item
     map.set(name, others)
@@ -22,32 +23,37 @@ function App() {
   const [articles, setArticles] = useState([])
   const [bias, setBias] = useState(new Map())
 
-  // console.log('sourceMap', sourceMap)
-
   React.useEffect(() => {
     fetch('http://localhost:3000/sources')
-      .then((res) => res.json())
+      .then((res) => {
+        if (res.status === 202) {
+          throw new Error(res.status)
+        } else return res.json()
+      })
       .then(
         (result) => {
           console.log('sources', result)
           setBias(reMap('name', result))
         },
-        (error) => {
-          throw error
+        (err) => {
+          console.log('err', err)
         }
       )
   }, [])
 
   React.useEffect(() => {
     fetch('http://localhost:3000')
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) throw new Error(res.status)
+        else return res.json()
+      })
       .then(
         (result) => {
           console.log('articles', result)
           setArticles(result)
         },
-        (error) => {
-          throw error
+        (err) => {
+          console.log('err', err)
         }
       )
   }, [])
