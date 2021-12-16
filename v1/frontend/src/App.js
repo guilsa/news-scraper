@@ -31,17 +31,19 @@ function App() {
                   {group[category].map((article) => {
                     return (
                       <div key={article.id} className='box'>
-                        <div style={{ textAlign: 'left', paddingBottom: 10 }}>
-                          <h3>
+                        <div style={{ fontSize: '0.9em', color: '#b5179e', fontWeight: 700, marginBottom: 10 }}>
+                          <span>{article.source}</span>
+                          <span style={{ textTransform: 'capitalize' }}>
+                            &nbsp;{renderBiasRating(article.bias_rating)}
+                          </span>
+                        </div>
+                        <div style={{ textAlign: 'left', marginBottom: 20 }}>
+                          <h3 style={{ display: 'inline' }}>
                             <a href={article.url}>{article.title}</a>
                           </h3>
-                          <p style={{ fontSize: '0.9em' }}>{article.description}</p>
-                          <div style={{ fontSize: '1em', color: 'gray' }}>
-                            <span>{article.source}</span>
-                            <span style={{ textTransform: 'capitalize' }}>
-                              &nbsp;{renderBiasRating(article.bias_rating)}
-                            </span>
-                          </div>
+                          <p style={{ paddingLeft: 15, fontSize: '0.9em', display: 'inline' }}>
+                            {article.description}
+                          </p>
                         </div>
                       </div>
                     )

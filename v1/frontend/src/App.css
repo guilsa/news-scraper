@@ -12,6 +12,6 @@ body {
 
 .box {
   border-radius: 5px;
-  padding: 20px;
+  padding: 2px auto;
   font-size: 1em;
 }
