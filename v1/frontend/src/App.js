@@ -2,6 +2,8 @@ import React from 'react'
 import { useState } from 'react'
 import './App.css'
 
+import { useFetch } from './hooks/useFetch'
+
 function reMap(key, arr) {
   const map = new Map()
 
@@ -20,65 +22,76 @@ function renderBias(bias, source) {
 }
 
 function App() {
-  const [articles, setArticles] = useState([])
   const [bias, setBias] = useState(new Map())
 
-  React.useEffect(() => {
-    fetch('http://localhost:3000/sources')
-      .then((res) => {
-        if (res.status === 202) {
-          throw new Error(res.status)
-        } else return res.json()
-      })
-      .then(
-        (result) => {
-          console.log('sources', result)
-          setBias(reMap('name', result))
-        },
-        (err) => {
-          console.log('err', err)
-        }
-      )
-  }, [])
+  const { apiData, isLoading, serverError } = useFetch('/articles')
 
-  React.useEffect(() => {
-    fetch('http://localhost:3000')
-      .then((res) => {
-        if (!res.ok) throw new Error(res.status)
-        else return res.json()
-      })
-      .then(
-        (result) => {
-          console.log('articles', result)
-          setArticles(result)
-        },
-        (err) => {
-          console.log('err', err)
-        }
-      )
-  }, [])
+  // console.log('apiData', apiData)
 
+  // React.useEffect(() => {
+  //   fetch('http://localhost:3000/sources')
+  //     .then((res) => {
+  //       if (res.status === 202) {
+  //         throw new Error(res.status)
+  //       } else return res.json()
+  //     })
+  //     .then(
+  //       (result) => {
+  //         console.log('sources', result)
+  //         setBias(reMap('name', result))
+  //       },
+  //       (err) => {
+  //         console.log('err', err)
+  //       }
+  //     )
+  // }, [])
+
+  // React.useEffect(() => {
+  //   fetch('http://localhost:3000')
+  //     .then((res) => {
+  //       if (!res.ok) throw new Error(res.status)
+  //       else return res.json()
+  //     })
+  //     .then(
+  //       (result) => {
+  //         console.log('articles', result)
+  //         setArticles(result)
+  //       },
+  //       (err) => {
+  //         console.log('err', err)
+  //       }
+  //     )
+  // }, [])
+  // console.log('serverError', serverError)
   return (
-    <div className='App'>
-      <header style={{ marginLeft: 20 }}>{articles.length} articles</header>
-
-      {articles.map((article) => {
-        return (
-          <div className='box' key={article.id} style={{ textAlign: 'left', paddingBottom: 10 }}>
-            <h3>
-              <a href={article.url}>{article.title}</a>
-            </h3>
-            <p style={{ fontSize: '0.9em' }}>{article.description}</p>
-            <div style={{ fontSize: '1em', color: 'gray' }}>
-              <span>{article.source}</span>
-              <span style={{ textTransform: 'capitalize' }}>
-                &nbsp;
-                {renderBias(bias, article.source)}
-              </span>
-            </div>
-          </div>
-        )
-      })}
+    <div>
+      <header style={{ marginLeft: 20 }}>{apiData?.length} articles</header>
+      <div className='App'>
+        {isLoading && <span>Loading.....</span>}
+        {!isLoading && serverError ? (
+          <span>Error in fetching data ...</span>
+        ) : (
+          apiData?.map((article) => {
+            return (
+              <div key={article.id}>
+                <div className='box' style={{ textAlign: 'left', paddingBottom: 10 }}>
+                  <h3>
+                    <a href={article.url}>{article.title}</a>
+                  </h3>
+                  <p style={{ fontSize: '0.9em' }}>{article.description}</p>
+                  <div style={{ fontSize: '1em', color: 'gray' }}>
+                    <span>{article.source}</span>
+                    <span style={{ textTransform: 'capitalize' }}>
+                      &nbsp;
+                      {renderBias(bias, article.source)}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            )
+          })
+        )}
+      </div>
     </div>
   )
 }
