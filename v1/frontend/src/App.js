@@ -4,17 +4,18 @@ import './App.css'
 import { useFetch } from './hooks/useFetch'
 
 function App() {
-  const { apiData, isLoading, serverError } = useFetch('/articles')
+  const { status, data, error } = useFetch('/articles')
+
+  const articles = data
 
   return (
     <div>
-      <header style={{ marginLeft: 20 }}>{apiData?.length} articles</header>
+      <header style={{ marginLeft: 20 }}>{articles?.length} articles</header>
       <div className='App'>
-        {isLoading && <span>Loading.....</span>}
-        {!isLoading && serverError ? (
-          <span>Error in fetching data ...</span>
-        ) : (
-          apiData?.map((article) => {
+        {status === 'error' && <div>{error}</div>}
+        {status === 'fetching' && <span>Loading.....</span>}
+        {status === 'fetched' &&
+          articles?.map((article) => {
             return (
               <div key={article.id}>
                 <div className='box' style={{ textAlign: 'left', paddingBottom: 10 }}>
@@ -31,8 +32,7 @@ function App() {
                 </div>
               </div>
             )
-          })
-        )}
+          })}
       </div>
     </div>
   )
