@@ -3,29 +3,53 @@ import { useState } from 'react'
 import './App.css'
 
 import { groupBy } from './utils/groupBy'
+import { isFilterBy } from './utils/isFilterBy'
+import { categoryToString } from './utils/custom'
 import { useFetch } from './hooks/useFetch'
 
 function App() {
   const { status, data, error } = useFetch('/articles')
   const [group, setGroup] = useState({})
+  const [filterBy, setFilterBy] = useState('date')
 
   React.useEffect(() => {
     data.sort((a, b) => a.date < b.date)
-    setGroup(groupBy(data, 'date'))
-  }, [data])
+    setGroup(groupBy(data, filterBy))
+  }, [data, filterBy])
 
   return (
     <div>
-      <header style={{ marginLeft: 20 }}>{data?.length} articles</header>
+      <div className='badges'>
+        <label>Filter by:</label>
+        <div className={isFilterBy(filterBy, 'date')} onClick={() => setFilterBy('date')}>
+          Date
+        </div>
+        <div className={isFilterBy(filterBy, 'source')} onClick={() => setFilterBy('source')}>
+          Source
+        </div>
+        <div className={isFilterBy(filterBy, 'bias_rating')} onClick={() => setFilterBy('bias_rating')}>
+          Bias
+        </div>
+      </div>
+
+      <div style={{ fontSize: '0.8em', textDecoration: 'underline' }}>{data?.length} articles</div>
       <div>
         {status === 'error' && <div>{error}</div>}
         {status === 'fetching' && <span>Loading.....</span>}
         {status === 'fetched' &&
-          Object.keys(group)?.map((category) => {
+          Object.keys(group).map((category, idx) => {
             return (
-              <div key={category}>
-                <h1 style={{ marginLeft: 20, marginRight: 20, textAlign: 'center', marginBottom: 20 }}>
-                  {category}
+              <div key={idx}>
+                <h1
+                  style={{
+                    marginLeft: 20,
+                    marginRight: 20,
+                    textAlign: 'center',
+                    marginBottom: 20,
+                    textTransform: 'capitalize',
+                  }}
+                >
+                  {categoryToString(category)}
                 </h1>
                 <div className='grid'>
                   {group[category].map((article) => {
