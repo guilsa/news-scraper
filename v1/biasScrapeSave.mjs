@@ -50,56 +50,31 @@ const insert = db.prepare(
   'INSERT OR IGNORE INTO sources (id, name, bias_rating, factual_reporting, country, media_type, popularity, mbfc_credibility_rating) VALUES (@id, @name, @bias_rating, @factual_reporting, @country, @media_type, @popularity, @mbfc_credibility_rating)'
 )
 
-const insertMany = db.transaction((scrappedData) => {
-  console.log('saving...', scrappedData)
-  for (const details of scrappedData) insert.run(details)
-  console.log('saving done')
-})
-
-let scrappedData = []
-
 console.log(`setting up scrapper...`)
 
 const scrapper = new MediaBiasFactCheck()
 
-async function doScrapping(scrapper, place) {
-  const { name, url } = place
+let placesScrapedSoFar = 0
 
-  console.log(`scrapping ${name}...`)
-  try {
-    const data = await scrapper.fetchText(url)
-
-    scrapper.clean(data)
-    const details = await scrapper.scrapeHTML(data, name)
-    console.log(details)
-    scrappedData.push(details)
-  } catch (err) {
-    throw err
-  }
-}
-
-const run = async () => {
-  for (const place of placesToScrape) {
-    try {
-      if (!biasSourceNames.includes(place.name)) {
-        doScrapping(scrapper, place)
-        await sleep(1000)
-      } else {
-        console.log(`Skipping ${place.name}, already included`)
-      }
-    } catch ({ errorMessage, cause }) {
-      console.log(err) // Continue map loop on exception
-      console.log('Cause: ' + cause)
+await Promise.all(
+  placesToScrape.map(async (place) => {
+    if (!biasSourceNames.includes(place.name)) {
+      console.log('scraping ' + place.name)
+      const data = await scrapper.fetchText(place.url)
+      scrapper.clean(data)
+      const details = await scrapper.scrapeHTML(data, place.name)
+      insert.run(details)
+      placesScrapedSoFar++
+    } else {
+      console.log('skipping ' + place.name)
     }
-  }
-}
-
-run()
-  .then(() => {
-    console.log('scrapping done')
-
-    insertMany(scrappedData)
-
+  })
+)
+  .finally(() => {
+    console.log(`completed! scraped ${placesScrapedSoFar} new sources.`);
+    db.close()
     console.log('db closed')
   })
-  .finally(() => db.close())
+  .catch((err) => {
+    console.log(err) // Continue map loop on exception
+  })

@@ -1,5 +1,6 @@
 # Todo
 
+- Add lastUpdated in sources table as well
 - Remove inline css (https://codesandbox.io/s/bold-booth-0qcq0?file=/src/App.css)
 - Then add timestamp to articles scrape + table
   - Then partition off articles into sections for each day and ensure they are ordered

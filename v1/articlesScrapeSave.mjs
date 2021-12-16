@@ -3,8 +3,6 @@ import scrapeIt from 'scrape-it'
 
 import { hash } from './utils/util.mjs'
 
-import { sleep } from './utils/util.mjs'
-
 const db = new Database('news.db')
 
 db.exec(`CREATE TABLE IF NOT EXISTS articles
