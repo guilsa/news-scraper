@@ -1,15 +1,17 @@
 body {
   margin: 40px;
+  margin-left: 32%;
+  margin-right: 32%;
 }
 
 .grid {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(min(450px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(650px, 100%), 1fr));
 }
 
 .box {
   border-radius: 5px;
   padding: 20px;
-  font-size: 1.5em;
+  font-size: 1em;
 }

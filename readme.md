@@ -1,5 +1,6 @@
 # Todo
 
+- Change articleScrapeSave convert to object mapping
 - Add lastUpdated in sources table as well
 - Remove inline css (https://codesandbox.io/s/bold-booth-0qcq0?file=/src/App.css)
 - Then add timestamp to articles scrape + table
@@ -18,7 +19,6 @@
     - Add 12-factor config [1]
 - Make v2 of the backend app simpler [1]
 - Consider switching to MySQL to learn general node/db best practices from the web
-
 
 "abstract any connection details"
 
