@@ -23,15 +23,17 @@ function App() {
         {status === 'fetched' &&
           Object.keys(group)?.map((category) => {
             return (
-              <div>
+              <div key={category}>
                 <h1 style={{ marginLeft: 20, marginRight: 20, textAlign: 'center', marginBottom: 20 }}>
                   {category}
                 </h1>
-                <div key={category} className='grid'>
+                <div className='grid'>
                   {group[category].map((article) => {
                     return (
                       <div key={article.id} className='box'>
-                        <div style={{ fontSize: '0.9em', color: '#b5179e', fontWeight: 700, marginBottom: 10 }}>
+                        <div
+                          style={{ fontSize: '0.9em', color: '#b5179e', fontWeight: 700, marginBottom: 10 }}
+                        >
                           <span>{article.source}</span>
                           <span style={{ textTransform: 'capitalize' }}>
                             &nbsp;{renderBiasRating(article.bias_rating)}
