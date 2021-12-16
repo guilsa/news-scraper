@@ -7,7 +7,7 @@
 echo What sqlite file to open?
 read sqlitefile
 
-echo What file to restore?
+echo What .sql file to restore?
 read file
 
 echo Starting restore...

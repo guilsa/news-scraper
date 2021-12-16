@@ -5,19 +5,16 @@ const Database = require('better-sqlite3')
 
 router.get('/articles', function (req, res) {
   const db = new Database('news.db')
-  const articles = db.prepare('SELECT * FROM articles order by createdAt').all()
-  res.send(articles)
-  db.close()
-})
-
-router.get('/sources', function (req, res) {
-  const db = new Database('news.db')
   try {
-    const sources = db.prepare('SELECT * FROM sources').all()
+    const articles = db
+      .prepare(
+        'select articles.id, articles.title, articles.source, articles.description, articles.url, articles.date, articles.createdAt, lower(sources.bias_rating) as bias_rating from articles left join sources on articles."source" = sources."name" order by createdAt'
+      )
+      .all()
+    res.send(articles)
   } catch (err) {
-    return res.status(202).send('No Content')
+    console.log('err', err)
   }
-  res.send(sources)
   db.close()
 })
 
