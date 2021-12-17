@@ -1,3 +1,5 @@
+import dayjs from 'dayjs'
+
 // For dates in YYYY-MM-DD format or "similar"
 function isValidDateString(str) {
   return str.split('-').length === 3
@@ -6,8 +8,7 @@ function isValidDateString(str) {
 function categoryToString(i) {
   if (i === 'null') return ''
   if (isValidDateString(i)) {
-    const date = new Date(i).toLocaleString('en-US')
-    return date.substring(0, date.indexOf(','))
+    return dayjs(i).format('MM/DD/YYYY')
   }
   return i
 }

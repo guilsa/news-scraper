@@ -1,11 +1,17 @@
 import React from 'react'
 import { useState } from 'react'
+import dayjs from 'dayjs'
+
 import './App.css'
 
 import { groupBy } from './utils/groupBy'
 import { isFilterBy } from './utils/isFilterBy'
 import { categoryToString } from './utils/custom'
 import { useFetch } from './hooks/useFetch'
+
+function displayArticleDate(filterBy, date) {
+  return filterBy !== 'date' ? dayjs(date).format('MM/DD/YYYY') : null
+}
 
 function App() {
   const { status, data, error } = useFetch('/articles')
@@ -52,6 +58,8 @@ function App() {
                   {categoryToString(category)}
                 </h1>
                 <div className='grid'>
+                  {/* TODO: Make it explicit that group is a component state or that we are mapping it */}
+                  {/* I guess make it explicit that we are rendering group and not data */}
                   {group[category].map((article) => {
                     return (
                       <div key={article.id} className='box'>
@@ -69,6 +77,11 @@ function App() {
                           </h3>
                           <p style={{ paddingLeft: 15, fontSize: '0.9em', display: 'inline' }}>
                             {article.description}
+                          </p>
+                          <p
+                            style={{ opacity: '0.7', color: '#3a0ca3', fontWeight: '700', fontSize: '0.9em' }}
+                          >
+                            {displayArticleDate(filterBy, article.date)}
                           </p>
                         </div>
                       </div>
