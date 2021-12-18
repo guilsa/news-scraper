@@ -12,8 +12,8 @@ class Scrapper {
   async fetchText(url) {
     const response = await fetch(url)
     // if (!response.ok) {
-      // throw { errorMessage: 'Network response was not OK', cause: this.urlName }
-      // throw Error('Network response was not OK')
+    // throw { errorMessage: 'Network response was not OK', cause: this.urlName }
+    // throw Error('Network response was not OK')
     // }
     const webPageAsText = await response.text()
     return webPageAsText
@@ -39,6 +39,10 @@ class MediaBiasFactCheck extends Scrapper {
       bias_rating: {
         selector: 'span strong',
         eq: 0,
+        convert: (i) => {
+          if (i === 'Your Support is Essential') return ''
+          return i
+        },
       },
       factual_reporting: {
         selector: 'span strong',
