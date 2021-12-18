@@ -1,5 +1,7 @@
 # Todo
 
+- Add darkmode
+- Add infinite scroll
 - Change articleScrapeSave convert to object mapping
 - Add lastUpdated in sources table as well
 - Remove inline css (https://codesandbox.io/s/bold-booth-0qcq0?file=/src/App.css)
