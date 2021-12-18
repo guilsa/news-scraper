@@ -25,6 +25,12 @@ const insertArticles = db.transaction((articles) => {
   for (const article of articles) insert.run(article)
 })
 
+const PUBLISHERS = {
+  'The New York Times Company': 'New York Times',
+  'Young America&apos;s Foundation': 'Young America’s Foundation (YAF)',
+  'Raleigh News &amp; Observer': 'Raleigh News Observer',
+}
+
 scrapeIt('https://www.memeorandum.com', {
   articles: {
     listItem: '.clus .item',
@@ -41,19 +47,8 @@ scrapeIt('https://www.memeorandum.com', {
         selector: 'cite a',
         how: 'html',
         convert: (s) => {
-          const nyt = 'The New York Times Company'
-          const yaf = 'Young America&apos;s Foundation'
-          const raleigh = 'Raleigh News &amp; Observer'
-
-          if (s === nyt) {
-            return 'New York Times'
-          } else if (s === yaf) {
-            return 'Young America’s Foundation (YAF)'
-          } else if (s === raleigh) {
-            return 'Raleigh News Observer'
-          } else {
-            return s
-          }
+          const sanitizedName = PUBLISHERS[s]
+          return sanitizedName !== undefined ? sanitizedName : s
         },
       },
       description: {
