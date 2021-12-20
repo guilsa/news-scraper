@@ -21,7 +21,8 @@ const insert = db.prepare(
 )
 
 const insertArticles = db.transaction((articles) => {
-  console.log(articles)
+  // console.log(articles)
+  console.log(`saving ${articles.length} new items\n`)
   for (const article of articles) insert.run(article)
 })
 
