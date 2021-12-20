@@ -1,3 +1,6 @@
+# app db
+./news.db
+
 # dependencies
 /node_modules
 

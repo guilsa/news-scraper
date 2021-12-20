@@ -4,8 +4,9 @@ const cron = require('node-cron')
 
 const everyHour = '0 * * * *'
 const everyFiveMins = '*/5 * * * *'
+const everyThirtyMins = '*/30 * * * *'
 
-cron.schedule(everyFiveMins, function () {
+cron.schedule(everyThirtyMins, function () {
   console.log(`scrapping articles (${new Date().toLocaleString()})...`)
   startArticleScraper()
 })
