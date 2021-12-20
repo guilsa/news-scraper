@@ -6,12 +6,13 @@ const Database = require('better-sqlite3')
 router.get('/articles', function (req, res) {
   const db = new Database('news.db')
   try {
+    const lastModified = db.prepare('select createdAt from articles order by createdAt desc limit 1')
     const articles = db
       .prepare(
         'select articles.id, articles.title, articles.source, articles.description, articles.url, articles.date, articles.createdAt, lower(sources.bias_rating) as bias_rating from articles left join sources on articles."source" = sources."name" order by createdAt desc LIMIT 50'
       )
       .all()
-    res.send(articles)
+    res.send({ articles: articles, last_modified: new Date(lastModified).split(', ')[1] })
   } catch (err) {
     console.log('err', err)
   }

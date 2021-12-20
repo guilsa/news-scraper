@@ -17,10 +17,12 @@ function App() {
   const { status, data, error } = useFetch('/articles')
   const [group, setGroup] = useState({})
   const [filterBy, setFilterBy] = useState('date')
+  const [lastModified, setLastModified] = useState(null)
 
   React.useEffect(() => {
-    data.sort((a, b) => a.date < b.date)
-    setGroup(groupBy(data, filterBy))
+    setLastModified(data.lastModified)
+    data.articles.sort((a, b) => a.date < b.date)
+    setGroup(groupBy(data.articles, filterBy))
   }, [data, filterBy])
 
   return (
@@ -38,7 +40,9 @@ function App() {
         </div>
       </div>
 
-      <div style={{ fontSize: '0.8em', textDecoration: 'underline' }}>{data?.length} articles</div>
+      <div style={{ fontSize: '0.8em', textDecoration: 'underline' }}>
+        {data?.articles?.length} articles | last update: {lastModified}
+      </div>
       <div>
         {status === 'error' && <div>{error}</div>}
         {status === 'fetching' && <span>Loading.....</span>}
