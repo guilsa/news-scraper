@@ -6,8 +6,8 @@ body {
 
 @media screen and (max-width: 1100px) {
   body {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
@@ -40,7 +40,7 @@ body {
 }
 
 .badges div:not(.active) {
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .active {
