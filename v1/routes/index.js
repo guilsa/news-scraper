@@ -8,7 +8,7 @@ router.get('/articles', function (req, res) {
   try {
     const articles = db
       .prepare(
-        'select articles.id, articles.title, articles.source, articles.description, articles.url, articles.date, articles.createdAt, lower(sources.bias_rating) as bias_rating from articles left join sources on articles."source" = sources."name" order by createdAt'
+        'select articles.id, articles.title, articles.source, articles.description, articles.url, articles.date, articles.createdAt, lower(sources.bias_rating) as bias_rating from articles left join sources on articles."source" = sources."name" order by createdAt desc LIMIT 50'
       )
       .all()
     res.send(articles)
