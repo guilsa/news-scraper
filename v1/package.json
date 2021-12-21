@@ -17,6 +17,7 @@
     "jade": "~1.11.0",
     "morgan": "~1.9.1",
     "node-cron": "^3.0.0",
+    "node-fetch": "^3.1.0",
     "scrape-it": "^5.3.2"
   },
   "devDependencies": {
