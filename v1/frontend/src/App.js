@@ -18,22 +18,34 @@ function App() {
   const { status, data, error } = useFetch('/articles')
   const [group, setGroup] = useState({})
   const [filterBy, setFilterBy] = useState('date')
+  const [publication, setPublication] = useState('')
 
   const remainingCount = useCountFilteredArticles(group)
+
+  const preferredPubs = ['The Atlantic', 'New York Times', 'Mother Jones']
 
   React.useEffect(() => {
     data.articles?.sort((a, b) => a.date < b.date)
     if (filterBy === 'custom_source') {
-      setGroup({ 'The Atlantic': groupBy(data.articles, 'source')['The Atlantic'] })
+      const filter = { [publication]: groupBy(data.articles, 'source')[publication] }
+      if (filter[publication]) {
+        setGroup(filter)
+      }
     } else {
       setGroup(groupBy(data.articles, filterBy))
     }
-  }, [data.articles, filterBy])
+  }, [data.articles, filterBy, publication])
+
+  const handleFilterByPublisher = (target) => {
+    setFilterBy('custom_source')
+    setPublication(target.getAttribute('name'))
+  }
 
   return (
     <div>
       <div className='badges'>
         <label>Filter by:</label>
+        {/* TODO: rename isFilterBy to something related to isActive */}
         <div className={isFilterBy(filterBy, 'date')} onClick={() => setFilterBy('date')}>
           Date
         </div>
@@ -55,9 +67,16 @@ function App() {
       </div>
       <div className='badges' style={{ marginTop: 25 }}>
         <label>Publisher:</label>
-        <div className={isFilterBy(filterBy, 'custom_source')} onClick={() => setFilterBy('custom_source')}>
-          The Atlantic
-        </div>
+        {preferredPubs.map((pub, idx) => (
+          <div
+            key={idx}
+            name={pub}
+            className='publishers active'
+            onClick={(e) => handleFilterByPublisher(e.target)}
+          >
+            {pub}
+          </div>
+        ))}
       </div>
 
       <div>

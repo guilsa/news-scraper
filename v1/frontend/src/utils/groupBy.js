@@ -1,7 +1,7 @@
 // https://gist.github.com/robmathers/1830ce09695f759bf2c4df15c29dd22d
 
 export const groupBy = function (data, key) {
-  if (!data) return []
+  if (!data) return {}
   // `data` is an array of objects, `key` is the key (or property accessor) to group by
   // reduce runs this anonymous function on each element of `data` (the `item` parameter,
   // returning the `storage` parameter at the end

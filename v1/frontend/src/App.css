@@ -29,7 +29,8 @@ body {
   margin-bottom: 20px;
 }
 
-.badges div {
+.badges div,
+.badges .publishers {
   cursor: pointer;
   color: #553c9a;
   display: inline;
@@ -37,6 +38,11 @@ body {
   border-radius: 15px;
   padding: 3px 15px;
   margin: 5px;
+}
+
+.badges .publishers {
+  color: #3c689a;
+  background-color: #e2ebf0;
 }
 
 .badges div:not(.active) {
