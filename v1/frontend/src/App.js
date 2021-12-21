@@ -65,13 +65,14 @@ function App() {
           | updated: {formatLastModified(data['last_modified'])}
         </label>
       </div>
-      <div className='badges' style={{ marginTop: 25 }}>
-        <label>Publisher:</label>
+      <div className='badges' style={{ marginTop: 25, display: 'inline-block' }}>
+        <label>Publishers:</label>
         {preferredPubs.map((pub, idx) => (
           <div
             key={idx}
             name={pub}
             className='publishers active'
+            style={{ display: 'inline-block' }}
             onClick={(e) => handleFilterByPublisher(e.target)}
           >
             {pub}
