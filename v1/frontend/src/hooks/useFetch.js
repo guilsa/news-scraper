@@ -15,7 +15,7 @@ export const useFetch = (url) => {
   const initialState = {
     status: 'idle',
     error: null,
-    data: [],
+    data: {},
   }
 
   const [state, dispatch] = useReducer((state, action) => {

@@ -6,7 +6,7 @@ import './App.css'
 
 import { groupBy } from './utils/groupBy'
 import { isFilterBy } from './utils/isFilterBy'
-import { categoryToString } from './utils/custom'
+import { categoryToString, formatLastModified } from './utils/custom'
 import { useFetch } from './hooks/useFetch'
 
 function displayArticleDate(filterBy, date) {
@@ -17,13 +17,11 @@ function App() {
   const { status, data, error } = useFetch('/articles')
   const [group, setGroup] = useState({})
   const [filterBy, setFilterBy] = useState('date')
-  const [lastModified, setLastModified] = useState(null)
 
   React.useEffect(() => {
-    setLastModified(data.lastModified)
-    data.articles.sort((a, b) => a.date < b.date)
+    data.articles?.sort((a, b) => a.date < b.date)
     setGroup(groupBy(data.articles, filterBy))
-  }, [data, filterBy])
+  }, [data.articles, filterBy])
 
   return (
     <div>
@@ -39,10 +37,14 @@ function App() {
           Bias
         </div>
       </div>
-
-      <div style={{ fontSize: '0.8em', textDecoration: 'underline' }}>
-        {data?.articles?.length} articles | last update: {lastModified}
+      <div style={{ fontSize: '0.8em', textDecoration: 'underline', display: 'inline' }}>
+        last {data?.length} articles
       </div>
+      <div style={{ display: 'inline', fontSize: '0.8em' }}>
+        {' '}
+        | updated: {formatLastModified(data['last_modified'])}
+      </div>
+
       <div>
         {status === 'error' && <div>{error}</div>}
         {status === 'fetching' && <span>Loading.....</span>}

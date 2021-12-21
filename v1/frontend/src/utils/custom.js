@@ -13,4 +13,8 @@ function categoryToString(i) {
   return i
 }
 
-export { categoryToString }
+function formatLastModified(date) {
+  return new Date(date)?.toLocaleString().split(', ')[1]
+}
+
+export { categoryToString, formatLastModified }
