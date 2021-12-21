@@ -38,7 +38,7 @@ function App() {
         </div>
       </div>
       <div style={{ fontSize: '0.8em', textDecoration: 'underline', display: 'inline' }}>
-        last {data?.length} articles
+        last {data.articles?.length} articles
       </div>
       <div style={{ display: 'inline', fontSize: '0.8em' }}>
         {' '}
