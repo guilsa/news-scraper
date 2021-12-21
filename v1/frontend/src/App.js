@@ -8,6 +8,7 @@ import { groupBy } from './utils/groupBy'
 import { isFilterBy } from './utils/isFilterBy'
 import { categoryToString, formatLastModified } from './utils/custom'
 import { useFetch } from './hooks/useFetch'
+import { useCountFilteredArticles } from './hooks/useCountFilteredArticles'
 
 function displayArticleDate(filterBy, date) {
   return filterBy !== 'date' ? dayjs(date).format('MM/DD/YYYY') : null
@@ -18,9 +19,15 @@ function App() {
   const [group, setGroup] = useState({})
   const [filterBy, setFilterBy] = useState('date')
 
+  const remainingCount = useCountFilteredArticles(group)
+
   React.useEffect(() => {
     data.articles?.sort((a, b) => a.date < b.date)
-    setGroup(groupBy(data.articles, filterBy))
+    if (filterBy === 'custom_source') {
+      setGroup({ 'The Atlantic': groupBy(data.articles, 'source')['The Atlantic'] })
+    } else {
+      setGroup(groupBy(data.articles, filterBy))
+    }
   }, [data.articles, filterBy])
 
   return (
@@ -37,12 +44,20 @@ function App() {
           Bias
         </div>
       </div>
-      <div style={{ fontSize: '0.8em', textDecoration: 'underline', display: 'inline' }}>
-        last {data.articles?.length} articles
+      <div>
+        <label style={{ fontSize: '0.8em', textDecoration: 'underline', display: 'inline' }}>
+          last {remainingCount} articles
+        </label>
+        <label style={{ display: 'inline', fontSize: '0.8em' }}>
+          {' '}
+          | updated: {formatLastModified(data['last_modified'])}
+        </label>
       </div>
-      <div style={{ display: 'inline', fontSize: '0.8em' }}>
-        {' '}
-        | updated: {formatLastModified(data['last_modified'])}
+      <div className='badges' style={{ marginTop: 25 }}>
+        <label>Publisher:</label>
+        <div className={isFilterBy(filterBy, 'custom_source')} onClick={() => setFilterBy('custom_source')}>
+          The Atlantic
+        </div>
       </div>
 
       <div>
