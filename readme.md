@@ -60,6 +60,8 @@ To run it continuously, from `/v1/`:
 
 The wonderful folks at mediabiasfactcheck.com do not want you scraping their website as they have valuable information (if you want, consider supporting them!). They auto-scramble the html and therefore you should expect inconsistencies from the scraper's parsing logic. To circumvent this, check out the _Database Backup Scripts_ section here. That's my recommended workflow for quickly cleansing the incoming data, if you will - after exporting the db file, you will want to open it in your text editor of choice, make your batch edits, then use the import script to insert the data. If you have other suggestions, send them over.
 
+`articlesScrapeSave.mjs` is set up to retry on failed attempts and afterwards it will blacklist the url.
+
 ### Deployment Workflow
 
 Everything is set up to run on my local LAN, especially since I started this with sqlite.
