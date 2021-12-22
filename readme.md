@@ -8,7 +8,7 @@ I decided to prototype this with sqlite, without the use of any ORM. SQL is a be
 
 I've [researched](https://gist.github.com/guilsa/0cdd1258c46edf3112b2cc50af03fc8c) some new node.js db tools for this project but have punted on that for now. Would consider picking MySQL over PostgreSQL if the available db drivers have nicer and cleaner JS syntax 😋.
 
-Finally here's what has in use today:
+What's being used now:
 
 - node/express
 - sqlite (better-sqlite3)
