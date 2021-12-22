@@ -86,6 +86,8 @@ TBD. If you can, please support these and other projects by contributing what yo
 
 # Todo
 
+- Fix auto-increment from articles table (https://www.sqlite.org/faq.html#q1)
+ - Articles are being displayed to the user out of order
 - Add pagination and infinite scroll
 - Add darkmode
 - Add updatedAt in sources table as well
