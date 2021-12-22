@@ -1,17 +1,15 @@
 # About this Project
 
-I often get my political news from memeorandum.com. When there's a need to learn more about a print or online publication (ie NYT, etc), I love using mediabiasfactcheck.com to check ideology, history, factual accuracy and who they are funded by (very important). This app scrapes daily news and media bias information, then cross references this data to user. It's a work in progress.
+I often get my mainstream news from memeorandum.com. When there's a need to learn more about a publication (ie NYT), I use mediabiasfactcheck.com to check where they skew ideologically, their history, factual accuracy and who they are funded by. This app scrapes daily news and media bias information, then cross references this data to user. It's a work in progress. As a user, you should be able to filter by factual reporting and credibility rating very soon!
 
 ## Built with
 
-I decided to prototype this with sqlite, without the use of any ORM. SQL is a beautiful technology, we should strive for less abstractions (ie. lets us write raw queries). There's also no need for a db type-system at this point. So far, it's been an amazing experience. But it probably needs to be migrated to MySQL or PostgreSQL sometime so that I learn proper back-end database best-practices like `12-factor`.
-
-I've [researched](https://gist.github.com/guilsa/0cdd1258c46edf3112b2cc50af03fc8c) some new node.js db tools for this project but have punted on that for now. Would consider picking MySQL over PostgreSQL if the available db drivers have nicer and cleaner JS syntax 😋.
+I decided to prototype this with sqlite, without the use of any ORM. SQL is a wonderful technology. Writing raw queries was important to me for this project. Also, there was no need for a db type-system at this point. I've [researched](https://gist.github.com/guilsa/0cdd1258c46edf3112b2cc50af03fc8c) new node.js db tool options, but have punted on that for now. Would consider picking MySQL over PostgreSQL if the available db drivers have nicer and cleaner JS syntax 😋.
 
 What's being used now:
 
 - node/express
-- sqlite (better-sqlite3)
+- better-sqlite3
 - scrape-it
 - node-cron
 - create-react-app
@@ -21,8 +19,11 @@ What's being used now:
 
 # Getting Started
 
-- Currently the repo comes with a sqlite db dump (`/v1/news.db`). Feel free to delete that file if you want to start from scratch.
-- To scrape/fetch news articles, run the article scraper manually (see `node articlesScrapeSave.mjs` below) or start the cron job (instructions below as well). I have this as a background worker process on a separate raspberry pi style linux box).
+- Currently, the repo comes with a sqlite db dump (`/v1/news.db`). 
+  - Feel free to delete `news.db` if you want to start from scratch.
+     - You will then need to empty out [blacklist.txt](https://github.com/guilsa/news-scraper/blob/main/v1/blacklist.txt). This step would go away if we add a `makefile`.
+- To scrape/fetch news articles, [run the article scraper manually or start the cron job](https://github.com/guilsa/news-scraper/#scrapers). 
+- Deployment is done to a separate raspberry-pi style box.
 
 ## Prerequisites
 
@@ -31,7 +32,7 @@ What's being used now:
 
 ## Installation
 
-For the time being, for starting the front-end server, manually uncomment the BASE_URL `localhost:3000` inside useFetch.js (you'll need that one instead of the other).
+For the time being, for starting the front-end server, manually uncomment the BASE_URL `localhost:3000` inside [useFetch.js](https://github.com/guilsa/news-scraper/blob/main/v1/frontend/src/hooks/useFetch.js) - you'll need the commented out one.
 
 ### Back-end server:
 
@@ -49,20 +50,24 @@ For the time being, for starting the front-end server, manually uncomment the BA
 
 They can be initiated manually or via the cron job (only `articlesScrapeSave.mjs` for now).
 
-To run it manually, from `/v1/`:
+#### To run it manually:
 
+- `cd v1`
 - Run the article scraper with `node articlesScrapeSave.mjs`
 - Run the media bias scraper with `node biasScrapeSave.mjs`
 
-To run it continuously, from `/v1/`:
+#### To run it as a job:
 
-- Start the cron job with `node /v1/cron.js` - that's it!
+- `cd v1`
+- Start the node-cron script with `node /v1/cron.js` - that's it!
+
+Once the job is running, to circumvent themit terminating after closing a ssh connection, I use a window/shell manager caled [screen](https://www.gnu.org/software/screen/). More info [here](https://gist.github.com/jctosta/af918e1618682638aa82).
 
 ## Data QA & Challenges
 
-The wonderful folks at mediabiasfactcheck.com do not want you scraping their website as they have valuable information (if you want, consider supporting them!). They auto-scramble the html and therefore you should expect inconsistencies from the scraper's parsing logic. To circumvent this, check out the _Database Backup Scripts_ section here. That's my recommended workflow for cleaning up the media bias data - after exporting the db file, you will want to open it in your text editor of choice, make your batch edits, then use the import script to insert the data. If you have other suggestions, send them over.
-
 `articlesScrapeSave.mjs` is set up to retry on failed attempts and afterwards it will blacklist the url.
+
+The wonderful folks at mediabiasfactcheck.com do not want you scraping their website as they have valuable information (if you want, consider supporting them!). They auto-scramble the html and therefore you should expect inconsistencies from the scraper's parsing logic. To circumvent this, check out [Database Backup Scripts](https://github.com/guilsa/news-scraper/#database-backup-scripts). That's my recommended workflow for cleaning up the media bias data - after exporting the db file, you will want to open it in your text editor of choice, make your batch edits, then use the import script to insert the data back.
 
 ### Deployment Workflow
 
@@ -70,7 +75,6 @@ Everything is set up to run on my local LAN, especially since I started this wit
 
 - To continuously run all systems (cron job, backend and frontend servers), I use an odroid n2 single-board-computer running on a DietPi. I highly recommend using the DietPi for linux related learning (ie. self-hosting, dev-ops, etc).
 - The machine runs headless (no monitor, boots directly to terminal) and is plugged directly into the router.
-- Once the processes are running, to circumvent them terminating once the ssh connection closes, I use [screen](https://www.gnu.org/software/screen/), it's a window/shell manager. More info on how to operate it [here](https://gist.github.com/jctosta/af918e1618682638aa82).
 - The box is exposed to other computers in the LAN (local domain name resolution) using avahi-daemon.
 
 ## Database Backup Scripts
@@ -91,7 +95,11 @@ TBD. If you can, please support these and other projects by contributing what yo
 - Fix auto-increment from articles table (https://www.sqlite.org/faq.html#q1)
   - Articles are being displayed to the user out of order
 - Add pagination and infinite scroll
+- Allow users to filter by factual reporting and credibility rating
+- Add `makefile`, it should clean `blacklist.txt` and auto install everything
+- Add `package.json` script to start it all in parallel with a single command
 - Remove inline css
+- QA and fix and clean install & dev set up issues
 - Make the express app simpler (shouldn't have used the express application generator)
   - Probably decouple db read/write logic from scrapper
   - Add [12-factor](https://medium.com/the-node-js-collection/making-your-node-js-work-everywhere-with-environment-variables-2da8cdf6e786)
@@ -103,8 +111,10 @@ TBD. If you can, please support these and other projects by contributing what yo
     - backend
       - db
     - frontend
-- Consider [MySQL node.js drivers](https://stackoverflow.com/questions/30545749/how-to-provide-a-mysql-database-connection-in-single-file-in-nodejs) for their simplicity
 - Add updatedAt in sources table as well
+- Migrate out out of sqlite
+  - Consider [MySQL node.js drivers](https://stackoverflow.com/questions/30545749/how-to-provide-a-mysql-database-connection-in-single-file-in-nodejs) for their simplicity
+  - Would unblock making it deployable to a PaaS (ie. Heroku, etc)
 - Add darkmode
 
 # Ideas
