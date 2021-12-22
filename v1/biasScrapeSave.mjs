@@ -82,7 +82,7 @@ await Promise.all(
       let details = await scrapper.scrapeHTML(data, place.name)
       const { id, media_type, ...mainDetails } = details
       if (invalidResponse(mainDetails)) {
-        console.log(`invalid response`)
+        console.log(`invalid response from ${place.url}`)
         const retryName = place.name.split(' ').splice(1).join(' ') // try removing the first word (ie. "the")
         if (retryName !== '') {
           const retryUrl = getUrlFromName(retryName)

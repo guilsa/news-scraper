@@ -1,3 +1,52 @@
+# About this Project
+
+I often get my political news from memeorandum.com. When there's a need to learn more about a print or online publication (ie NYT, etc), I love using mediabiasfactcheck.com to check ideology, history, factual accuracy and who they are funded by (very important). This app scrapes daily news and media bias information, then cross references this data to user. It's a work in progress.
+
+## Built with
+
+I decided to prototype this with sqlite. It's been an amazing experience, but probably needs to be migrated to PostgreSQL sometime.
+
+- node/express
+- better-sqlite3
+- scrape-it
+- node-cron
+- create-react-app
+- react
+
+# Getting Started
+
+## Prerequisites
+
+- Node 16.11.0
+ - I like to manage my Node versions with nvm.
+
+## Installation
+
+For the time being, for starting the front-end server, manually uncomment the BASE_URL `localhost:3000` inside useFetch.js (you'll need that one instead of the other).
+
+### Back-end server:
+- `cd v1`
+- `npm install`
+- `npm run dev`
+
+### Front-end server:
+- `cd v1/frontend`
+- `npm install`
+- `npm run start`
+
+### Scrapers:
+
+They can be initiated manually or via the cron job (only articlesScrapeSave for now).
+
+From `/v1/`:
+
+- Run the article scraper with `node articlesScrapeSave.mjs`
+- Run the media bias scraper with `node biasScrapeSave.mjs`
+
+## Db Backup Scripts
+
+Bash scripts are located in `/v1/scripts/backup`. They save to the `/data/` folder.
+
 # Todo
 
 - daily cron
