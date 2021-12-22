@@ -4,7 +4,7 @@ I often get my political news from memeorandum.com. When there's a need to learn
 
 ## Built with
 
-I decided to prototype this with sqlite, without the use of any ORM. SQL is a beautiful technology, we should strive for less abstractions (ie. lets us write raw queries). There's also no need for a db type-system at this point. So far, it's been an amazing experience. But it probably needs to be migrated to MySQL or PostgreSQL sometime so that I learn proper back-end database best-practices like `12-factor config`.
+I decided to prototype this with sqlite, without the use of any ORM. SQL is a beautiful technology, we should strive for less abstractions (ie. lets us write raw queries). There's also no need for a db type-system at this point. So far, it's been an amazing experience. But it probably needs to be migrated to MySQL or PostgreSQL sometime so that I learn proper back-end database best-practices like `12-factor`.
 
 I've [researched](https://gist.github.com/guilsa/0cdd1258c46edf3112b2cc50af03fc8c) some node.js db tools for this project but have punted on that for now. Would consider picking MySQL over PostgreSQL if the available db drivers have nice and clean JS syntax.
 
