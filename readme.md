@@ -21,24 +21,26 @@ What's being used now:
 
 # Getting Started
 
-- Currently the repo comes with a sqlite db dump (`/v1/news.db`). Feel free to delete that file if you want to start from scratch. 
+- Currently the repo comes with a sqlite db dump (`/v1/news.db`). Feel free to delete that file if you want to start from scratch.
 - To scrape/fetch news articles, run the article scraper manually (see `node articlesScrapeSave.mjs` below) or start the cron job (instructions below as well). I have this as a background worker process on a separate raspberry pi style linux box).
 
 ## Prerequisites
 
 - Node 16.11.0
- - I like to manage my Node versions with nvm.
+- I like to manage my Node versions with nvm.
 
 ## Installation
 
 For the time being, for starting the front-end server, manually uncomment the BASE_URL `localhost:3000` inside useFetch.js (you'll need that one instead of the other).
 
 ### Back-end server:
+
 - `cd v1`
 - `npm install`
 - `npm run dev`
 
 ### Front-end server:
+
 - `cd v1/frontend`
 - `npm install`
 - `npm run start`
@@ -67,7 +69,7 @@ The wonderful folks at mediabiasfactcheck.com do not want you scraping their web
 Everything is set up to run on my local LAN, especially since I started this with sqlite.
 
 - To continuously run all systems (cron job, backend and frontend servers), I use an odroid n2 single-board-computer running on a DietPi. I highly recommend using the DietPi for linux related learning (ie. self-hosting, dev-ops, etc).
-- The machine runs headless (no monitor, boots directly to terminal) and is plugged directly into the router. 
+- The machine runs headless (no monitor, boots directly to terminal) and is plugged directly into the router.
 - Once the processes are running, to circumvent them terminating once the ssh connection closes, I use [screen](https://www.gnu.org/software/screen/), it's a window/shell manager. More info on how to operate it [here](https://gist.github.com/jctosta/af918e1618682638aa82).
 - The box is exposed to other computers in the LAN (local domain name resolution) using avahi-daemon.
 
@@ -89,30 +91,25 @@ TBD. If you can, please support these and other projects by contributing what yo
 - Fix auto-increment from articles table (https://www.sqlite.org/faq.html#q1)
   - Articles are being displayed to the user out of order
 - Add pagination and infinite scroll
-- Add darkmode
+- Remove inline css
+- Make the express app simpler (shouldn't have used the express application generator)
+  - Probably decouple db read/write logic from scrapper
+  - Add [12-factor](https://medium.com/the-node-js-collection/making-your-node-js-work-everywhere-with-environment-variables-2da8cdf6e786)
+  - System folder structure should be:
+    - cron
+    - scripts (for backup)
+      - utils
+    - data
+    - backend
+      - db
+    - frontend
+- Consider [MySQL node.js drivers](https://stackoverflow.com/questions/30545749/how-to-provide-a-mysql-database-connection-in-single-file-in-nodejs) for their simplicity
 - Add updatedAt in sources table as well
-- Remove all inline css (https://codesandbox.io/s/bold-booth-0qcq0?file=/src/App.css)
-- System folder structure should be
-  - cron
-  - scripts (for backup)
-    - utils
-  - data
-  - backend
-    - db
-  - frontend
-  - Make v2 of the backend app simpler [1]
-- Think about a test workflow to run main scripts under new db without having to redo shit
-  - That may be why we want to decouple db read/write logic from scrapper
-  - This way we can have a ENV file or something that dictates what should run
-    - Add 12-factor config [1]
-
-[1] https://medium.com/the-node-js-collection/making-your-node-js-work-everywhere-with-environment-variables-2da8cdf6e786
-
-[2] https://stackoverflow.com/questions/30545749/how-to-provide-a-mysql-database-connection-in-single-file-in-nodejs
+- Add darkmode
 
 # Ideas
 
-- scrape articles and run google translate
-- extract keywords and key phrases using tensorflow (ie retext-keywords)
-- sentiment analysis (npm natural, python pattern)
-- cross-reference news article (or from a special keyword extraction of it) to youtube search results for that particular day
+- Scrape articles and run google translate
+- Extract keywords and key phrases using tensorflow (ie retext-keywords)
+- Sentiment analysis (npm natural, python pattern)
+- Cross-reference news article (or from a special keyword extraction of it) to youtube search results for that particular day
