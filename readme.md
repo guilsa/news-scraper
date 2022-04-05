@@ -92,6 +92,10 @@ TBD. If you can, please support these and other projects by contributing what yo
 
 # Todo
 
+- Add PM2 DietPi setup and common commands
+- PM2 should auto restart app on reboot
+- Add .env files (workflow improvement for `how to point dev to prod database`)
+- Add favorite column to sources (media bias) table
 - Fix auto-increment from articles table (https://www.sqlite.org/faq.html#q1)
   - Articles are being displayed to the user out of order
 - Add pagination and infinite scroll

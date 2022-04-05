@@ -15,30 +15,25 @@ function displayArticleDate(filterBy, date) {
 }
 
 function App() {
-  const { status, data, error } = useFetch('/articles')
+  const [publication, setPublication] = useState('')
+  const paramsString = new URLSearchParams({ limit: 20, offset: 0, publication })
+  console.log(paramsString)
+  const { status, data, error } = useFetch('/articles?' + paramsString.toString())
   const [group, setGroup] = useState({})
   const [filterBy, setFilterBy] = useState('date')
-  const [publication, setPublication] = useState('')
 
   const remainingCount = useCountFilteredArticles(group)
 
-  const preferredPubs = ['The Atlantic', 'New York Times', 'Mother Jones']
+  const publicationSelection = ['The Atlantic', 'New York Times', 'Mother Jones', 'All']
 
   React.useEffect(() => {
     data.articles?.sort((a, b) => a.date < b.date)
-    if (filterBy === 'custom_source') {
-      const filter = { [publication]: groupBy(data.articles, 'source')[publication] }
-      if (filter[publication]) {
-        setGroup(filter)
-      }
-    } else {
-      setGroup(groupBy(data.articles, filterBy))
-    }
+    setGroup(groupBy(data.articles, filterBy))
   }, [data.articles, filterBy, publication])
 
   const handleFilterByPublisher = (target) => {
-    setFilterBy('custom_source')
-    setPublication(target.getAttribute('name'))
+    if (target.getAttribute('name') === 'All') setPublication('')
+    else setPublication(target.getAttribute('name'))
   }
 
   return (
@@ -67,7 +62,7 @@ function App() {
       </div>
       <div className='badges' style={{ marginTop: 25, display: 'inline-block' }}>
         <label>Publishers:</label>
-        {preferredPubs.map((pub, idx) => (
+        {publicationSelection.map((pub, idx) => (
           <div
             key={idx}
             name={pub}
