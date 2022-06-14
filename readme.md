@@ -63,6 +63,29 @@ They can be initiated manually or via the cron job (only `articlesScrapeSave.mjs
 
 Once the job is running, to circumvent themit terminating after closing a ssh connection, I use a window/shell manager caled [screen](https://www.gnu.org/software/screen/). More info [here](https://gist.github.com/jctosta/af918e1618682638aa82).
 
+#### PM2 Commands
+
+- Reload
+
+As opposed to restart, which kills and restarts the process, reload achieves a 0-second-downtime reload.
+
+To reload an app:
+
+```
+pm2 reload <app_name>
+```
+
+- Logs
+
+```
+# Display all apps logs in realtime
+pm2 logs
+```
+
+You can also check logs with the CLI dashboard:
+
+pm2 monit
+
 ## Data QA & Challenges
 
 `articlesScrapeSave.mjs` is set up to retry on failed attempts and afterwards it will blacklist the url.
@@ -92,8 +115,8 @@ TBD. If you can, please support these and other projects by contributing what yo
 
 # Todo
 
+- Add logging to cron job
 - Add PM2 DietPi setup and common commands
-- PM2 should auto restart app on reboot
 - Add .env files (workflow improvement for `how to point dev to prod database`)
 - Add favorite column to sources (media bias) table
 - Fix auto-increment from articles table (https://www.sqlite.org/faq.html#q1)
