@@ -1,33 +1,20 @@
 import Database from 'better-sqlite3'
 
-const db = new Database('news.db')
-
 // TODO: move this stuff out of here
 import { MediaBiasFactCheck } from './utils/biasScrapper.mjs'
 import { sleep } from './utils/util.mjs'
 import { readFile } from './readFile.mjs'
 import { writeFile } from './writeFile.mjs'
 
+import { getPlacesToScrape } from './utils/getPlacesToScrape.mjs'
+import getUrlFromName from './utils/getUrlFromName.mjs'
+
+const db = new Database('news.db')
+
 function invalidResponse(resp) {
   // If there are 5 keys, all empty, it's a bad response
   // bias_rating │ factual_reporting │ country │ popularity │ mbfc_credibility_rating
   return Object.keys(resp).filter((i) => resp[i] === '').length === 5
-}
-
-function getUrlFromName(source) {
-  source = source.toLowerCase().split(' ').join('-')
-  return `https://mediabiasfactcheck.com/${source}/`
-}
-
-function getPlacesToScrapeFromPublishers(publishers) {
-  const placesToScrape = []
-  for (const name of publishers) {
-    placesToScrape.push({
-      name: name,
-      url: getUrlFromName(name),
-    })
-  }
-  return placesToScrape
 }
 
 class Source {
@@ -50,7 +37,7 @@ const source = new Source()
 source.create()
 
 const publishers = db.prepare('SELECT DISTINCT source FROM articles').pluck().all()
-const placesToScrape = getPlacesToScrapeFromPublishers(publishers)
+const placesToScrape = getPlacesToScrape(publishers)
 
 const insert = db.prepare(
   'INSERT OR IGNORE INTO sources (id, name, bias_rating, factual_reporting, country, media_type, popularity, mbfc_credibility_rating) VALUES (@id, @name, @bias_rating, @factual_reporting, @country, @media_type, @popularity, @mbfc_credibility_rating)'
