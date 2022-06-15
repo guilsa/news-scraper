@@ -19,8 +19,8 @@ function App() {
 
   const isPublication = publication !== ''
   const paramsString = new URLSearchParams({
-    limit: 20,
-    offset: 0,
+    page: 2,
+    limit: 15,
     ...(isPublication ? { publication: publication } : {}),
   })
 
@@ -33,9 +33,9 @@ function App() {
   const publicationSelection = ['The Atlantic', 'New York Times', 'Mother Jones', 'All']
 
   React.useEffect(() => {
-    data.articles?.sort((a, b) => a.date < b.date)
-    setGroup(groupBy(data.articles, filterBy))
-  }, [data.articles, filterBy, publication])
+    data.results?.sort((a, b) => a.date < b.date)
+    setGroup(groupBy(data.results, filterBy))
+  }, [data.results, filterBy, publication])
 
   const handleFilterByPublisher = (target) => {
     if (target.getAttribute('name') === 'All') setPublication('')
