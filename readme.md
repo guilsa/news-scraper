@@ -19,10 +19,10 @@ What's being used now:
 
 # Getting Started
 
-- Currently, the repo comes with a sqlite db dump (`/v1/news.db`). 
+- Currently, the repo comes with a sqlite db dump (`/v1/news.db`).
   - Feel free to delete `news.db` if you want to start from scratch.
-     - You will then need to empty out [blacklist.txt](https://github.com/guilsa/news-scraper/blob/main/v1/blacklist.txt). This step would go away if we add a `makefile`.
-- To scrape/fetch news articles, [run the article scraper manually or start the cron job](https://github.com/guilsa/news-scraper/#scrapers). 
+    - You will then need to empty out [blacklist.txt](https://github.com/guilsa/news-scraper/blob/main/v1/blacklist.txt). This step would go away if we add a `makefile`.
+- To scrape/fetch news articles, [run the article scraper manually or start the cron job](https://github.com/guilsa/news-scraper/#scrapers).
 - Deployment is done to a separate raspberry-pi style box.
 
 ## Prerequisites
@@ -63,7 +63,7 @@ They can be initiated manually or via the cron job (only `articlesScrapeSave.mjs
 
 Once the job is running, to circumvent themit terminating after closing a ssh connection, I use a window/shell manager caled [screen](https://www.gnu.org/software/screen/). More info [here](https://gist.github.com/jctosta/af918e1618682638aa82).
 
-#### PM2 Commands
+#### PM2 Commands:
 
 - Reload
 
@@ -80,11 +80,23 @@ pm2 reload <app_name>
 ```
 # Display all apps logs in realtime
 pm2 logs
+
+#CLI dashboard:
+pm2 monit
 ```
 
-You can also check logs with the CLI dashboard:
+#### Inspect SQLite3 DB:
 
-pm2 monit
+```
+sqlite3 -readonly news.db
+select count(*) from articles where source='New York Times';
+```
+
+#### Copy DB from remote to host:
+
+```
+scp user@host:path/file_name.db ./filename.db
+```
 
 ## Data QA & Challenges
 
