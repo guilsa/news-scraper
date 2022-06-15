@@ -16,8 +16,14 @@ function displayArticleDate(filterBy, date) {
 
 function App() {
   const [publication, setPublication] = useState('')
-  const paramsString = new URLSearchParams({ limit: 20, offset: 0, publication })
-  console.log(paramsString)
+
+  const isPublication = publication !== ''
+  const paramsString = new URLSearchParams({
+    limit: 20,
+    offset: 0,
+    ...(isPublication ? { publication: publication } : {}),
+  })
+
   const { status, data, error } = useFetch('/articles?' + paramsString.toString())
   const [group, setGroup] = useState({})
   const [filterBy, setFilterBy] = useState('date')
