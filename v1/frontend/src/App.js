@@ -14,12 +14,15 @@ function displayArticleDate(filterBy, date) {
   return filterBy !== 'date' ? dayjs(date).format('MM/DD/YYYY') : null
 }
 
+let canFetchTestimonials = true
+
 function App() {
   const [publication, setPublication] = useState('')
+  const [page, setPage] = useState(1)
 
   const isPublication = publication !== ''
   const paramsString = new URLSearchParams({
-    page: 2,
+    page: page,
     limit: 15,
     ...(isPublication ? { publication: publication } : {}),
   })
@@ -41,6 +44,18 @@ function App() {
     if (target.getAttribute('name') === 'All') setPublication('')
     else setPublication(target.getAttribute('name'))
   }
+
+  React.useEffect(() => {
+    if (!canFetchTestimonials) return
+    function handleScroll(e) {
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+        console.log('bottom')
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
     <div>
