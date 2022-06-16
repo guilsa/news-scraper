@@ -14,9 +14,8 @@ function displayArticleDate(filterBy, date) {
   return filterBy !== 'date' ? dayjs(date).format('MM/DD/YYYY') : null
 }
 
-let canFetchTestimonials = true
-
 function App() {
+  const [articles, setArticles] = useState([])
   const [publication, setPublication] = useState('')
   const [page, setPage] = useState(1)
 
@@ -28,6 +27,12 @@ function App() {
   })
 
   const { status, data, error } = useFetch('/articles?' + paramsString.toString())
+
+  React.useEffect(() => {
+    if (!data.results) return
+    setArticles((oldArticles) => [...(oldArticles === [] ? [] : oldArticles), ...data.results])
+  }, [setArticles, data.results])
+
   const [group, setGroup] = useState({})
   const [filterBy, setFilterBy] = useState('date')
 
@@ -36,9 +41,9 @@ function App() {
   const publicationSelection = ['The Atlantic', 'New York Times', 'Mother Jones', 'All']
 
   React.useEffect(() => {
-    data.results?.sort((a, b) => a.date < b.date)
+    // data.results?.sort((a, b) => a.date < b.date)
     setGroup(groupBy(data.results, filterBy))
-  }, [data.results, filterBy, publication])
+  }, [data, filterBy, publication])
 
   const handleFilterByPublisher = (target) => {
     if (target.getAttribute('name') === 'All') setPublication('')
@@ -46,16 +51,17 @@ function App() {
   }
 
   React.useEffect(() => {
-    if (!canFetchTestimonials) return
+    if (status === 'fetching') return
     function handleScroll(e) {
       if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
         console.log('bottom')
+        setPage(page + 1)
       }
     }
 
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  }, [page, status])
 
   return (
     <div>
@@ -99,55 +105,27 @@ function App() {
       <div>
         {status === 'error' && <div>{error}</div>}
         {status === 'fetching' && <span>Loading.....</span>}
-        {status === 'fetched' &&
-          Object.keys(group).map((category, idx) => {
-            return (
-              <div key={idx}>
-                <h1
-                  style={{
-                    marginLeft: 20,
-                    marginRight: 20,
-                    textAlign: 'center',
-                    marginBottom: 20,
-                    textTransform: 'capitalize',
-                  }}
-                >
-                  {categoryToString(category)}
-                </h1>
-                <div className='grid'>
-                  {/* TODO: Make it explicit that group is a component state or that we are mapping it */}
-                  {/* I guess make it explicit that we are rendering group and not data */}
-                  {group[category].map((article) => {
-                    return (
-                      <div key={article.id} className='box'>
-                        <div
-                          style={{ fontSize: '0.9em', color: '#b5179e', fontWeight: 700, marginBottom: 10 }}
-                        >
-                          <span>{article.source}</span>
-                          <span style={{ textTransform: 'capitalize' }}>
-                            &nbsp;{renderBiasRating(article.bias_rating)}
-                          </span>
-                        </div>
-                        <div style={{ textAlign: 'left', marginBottom: 20 }}>
-                          <h3 style={{ display: 'inline' }}>
-                            <a href={article.url}>{article.title}</a>
-                          </h3>
-                          <p style={{ paddingLeft: 15, fontSize: '0.9em', display: 'inline' }}>
-                            {article.description}
-                          </p>
-                          <p
-                            style={{ opacity: '0.7', color: '#3a0ca3', fontWeight: '700', fontSize: '0.9em' }}
-                          >
-                            {displayArticleDate(filterBy, article.date)}
-                          </p>
-                        </div>
-                      </div>
-                    )
-                  })}
-                </div>
+        {articles?.map((article) => {
+          return (
+            <div key={article.id} className='box'>
+              <div style={{ fontSize: '0.9em', color: '#b5179e', fontWeight: 700, marginBottom: 10 }}>
+                <span>{article.source}</span>
+                <span style={{ textTransform: 'capitalize' }}>
+                  &nbsp;{renderBiasRating(article.bias_rating)}
+                </span>
               </div>
-            )
-          })}
+              <div style={{ textAlign: 'left', marginBottom: 20 }}>
+                <h3 style={{ display: 'inline' }}>
+                  <a href={article.url}>{article.title}</a>
+                </h3>
+                <p style={{ paddingLeft: 15, fontSize: '0.9em', display: 'inline' }}>{article.description}</p>
+                <p style={{ opacity: '0.7', color: '#3a0ca3', fontWeight: '700', fontSize: '0.9em' }}>
+                  {displayArticleDate(filterBy, article.date)}
+                </p>
+              </div>
+            </div>
+          )
+        })}
       </div>
     </div>
   )
