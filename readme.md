@@ -63,42 +63,51 @@ They can be initiated manually or via the cron job (only `articlesScrapeSave.mjs
 
 Once the job is running, to circumvent themit terminating after closing a ssh connection, I use a window/shell manager caled [screen](https://www.gnu.org/software/screen/). More info [here](https://gist.github.com/jctosta/af918e1618682638aa82).
 
-#### PM2 Commands:
+## Querying the database:
 
-- Reload
-
-As opposed to restart, which kills and restarts the process, reload achieves a 0-second-downtime reload.
-
-To reload an app:
-
-```
-pm2 reload <app_name>
-```
-
-- Logs
-
-```
-# Display all apps logs in realtime
-pm2 logs
-
-#CLI dashboard:
-pm2 monit
-```
-
-#### Inspect SQLite3 DB:
+Access db:
 
 ```
 sqlite3 -readonly news.db
 ```
+
+Changing output formats:
 
 ```
 .mode column
 .headers on
 ```
 
+Example questions we can ask:
+
 ```
 select count(*) from articles where source='New York Times';
 select articles.title, articles.source, sources.bias_rating as bias_rating from articles left join sources on articles."source" = sources."name" where articles.title like lower('%woke%');
+```
+
+...which if you're curious, the result is:
+
+```
+title                                                     source      bias_rating
+--------------------------------------------------------  ----------  -----------
+Republicans' New Obsession Is Fighting ‘Woke Capitalism’  Gizmodo     LEFT
+Fighting Behind Enemy Lines: Three Tactics for Resisting  Minding Th
+Public University Offers Professors Cash To Go Woke       Washington  RIGHT
+Happy ‘woke’ 2022, Democrats.  With democracy in the bal  USA Today   LEFT-CENTER
+Navy training goes woke: Boot camp to include classes on  Daily Mail  RIGHT
+The woke lives of college girls                           Washington  RIGHT
+EXCLUSIVE: Meet The Seattle Schools Woke Indoctrination   The Daily   Conspiracy
+Critics of ‘woke’ capitalism are wrong                    Financial
+Why are Democrats struggling with working class voters?   Washington  LEFT-CENTER
+Md. state Sen. Will Smith missed the Oscars.  He woke up  Washington  LEFT-CENTER
+Disney Goes Woke, Will No Longer Say ‘Boys And Girls’ Wi  OutKick     RIGHT-CENTE
+Daily Wire to make conservative kids' shows to rival ‘wo  Washington  LEFT-CENTER
+Woke North Carolina medical student who is trans rights   Daily Mail  RIGHT
+Sen. Rick Scott Says The ‘Woke Left’ Is The ‘Greatest Da  HuffPost
+Student hides from ‘woke mob’ in bathroom as angry prote  Fox News    RIGHT
+Woke Ariz. diversity activists falsely accuse black DJ o  New York P  RIGHT-CENTE
+Corporate welfare, not woke tweets, is the problem with   Washington  RIGHT
+Double Standards: Princeton Turns Blind Eye To Plagiaris  Washington  RIGHT
 ```
 
 #### Copy DB from remote to host:
@@ -126,6 +135,24 @@ Everything is set up to run on my local LAN, especially since I started this wit
 - Export/import bash scripts are available, located in `/v1/scripts/backup`
 - Export saves to the `/data/` folder
 - Import loads to the `/v1/news.db` database
+
+## PM2 Commands:
+
+As opposed to restart, which kills and restarts the process, reload achieves a 0-second-downtime reload. To reload an app:
+
+```
+pm2 reload <app_name>
+```
+
+Logs:
+
+```
+# Display all apps logs in realtime
+pm2 logs
+
+#CLI dashboard:
+pm2 monit
+```
 
 # Contributions
 
