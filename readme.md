@@ -89,7 +89,16 @@ pm2 monit
 
 ```
 sqlite3 -readonly news.db
+```
+
+```
+.mode column
+.headers on
+```
+
+```
 select count(*) from articles where source='New York Times';
+select articles.title, articles.source, sources.bias_rating as bias_rating from articles left join sources on articles."source" = sources."name" where articles.title like lower('%woke%');
 ```
 
 #### Copy DB from remote to host:
