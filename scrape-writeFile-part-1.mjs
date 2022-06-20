@@ -1,6 +1,10 @@
 import * as fs from 'fs'
 import fetch from 'node-fetch'
 
+//
+// Fetch url and save to file
+//
+
 fetch('https://mediabiasfactcheck.com/9news-kusa/')
   .then((res) => res.text())
   .then((data) => {

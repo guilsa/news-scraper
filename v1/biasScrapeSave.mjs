@@ -58,6 +58,7 @@ const displayScrapedData = []
 
 // TODO - what is skipping and is empty in db? there is an alternative name for these
 
+// TODO: Look into async.parallel()
 await Promise.all(
   placesToScrape.map(async (place) => {
     const isBlacklisted = blacklist.includes(place.name)

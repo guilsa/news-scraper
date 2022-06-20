@@ -2,6 +2,11 @@ import * as fs from 'fs'
 import * as cheerio from 'cheerio'
 import fetch from 'node-fetch'
 
+//
+// Rudimentary article scraper
+// finds all <p> tags, joins them together, writes to a file
+//
+
 const url = 'https://www.economist.com/europe/2021/11/11/how-trains-could-replace-planes-in-europe'
 
 fetch(url)

@@ -2,9 +2,7 @@
 
 I often get my mainstream news from memeorandum.com. When there's a need to learn more about a publication (ie NYT), I use mediabiasfactcheck.com to check where they skew ideologically, their history, factual accuracy and who they are funded by. This app scrapes daily news and media bias information, then cross references this data to user. It's a work in progress. As a user, you should be able to filter by factual reporting and credibility rating very soon!
 
-# Built with
-
-I decided to prototype this with sqlite, without the use of any ORM. SQL is a wonderful technology. Writing raw queries was important to me for this project. Also, there was no need for a db type-system at this point. I've [researched](https://gist.github.com/guilsa/0cdd1258c46edf3112b2cc50af03fc8c) new node.js db tool options, but have punted on that for now. Would consider picking MySQL over PostgreSQL if the available db drivers have nicer and cleaner JS syntax 😋.
+This project is a prototype and will be archived and redone using a proper Node.js file structure, etc. It uses sqlite, without the use of any ORM. SQL is a wonderful technology. Writing raw queries was important to me for this project. Also, there was no need for a db type-system at this point. I've [researched](https://gist.github.com/guilsa/0cdd1258c46edf3112b2cc50af03fc8c) new node.js db tool options, but have punted on that for now. Would consider picking MySQL over PostgreSQL if the available db drivers have nicer and cleaner JS syntax 😋.
 
 What's being used now:
 
@@ -134,7 +132,7 @@ Everything is set up to run on my local LAN, especially since I started this wit
 - The machine runs headless (no monitor, boots directly to terminal) and is plugged directly into the router.
 - The box is exposed to other computers in the LAN (local domain name resolution) using avahi-daemon.
 
-## PM2 Commands:
+# PM2 Commands:
 
 As opposed to restart, which kills and restarts the process, reload achieves a 0-second-downtime reload. To reload an app:
 
