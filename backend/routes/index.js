@@ -1,3 +1,4 @@
+const config = require('../config')
 var express = require('express')
 var router = express.Router()
 
@@ -19,13 +20,15 @@ function validatePaginationLimit(req, res, next) {
 }
 
 function paginatedResults(req, res, next) {
+  console.log('env: ', process.env.NODE_ENV)
+
   const page = parseInt(req.query.page)
   const limit = parseInt(req.query.limit)
 
   const startIndex = (page - 1) * limit
   const endIndex = page * limit
 
-  const db = new Database('news.db')
+  const db = new Database(config.databaseStorage)
   try {
     const lastModified = db.prepare('select createdAt from articles order by createdAt desc limit 1').get()
 

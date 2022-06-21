@@ -132,6 +132,10 @@ Everything is set up to run on my local LAN, especially since I started this wit
 - The machine runs headless (no monitor, boots directly to terminal) and is plugged directly into the router.
 - The box is exposed to other computers in the LAN (local domain name resolution) using avahi-daemon.
 
+# Environment Variables
+
+PM2 is used with `production` environment variables set in `ecosystem.config.js`.
+
 # PM2 Commands:
 
 As opposed to restart, which kills and restarts the process, reload achieves a 0-second-downtime reload. To reload an app:
