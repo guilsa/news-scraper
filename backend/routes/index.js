@@ -20,8 +20,6 @@ function validatePaginationLimit(req, res, next) {
 }
 
 function paginatedResults(req, res, next) {
-  console.log('env: ', process.env.NODE_ENV)
-
   const page = parseInt(req.query.page)
   const limit = parseInt(req.query.limit)
 
