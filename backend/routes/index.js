@@ -64,12 +64,12 @@ function paginatedResults(req, res, next) {
     }
 
     res.paginatedResults = results
+    db.close()
     next()
   } catch (e) {
     console.log(e)
     res.status(500).json({ message: e.message })
   }
-  db.close()
 }
 
 module.exports = router
