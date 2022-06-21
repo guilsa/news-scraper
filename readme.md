@@ -18,50 +18,36 @@ What's being used now:
 # Prerequisites
 
 - Node 16.11.0. I like to manage my Node versions with nvm.
-- Currently, the repo comes with a sqlite db dump (`/v1/news.db`).
-  - Feel free to delete `news.db` if you want to start from scratch.
-    - You will then need to empty out [blacklist.txt](https://github.com/guilsa/news-scraper/blob/main/v1/blacklist.txt). This step would go away if we add a `makefile`.
+- If you run any of the files that connect to the sqlite instance, it will create either `news-dev.db` or `news-prod.db` depending on the vars that's set. See Environment Variables section below for more info on that.
+- Feel free to delete the db if you want to start from scratch.
+  - You will then need to empty out [blacklist.txt](https://github.com/guilsa/news-scraper/blob/main/v1/blacklist.txt).
 - To scrape/fetch news articles, [run the article scraper manually or start the cron job](https://github.com/guilsa/news-scraper/#scrapers).
 - Deployment is done to a separate raspberry-pi style box.
 
-# Install
+# Install & start servers
 
-For the time being, for starting the front-end server, manually uncomment the BASE_URL `localhost:3000` inside useFetch.js.
-
-Backend:
-
-```
-cd v1
-npm install
-npm run dev
-```
-
-Frontend:
-
-```
-cd v1/frontend
-npm install
-npm run start
-```
+Backend: `cd backend && npm install`
+Frontend: `cd frontend && npm install`
+Then run everything concurrently: `npm run dev-watch`
 
 # Scrapers:
 
-They can be initiated manually or via the cron job (only `articlesScrapeSave.mjs` for now).
+See scraper directory. They can be initiated manually or via the cron job (only `/services/articles.mjs` for now).
 
 ## To run it manually:
 
-- `cd v1`
-- Run the article scraper with `node articlesScrapeSave.mjs`
-- Run the media bias scraper with `node biasScrapeSave.mjs`
+Go in folder, then:
+
+- Article scraper `node articles.mjs`
+- Bias scraper `node bias.mjs`
 
 ## To run it as a job:
 
-- `cd v1`
-- Start the node-cron script with `node /v1/cron.js` - that's it!
+- `cd scraper && node cron.js`
 
 # Querying the scraped news dataset:
 
-Access db:
+Go in folder, then access db:
 
 ```
 sqlite3 -readonly news.db
@@ -109,18 +95,17 @@ Double Standards: Princeton Turns Blind Eye To Plagiaris  Washington  RIGHT
 ## Copy dataset from remote to host:
 
 ```
-scp user@host:path/file_name.db ./filename.db
+scp user@host:path/file_name.db ./file_name.db
 ```
 
 # Database Backup Scripts
 
-- Export/import bash scripts are available, located in `/v1/scripts/backup`
-- Export saves to the `/data/` folder
-- Import loads to the `/v1/news.db` database
+- Export/import bash scripts are available, located in `/database/scripts`
+- Export saves to the `/database/dump` folder
 
 # Data QA & Challenges
 
-`articlesScrapeSave.mjs` is set up to retry on failed attempts and afterwards it will blacklist the url.
+`articles.mjs` is set up to retry on failed attempts and afterwards it will blacklist the url.
 
 The wonderful folks at mediabiasfactcheck.com do not want you scraping their website as they have valuable information (if you want, consider supporting them!). They auto-scramble the html and therefore you should expect inconsistencies from the scraper's parsing logic. To circumvent this, check out [Database Backup Scripts](https://github.com/guilsa/news-scraper/#database-backup-scripts). That's my recommended workflow for cleaning up the media bias data - after exporting the db file, you will want to open it in your text editor of choice, make your batch edits, then use the import script to insert the data back.
 
@@ -163,34 +148,18 @@ TBD. If you can, please support these and other projects by contributing what yo
 
 # Todo
 
+- Make the express app simpler (shouldn't have used the express application generator)
+- Add darkmode
 - Add logging to cron job
-- Add PM2 DietPi setup and common commands
-- Add .env files (workflow improvement for `how to point dev to prod database`)
 - Add favorite column to sources (media bias) table
 - Fix auto-increment from articles table (https://www.sqlite.org/faq.html#q1)
   - Articles are being displayed to the user out of order
-- Add pagination and infinite scroll
 - Allow users to filter by factual reporting and credibility rating
-- Add `makefile`, it should clean `blacklist.txt` and auto install everything
-- Add `package.json` script to start it all in parallel with a single command
 - Remove inline css
-- QA and fix and clean install & dev set up issues
-- Make the express app simpler (shouldn't have used the express application generator)
-  - Probably decouple db read/write logic from scrapper
-  - Add [12-factor](https://medium.com/the-node-js-collection/making-your-node-js-work-everywhere-with-environment-variables-2da8cdf6e786)
-  - System folder structure should be:
-    - cron
-    - scripts (for backup)
-      - utils
-    - data
-    - backend
-      - db
-    - frontend
 - Add updatedAt in sources table as well
 - Migrate out out of sqlite
   - Consider [MySQL node.js drivers](https://stackoverflow.com/questions/30545749/how-to-provide-a-mysql-database-connection-in-single-file-in-nodejs) for their simplicity
   - Would unblock making it deployable to a PaaS (ie. Heroku, etc)
-- Add darkmode
 
 # Ideas
 
