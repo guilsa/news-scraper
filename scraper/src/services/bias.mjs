@@ -1,13 +1,12 @@
 import Database from 'better-sqlite3'
 
 // TODO: move this stuff out of here
-import { MediaBiasFactCheck } from './utils/biasScrapper.mjs'
-import { sleep } from './utils/util.mjs'
-import { readFile } from './readFile.mjs'
-import { writeFile } from './writeFile.mjs'
+import { MediaBiasFactCheck } from '../utils/mediaBiasFactCheck.mjs'
+import { readFile } from '../utils/readFile.mjs'
+import { writeFile } from '../utils/writeFile.mjs'
 
-import { getPlacesToScrape } from './utils/getPlacesToScrape.mjs'
-import getUrlFromName from './utils/getUrlFromName.mjs'
+import { getPlacesToScrape } from '../utils/getPlacesToScrape.mjs'
+import getUrlFromName from '../utils/getUrlFromName.mjs'
 
 const config = require('../../config')
 const db = new Database(config.databaseStorage)

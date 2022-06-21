@@ -1,7 +1,7 @@
 import Database from 'better-sqlite3'
 import scrapeIt from 'scrape-it'
 
-import { hash } from './utils/util.mjs'
+import { hash } from '../utils/util.mjs'
 
 const config = require('../../config')
 const db = new Database(config.databaseStorage)
