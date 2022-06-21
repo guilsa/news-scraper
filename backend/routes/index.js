@@ -2,7 +2,8 @@ const config = require('../config')
 var express = require('express')
 var router = express.Router()
 
-const db = require('../loaders/database')
+// const db = require('../loaders/database')
+const Database = require('better-sqlite3')
 
 const middleware = [validatePaginationLimit, paginatedResults]
 
@@ -27,6 +28,7 @@ function paginatedResults(req, res, next) {
   const endIndex = page * limit
 
   try {
+    const db = new Database(config.databaseStorage)
     const lastModified = db.prepare('select createdAt from articles order by createdAt desc limit 1').get()
 
     const stmt = db.prepare(
