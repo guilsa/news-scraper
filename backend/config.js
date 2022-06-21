@@ -1,7 +1,11 @@
 // Set the NODE_ENV to 'development' by default
 process.env.NODE_ENV = process.env.NODE_ENV || 'development'
 
-// If NODE_ENV is undefined, set databaseStorage to dev
+const databaseDirectory = '../database'
+
+const dev = databaseDirectory + '/development/news-dev.db'
+const prod = databaseDirectory + '/production/news-prod.db'
+
 module.exports = {
-  databaseStorage: process.env.NODE_ENV === 'development' ? './news-dev.db' : './news-prod.db',
+  databaseStorage: process.env.NODE_ENV === 'development' ? dev : prod,
 }
