@@ -13,7 +13,7 @@ read file
 echo Starting restore...
 sqlite3 <<EOS
 .open ${sqlitefile}
-.read ../data/${file}
+.read ../dump/${file}
 .quit
 EOS
 echo ${file} restored successfully...
