@@ -1,8 +1,9 @@
-var express = require('express')
-var router = express.Router()
-
-const config = require('../config')
 const Database = require('better-sqlite3')
+
+var express = require('express')
+const config = require('../config')
+
+var router = express.Router()
 
 const middleware = [validatePaginationLimit, paginatedResults]
 

@@ -1,6 +1,7 @@
 import Database from 'better-sqlite3'
 
-const db = new Database('news.db')
+const config = require('../../config')
+const db = new Database(config.databaseStorage)
 
 db.exec(`CREATE TABLE IF NOT EXISTS sources
 (

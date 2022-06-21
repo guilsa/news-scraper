@@ -9,7 +9,8 @@ import { writeFile } from './writeFile.mjs'
 import { getPlacesToScrape } from './utils/getPlacesToScrape.mjs'
 import getUrlFromName from './utils/getUrlFromName.mjs'
 
-const db = new Database('news.db')
+const config = require('../../config')
+const db = new Database(config.databaseStorage)
 
 function invalidResponse(resp) {
   // If there are 5 keys, all empty, it's a bad response

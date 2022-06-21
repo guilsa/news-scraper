@@ -3,7 +3,8 @@ import scrapeIt from 'scrape-it'
 
 import { hash } from './utils/util.mjs'
 
-const db = new Database('news.db')
+const config = require('../../config')
+const db = new Database(config.databaseStorage)
 
 db.exec(`CREATE TABLE IF NOT EXISTS articles
 (
