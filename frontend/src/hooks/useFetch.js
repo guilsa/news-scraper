@@ -1,7 +1,6 @@
 import { useEffect, useRef, useReducer } from 'react'
 
-// const BASE_URL = 'http://localhost:3000'
-const BASE_URL = 'http://192.168.0.107:3000'
+const BASE_URL = 'http://' + process.env.REACT_APP_HOST + ':3000'
 
 // source: https://www.smashingmagazine.com/2020/07/custom-react-hook-fetch-cache-data/
 
