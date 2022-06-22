@@ -54,7 +54,6 @@ function App() {
     if (status === 'fetching') return
     function handleScroll(e) {
       if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-        console.log('bottom')
         setPage(page + 1)
       }
     }
@@ -62,8 +61,6 @@ function App() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [page, status])
-
-  console.log('process.env.NODE_ENV', process.env.NODE_ENV)
 
   return (
     <div>

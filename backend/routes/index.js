@@ -8,7 +8,6 @@ var router = express.Router()
 const middleware = [validatePaginationLimit, paginatedResults]
 
 router.get('/articles', middleware, function (req, res) {
-  console.log('process.env.NODE_ENV', process.env.NODE_ENV)
   res.json(res.paginatedResults)
 })
 
