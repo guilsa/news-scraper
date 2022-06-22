@@ -18,9 +18,9 @@ const insert = db.prepare(
   'INSERT OR IGNORE INTO sources (id, name, bias_rating, factual_reporting, country, media_type, popularity, mbfc_credibility_rating) VALUES (@id, @name, @bias_rating, @factual_reporting, @country, @media_type, @popularity, @mbfc_credibility_rating)'
 )
 
-const insertMany = db.transaction((scrappedData) => {
-  console.log('saving...', scrappedData)
-  for (const details of scrappedData) insert.run(details)
+const insertMany = db.transaction((scrapedData) => {
+  console.log('saving...', scrapedData)
+  for (const details of scrapedData) insert.run(details)
   console.log('saving done')
 })
 

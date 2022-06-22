@@ -4,7 +4,7 @@ import { findPrecedingString, hash } from './util.mjs'
 
 const { scrapeHTML } = scrapeIt
 
-class Scrapper {
+class Scraper {
   constructor(urlName = null) {
     this.urlName = urlName
   }
@@ -20,7 +20,7 @@ class Scrapper {
   }
 }
 
-class MediaBiasFactCheck extends Scrapper {
+class MediaBiasFactCheck extends Scraper {
   constructor(urlName) {
     super(urlName)
   }

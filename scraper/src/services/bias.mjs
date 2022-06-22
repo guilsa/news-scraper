@@ -43,9 +43,9 @@ const insert = db.prepare(
   'INSERT OR IGNORE INTO sources (id, name, bias_rating, factual_reporting, country, media_type, popularity, mbfc_credibility_rating) VALUES (@id, @name, @bias_rating, @factual_reporting, @country, @media_type, @popularity, @mbfc_credibility_rating)'
 )
 
-console.log(`setting up scrapper...`)
+console.log(`setting up scraper...`)
 
-const scrapper = new MediaBiasFactCheck()
+const scraper = new MediaBiasFactCheck()
 
 let successfulScrapes = 0
 
@@ -65,9 +65,9 @@ await Promise.all(
     if (!biasSourceNames.includes(place.name) && !isBlacklisted) {
       let failedRetry = false
       console.log(`scraping ${place.name}: ${place.url}`)
-      const data = await scrapper.fetchText(place.url)
-      scrapper.clean(data)
-      let details = await scrapper.scrapeHTML(data, place.name)
+      const data = await scraper.fetchText(place.url)
+      scraper.clean(data)
+      let details = await scraper.scrapeHTML(data, place.name)
       const { id, media_type, ...mainDetails } = details
       if (invalidResponse(mainDetails)) {
         console.log(`invalid response from ${place.url}`)
@@ -75,9 +75,9 @@ await Promise.all(
         if (retryName !== '') {
           const retryUrl = getUrlFromName(retryName)
           console.log(`retrying as ${retryName}: ${retryUrl}`)
-          const retryData = await scrapper.fetchText(retryUrl)
-          scrapper.clean(retryData)
-          const retryDetails = await scrapper.scrapeHTML(retryData, place.name)
+          const retryData = await scraper.fetchText(retryUrl)
+          scraper.clean(retryData)
+          const retryDetails = await scraper.scrapeHTML(retryData, place.name)
           const { retryId, retryMediaType, ...retryMainDetails } = retryDetails
           if (invalidResponse(retryMainDetails)) {
             failedRetry = true

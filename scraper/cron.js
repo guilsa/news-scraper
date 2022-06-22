@@ -7,13 +7,13 @@ const everyFiveMins = '*/5 * * * *'
 const everyThirtyMins = '*/30 * * * *'
 
 cron.schedule(everyThirtyMins, function () {
-  console.log(`scrapping articles (${new Date().toLocaleString()})...`)
+  console.log(`scraping articles (${new Date().toLocaleString()})...`)
   startArticleScraper()
 })
 
 async function startArticleScraper() {
   try {
-    const { stdout, stderr } = await exec('node articlesScrapeSave.mjs')
+    const { stdout, stderr } = await exec('node ./src/services/articles.mjs')
     console.table({ stdout, stderr })
     //console.log('stdout:', stdout)
     //console.log('stderr:', stderr)
