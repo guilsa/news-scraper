@@ -63,6 +63,8 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [page, status])
 
+  console.log('process.env.NODE_ENV', process.env.NODE_ENV)
+
   return (
     <div>
       <div className='badges'>
