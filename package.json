@@ -1,0 +1,25 @@
+{
+  "name": "news-scraper",
+  "version": "1.0.0",
+  "description": "This app scrapes and cross references daily news from memeorandum.com and mediabiasfactcheck.com and displays it to the user.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-watch": "concurrently \"npm run dev-backend\" \"npm run dev-frontend\"",
+    "dev-backend": "cd backend && npm run dev",
+    "dev-frontend": "cd frontend && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guilsa/news-scraper.git"
+  },
+  "author": "Guilherme Sa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guilsa/news-scraper/issues"
+  },
+  "homepage": "https://github.com/guilsa/news-scraper#readme",
+  "devDependencies": {
+    "concurrently": "^7.2.2"
+  }
+}
