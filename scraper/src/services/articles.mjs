@@ -2,9 +2,9 @@ import Database from 'better-sqlite3'
 import scrapeIt from 'scrape-it'
 
 import { hash } from '../utils/util.mjs'
+import { databaseStorage } from '../../config.mjs'
 
-const config = require('../../config')
-const db = new Database(config.databaseStorage)
+const db = new Database(databaseStorage)
 
 db.exec(`CREATE TABLE IF NOT EXISTS articles
 (
