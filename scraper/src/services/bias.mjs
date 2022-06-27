@@ -5,11 +5,12 @@ import { MediaBiasFactCheck } from '../utils/mediaBiasFactCheck.mjs'
 import { readFile } from '../utils/readFile.mjs'
 import { writeFile } from '../utils/writeFile.mjs'
 
+import { databaseStorage } from '../../config.mjs'
+
 import { getPlacesToScrape } from '../utils/getPlacesToScrape.mjs'
 import getUrlFromName from '../utils/getUrlFromName.mjs'
 
-const config = require('../../config')
-const db = new Database(config.databaseStorage)
+const db = new Database(databaseStorage)
 
 function invalidResponse(resp) {
   // If there are 5 keys, all empty, it's a bad response
