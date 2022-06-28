@@ -11,7 +11,7 @@ async function getData(url) {
 
 const insertDate = (arr, date) =>
   arr.reduce((prev, curr) => {
-    curr['date'] = data.date
+    curr['date'] = date
     prev.push(curr)
     return prev
   }, [])
@@ -25,19 +25,8 @@ const stringifyCitations = (arr) =>
 
 try {
   const data = await getData()
-  const articles = data.articles
-    // insert date
-    .reduce((prev, curr) => {
-      curr['date'] = data.date
-      prev.push(curr)
-      return prev
-    }, [])
-    // stringify citations
-    .reduce((prev, curr) => {
-      curr['citations'] = curr['citations'].join('; ')
-      prev.push(curr)
-      return prev
-    }, [])
+  const articles = stringifyCitations(insertDate(data.articles, data.date))
+  console.log(articles)
 
   insertArticles(articles)
 } catch (e) {
