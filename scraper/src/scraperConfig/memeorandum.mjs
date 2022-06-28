@@ -1,5 +1,3 @@
-import scrapeIt from 'scrape-it'
-
 import { hash } from '../utils/util.mjs'
 
 const PUBLISHERS = {
