@@ -16,10 +16,18 @@ function insertDateInArticles(articles, date) {
   return articles
 }
 
+function stringifyCitations(articles) {
+  for (const article of articles) {
+    article['citations'] = article['citations'].join('; ')
+  }
+  return articles
+}
+
 try {
   const data = await getData()
   const articles = insertDateInArticles(data.articles, data.date)
-  // console.log('articles', articles)
+  const articles2 = stringifyCitations(articles)
+  console.log('articles2', articles2)
 
   insertArticles(articles)
 } catch (e) {
