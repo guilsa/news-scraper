@@ -9,25 +9,35 @@ async function getData(url) {
   return data
 }
 
-function insertDateInArticles(articles, date) {
-  for (const article of articles) {
-    article['date'] = date
-  }
-  return articles
-}
+const insertDate = (arr, date) =>
+  arr.reduce((prev, curr) => {
+    curr['date'] = data.date
+    prev.push(curr)
+    return prev
+  }, [])
 
-function stringifyCitations(articles) {
-  for (const article of articles) {
-    article['citations'] = article['citations'].join('; ')
-  }
-  return articles
-}
+const stringifyCitations = (arr) =>
+  arr.reduce((prev, curr) => {
+    curr['citations'] = curr['citations'].join('; ')
+    prev.push(curr)
+    return prev
+  }, [])
 
 try {
   const data = await getData()
-  const articles = insertDateInArticles(data.articles, data.date)
-  const articles2 = stringifyCitations(articles)
-  console.log('articles2', articles2)
+  const articles = data.articles
+    // insert date
+    .reduce((prev, curr) => {
+      curr['date'] = data.date
+      prev.push(curr)
+      return prev
+    }, [])
+    // stringify citations
+    .reduce((prev, curr) => {
+      curr['citations'] = curr['citations'].join('; ')
+      prev.push(curr)
+      return prev
+    }, [])
 
   insertArticles(articles)
 } catch (e) {
