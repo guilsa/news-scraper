@@ -38,6 +38,10 @@ export default {
       createdAt: {
         convert: () => new Date().toISOString(),
       },
+      citations: {
+        listItem: 'cite a',
+        how: 'text',
+      },
     },
   },
   date: {
