@@ -148,22 +148,57 @@ TBD. If you can, please support these and other projects by contributing what yo
 
 # Todo
 
+## Easy
+
+- Remove last n articles from ui, no longer needed
 - Make the express app simpler (shouldn't have used the express application generator)
-- Add darkmode
-- Add logging to cron job
-- Add favorite column to sources (media bias) table
+
+## Med
+
+- Refactorings
+  - Bring /services/bias up to parity with /services/articles
+  - Refactor scraper retry (ie. axios has built in functionality for this)
+- Remove inline css
+
+## Hard
+
+- Enable foreign key support
+- Backend should return article payload sorted by desc date and desc citations
+  - This may the fix auto-inc issue below
 - Fix auto-increment from articles table (https://www.sqlite.org/faq.html#q1)
   - Articles are being displayed to the user out of order
-- Allow users to filter by factual reporting and credibility rating
-- Remove inline css
-- Add updatedAt in sources table as well
-- Migrate out out of sqlite
-  - Consider [MySQL node.js drivers](https://stackoverflow.com/questions/30545749/how-to-provide-a-mysql-database-connection-in-single-file-in-nodejs) for their simplicity
-  - Would unblock making it deployable to a PaaS (ie. Heroku, etc)
+- Expand scraper to enumerate list of urls
+- Db model updates
+  - SqliteError: table articles has no column named citations
+  - Add favorite column to sources (media bias) table
+  - Add citations table to help articles table store list of citations
+- Add proper logging to all services (scraper cron task, backend, etc)
+- Add darkmode
 
 # Ideas
 
-- Scrape articles and run google translate
+- Migrate out out of sqlite
+  - Consider [MySQL node.js drivers](https://stackoverflow.com/questions/30545749/how-to-provide-a-mysql-database-connection-in-single-file-in-nodejs) for their simplicity
+  - Would unblock making it deployable to a PaaS (ie. Heroku, etc)
+- Run articles through google translate
+  - Option: store articles in db or process data in real-time
 - Extract keywords and key phrases using tensorflow (ie retext-keywords)
 - Sentiment analysis (npm natural, python pattern)
-- Cross-reference news article (or from a special keyword extraction of it) to youtube search results for that particular day
+- Cross-reference news article (or from a special keyword extraction of it) with youtube search results for that particular day
+- Create an admin ui to manage the scraper
+- Add a message queue based system (ie custom or redis) to manage async tasks
+- Add updatedAt in sources table as well
+
+# Learnings
+
+**Database Schema Migration Best Practices**
+
+You can use migrations to create empty database schemas for development and testing.
+
+**Npm Pre and Post scripts**
+
+We can create "pre" and "post" scripts for any of our scripts, and NPM will automatically run them in order.
+
+**Npm config field**
+
+You can add your own environment variables using the "config" field in your package.json file. Note that this is great but "encourages confusing and non-12-factor-app-compliant patterns".
