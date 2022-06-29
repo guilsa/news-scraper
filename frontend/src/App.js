@@ -22,7 +22,7 @@ function App() {
   const isPublication = publication !== ''
   const paramsString = new URLSearchParams({
     page: page,
-    limit: 15,
+    limit: 30,
     ...(isPublication ? { publication: publication } : {}),
   })
 
