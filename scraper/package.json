@@ -7,12 +7,19 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha --recursive './tests/*.test.mjs'"
+    "db:migrate": "npx knex migrate:latest",
+    "db:seed": "npx knex seed:run",
+    "db:all": "npm run db:migrate && npm run db:seed",
+    "test": "mocha --recursive './tests/*.test.mjs'",
+    "scrape:articles": "node ./src/services/articles.mjs",
+    "scrape:bias": "node ./src/services/bias.mjs",
+    "start:cron": "node cron.js"
   },
   "author": "Guilherme Sa",
   "license": "MIT",
   "dependencies": {
     "better-sqlite3": "^7.5.3",
+    "knex": "^2.1.0",
     "node-cron": "^3.0.1",
     "node-fetch": "^3.2.6",
     "scrape-it": "^5.3.2"

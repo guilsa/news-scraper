@@ -26,7 +26,7 @@ const stringifyCitations = (arr) =>
 try {
   const data = await getData()
   const articles = stringifyCitations(insertDate(data.articles, data.date))
-  console.log(articles)
+  // console.log(articles)
 
   insertArticles(articles)
 } catch (e) {

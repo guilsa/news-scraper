@@ -18,30 +18,11 @@ function invalidResponse(resp) {
   return Object.keys(resp).filter((i) => resp[i] === '').length === 5
 }
 
-class Source {
-  create() {
-    db.exec(`CREATE TABLE IF NOT EXISTS sources
-      (
-          id TEXT UNIQUE PRIMARY KEY,
-          name TEXT UNIQUE,
-          bias_rating TEXT,
-          factual_reporting TEXT,
-          country TEXT,
-          media_type TEXT,
-          popularity TEXT,
-          mbfc_credibility_rating TEXT
-      )`)
-  }
-}
-
-const source = new Source()
-source.create()
-
 const publishers = db.prepare('SELECT DISTINCT source FROM articles').pluck().all()
 const placesToScrape = getPlacesToScrape(publishers)
 
 const insert = db.prepare(
-  'INSERT OR IGNORE INTO sources (id, name, bias_rating, factual_reporting, country, media_type, popularity, mbfc_credibility_rating) VALUES (@id, @name, @bias_rating, @factual_reporting, @country, @media_type, @popularity, @mbfc_credibility_rating)'
+  'INSERT OR IGNORE INTO bias (name, bias_rating, factual_reporting, country, media_type, popularity, mbfc_credibility_rating) VALUES (@name, @bias_rating, @factual_reporting, @country, @media_type, @popularity, @mbfc_credibility_rating)'
 )
 
 console.log(`setting up scraper...`)
@@ -50,7 +31,7 @@ const scraper = new MediaBiasFactCheck()
 
 let successfulScrapes = 0
 
-const biasSourceNames = db.prepare('SELECT name FROM sources').pluck().all()
+const biasNames = db.prepare('SELECT name FROM bias').pluck().all()
 
 const fileData = await readFile('./blacklist.txt')
 const blacklist = fileData.toString().split('\n')
@@ -63,13 +44,13 @@ const displayScrapedData = []
 await Promise.all(
   placesToScrape.map(async (place) => {
     const isBlacklisted = blacklist.includes(place.name)
-    if (!biasSourceNames.includes(place.name) && !isBlacklisted) {
+    if (!biasNames.includes(place.name) && !isBlacklisted) {
       let failedRetry = false
       console.log(`scraping ${place.name}: ${place.url}`)
       const data = await scraper.fetchText(place.url)
       scraper.clean(data)
       let details = await scraper.scrapeHTML(data, place.name)
-      const { id, media_type, ...mainDetails } = details
+      const { media_type, ...mainDetails } = details
       if (invalidResponse(mainDetails)) {
         console.log(`invalid response from ${place.url}`)
         const retryName = place.name.split(' ').splice(1).join(' ') // try removing the first word (ie. "the")
@@ -107,7 +88,7 @@ await Promise.all(
   .finally(() => {
     db.close()
     console.log('db closed')
-    console.log(`completed! scraped ${successfulScrapes} new source(s).`)
+    console.log(`completed! scraped ${successfulScrapes} new bias source(s).`)
     if (displayScrapedData.length > 0) console.table(displayScrapedData)
     if (newBlacklistQueue.length > 0) {
       writeFile('./blacklist.txt', '\n' + newBlacklistQueue.join('\n'))

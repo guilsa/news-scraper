@@ -191,14 +191,21 @@ TBD. If you can, please support these and other projects by contributing what yo
 
 # Learnings
 
-**Database Schema Migration Best Practices**
+Database Best Practices
 
-You can use migrations to create empty database schemas for development and testing.
+- Have a schema migration strategy
+  - Reproducibility, automation and version control
+  - In general, we want to automate the creation of database schemas for development and testing and have version control and roll things back/forward/latest.
+  - Use tools like Knex.js and have `db:migrate` and `db:seed` npm scripts.
+  - Knex.js comes with an `init` command which creates a db config file template with dev/staging/prod settings for db initialization based on the given `process.env` settings. You can interact with something like `dotenv` from here.
+  - For more examples and best practices, check out Alembic's or Knex.js' docs and their respective migration pages.
 
-**Npm Pre and Post scripts**
+### Mastering NPM scripts
 
-We can create "pre" and "post" scripts for any of our scripts, and NPM will automatically run them in order.
+**Pre and Post scripts**
 
-**Npm config field**
+Create "pre" and "post" scripts and NPM will automatically run them in order. So running "start" will automatically run "prestart" if you have that, etc.
 
-You can add your own environment variables using the "config" field in your package.json file. Note that this is great but "encourages confusing and non-12-factor-app-compliant patterns".
+**Config field**
+
+It's possible to pass environment variables using the "config" field in your `package.json` file. Note that this is great but "encourages confusing and non-12-factor-app-compliant patterns".

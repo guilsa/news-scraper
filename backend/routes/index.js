@@ -42,7 +42,6 @@ function paginatedResults(req, res, next) {
 
     const stmt = db.prepare(
       `SELECT
-          articles.id,
           articles.title,
           articles.source,
           articles.description,
@@ -50,11 +49,11 @@ function paginatedResults(req, res, next) {
           articles.date,
           articles.createdAt,
           articles.citations,
-          lower(sources.bias_rating)
+          lower(bias.bias_rating)
         AS bias_rating
         FROM articles
         LEFT JOIN
-          sources ON articles."source" = sources."name"
+          bias ON articles."source" = bias."name"
         ORDER BY createdAt
         DESC LIMIT ?,?;`
     )
