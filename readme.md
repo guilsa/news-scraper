@@ -152,6 +152,7 @@ TBD. If you can, please support these and other projects by contributing what yo
 - Db migration automation should be done from database, not scraper
 - Bring /services/bias up to parity with /services/articles
 - Db model updates
+
   - Add favorite publication table (need user auth)
     - Add a like column to sources (media bias) table in the meantime
 
@@ -198,3 +199,147 @@ Create "pre" and "post" scripts and NPM will automatically run them in order. So
 **Config field**
 
 It's possible to pass environment variables using the "config" field in your `package.json` file. Note that this is great but "encourages confusing and non-12-factor-app-compliant patterns".
+
+### Project Organization: Component Naming Convention & Folder Structure 
+
+A well defined file and folder structure diminishes cognitive overload. Clutter impedes scalability and dev experience.
+
+If you enjoy taxonomies and why they work, hopefully you'll enjoy this...
+
+```
+/src/
+  /components
+    App.js
+    ForgotPassword.js
+    HeaderBar.js
+    PreAuth.js
+    ...
+    ...
+    /Articles
+      /SubComponentAForArticles.js
+      /SubComponentBForArticles.js
+      /BiasRating.js
+      /Article.js
+      /index.js (exports Articles or ArticleList)
+    /common/
+      /Button.js
+      /Questions.js
+      ...
+    /__tests__
+      /article.test.js
+      /button.test.js
+      /questions.test.js
+```
+
+Let's now explain the folder structure that we have above.
+
+_Hint: To glance at all responses below, open the readme.md in raw view so that all collapsible items are visible and searchable._
+
+#### Question:
+
+How can I make good use of my root folder (ie. `/src/`)?
+
+<details>
+	<summary>Answer</summary>
+
+If it feels miscellaneous, but not a "common component", or it doesn't have sub-components, the component probably belogs in the root folder.
+
+Take advantage of that space and add critical user or layout related components.
+
+</details>
+
+#### Question:
+
+Where to place components that contain sub-components?
+
+<details>
+	<summary>Answer</summary>
+
+Sub-components should be place alongside their parents as separate files either inside the `/src/components/ComponentName/` folder or if the component is critical and not monolithic, place everything inside one file in root `/src/ComponentName.js` (there is a benefit here explained below).
+
+</details>
+
+#### Question:
+
+Where to place custom stylesheets?
+
+<details>
+	<summary>Answer</summary>
+
+Inside a flat folder structure in `/src/styles/` (ie. `/src/styles/ComponentFoo.scss`). The advantage of it not containing sub-folders is that of navigability and scalability.
+
+</details>
+
+#### Question:
+
+What exactly is a shared or common component? Where to place it?
+
+<details>
+	<summary>Answer</summary>
+
+Common components are common UI "building blocks" (think lower-level views) that: a) don't import or consume many other components; and b) aren't too domain specific (so it _can_ be related to the business, but should be generic).
+
+The `/src/components/common` folder should be flat and not contain any level of folder nesting.
+
+Common components should be moved to `/src/components/common/ComponentA.js` (a `/common/` or shared folder).
+
+Examples in the first category include Button, DateInput, Footer, Modal.
+
+Examples in the second category include DeleteCategory, ActivateCard and CommonQuestionFields.
+
+It's plausable that you'll have a smaller amount of business specific generic items in your commons folder, but this is a nice place to put them.
+
+</details>
+
+#### Question:
+
+Is there a good use case for _not_ making separare files for a sub-component?
+
+<details>
+	<summary>Answer</summary>
+
+I think so... You may want to avoid creating separate files for your sub-components when: a) the parent component should belong to commons folder; b) the sub-components themselves are "non-common".
+
+Imagine for instance that you have `Questions.js` with some _non-common_ sub-components EnumField, CompanyType, PhotoIdField, etc. So here, the sub-components aren't used elsewhere. The trade-off is that `/src/components/common/` is kept in a flat and clean and can scale to hundreds of files.
+
+If you need an entire folder, move it to `/src/components/ComponentA/`.
+
+</details>
+
+#### Question:
+
+Can I have multiple components with the same name?
+
+<details>
+	<summary>Answer</summary>
+
+Yes, sub-components should. For example, `Card.js` can be a unique name for two unique parent components. So `/src/components/ComponentA/Card.js` and `/src/components/ComponentB/Card.js`
+
+You shouldn't have to name the file as `SubComponentCard.js` even though `Card` is a sub-component of something else. That's why folders exists.
+
+</details>
+
+#### Question:
+
+Where to place the `__tests__` folder? How to name the test files?
+
+<details>
+	<summary>Answer</summary>
+
+Keep them next to your components folder. More importantly, **your tests filenames should be lowercase** - it helps unclutter things when searching many files by name.
+
+</details>
+
+#### Question:
+
+How can I differentiate between component names with plural nouns versus collection of views?
+
+<details>
+	<summary>Answer</summary>
+
+- Does the component hold a collection of distinct or identical things?
+  - If distinct, it's fine to use plural and export that name.
+  - If identical, include a suffix like `List` or `ListView`
+  - It's fine to export a component named `Settings` as that's a common and recognizable name and does not include a collection or a list of identical things. An example component name `SystemPreferences` is not the same as `PreferenceList` component because inside we have a collection of distinct things.
+
+</details>
