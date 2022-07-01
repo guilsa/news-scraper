@@ -9,8 +9,10 @@ const middleware = [validatePaginationLimit, paginatedResults]
 
 function replaceCitationsStrWithTotalCitationsInt(arr) {
   return arr.reduce((storage, item) => {
-    item['totalCitations'] = item['citations'].split('; ').length
-    delete item.citations
+    if (item['totalCitations'] !== undefined) {
+      item['totalCitations'] = item['citations'].split('; ').length
+      delete item.citations
+    }
     storage.push(item)
     return storage
   }, [])

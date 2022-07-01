@@ -8,7 +8,7 @@ exports.up = function (knex) {
     table.string('title').notNullable()
     table.string('description').notNullable()
     table.string('date').notNullable()
-    table.string('citations').notNullable()
+    table.string('citations')
     table.string('url').unique().notNullable()
     table.string('source').notNullable()
     table.string('createdAt').notNullable()

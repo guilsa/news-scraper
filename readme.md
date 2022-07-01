@@ -1,53 +1,43 @@
 # About
 
-I often get my mainstream news from memeorandum.com. When there's a need to learn more about a publication (ie NYT), I use mediabiasfactcheck.com to check where they skew ideologically, their history, factual accuracy and who they are funded by. This app scrapes daily news and media bias information, then cross references this data to user. It's a work in progress. As a user, you should be able to filter by factual reporting and credibility rating very soon!
+I often get my mainstream news from memeorandum.com.
 
-This project is a prototype and will be archived and redone using a proper Node.js file structure, etc. It uses sqlite, without the use of any ORM. SQL is a wonderful technology. Writing raw queries was important to me for this project. Also, there was no need for a db type-system at this point. I've [researched](https://gist.github.com/guilsa/0cdd1258c46edf3112b2cc50af03fc8c) new node.js db tool options, but have punted on that for now. Would consider picking MySQL over PostgreSQL if the available db drivers have nicer and cleaner JS syntax 😋.
+Have you ever wanted to more about a publication? For example, how they skew ideologically, their history, factual accuracy and who they are funded by?
+
+This app scrapes daily news from memeorandum.com and mediabiasfactcheck.com, then cross references this data to make it consumable to news junks.
 
 What's being used now:
 
 - node/express
 - better-sqlite3
+- knex.js
 - scrape-it
 - node-cron
 - create-react-app
-- react
 - odroid n2 (hardware)
-- diet-pi (debian operating system)
+- diet-pi (debian)
 
 # Prerequisites
 
-- Node 16.11.0. I like to manage my Node versions with nvm.
-- If you run any of the files that connect to the sqlite instance, it will create either `news-dev.db` or `news-prod.db` depending on the vars that's set. See Environment Variables section below for more info on that.
-- Feel free to delete the db if you want to start from scratch.
-  - You will then need to empty out [blacklist.txt](https://github.com/guilsa/news-scraper/blob/main/v1/blacklist.txt).
-- To scrape/fetch news articles, [run the article scraper manually or start the cron job](https://github.com/guilsa/news-scraper/#scrapers).
-- Deployment is done to a separate raspberry-pi style box.
+- Node 16.11.0 via nvm.
+- Deployment is done to a separate Raspberry-Pi style box.
 
-# Install & start servers
+# Install & start dev servers
 
-Backend: `cd backend && npm install`
-Frontend: `cd frontend && npm install`
-Then run everything concurrently: `npm run dev-watch`
+This is a monorepo for 3 services.
+
+To install everything at once, use: `npm run setup:all`. Then start dev servers with: `npm run dev-watch`.
 
 # Scrapers:
 
-See scraper directory. They can be initiated manually or via the cron job (only `/services/articles.mjs` for now).
+There are 2 scraper services: articles and bias. Make sure you enter the `scraper` folder, then:
 
-## To run it manually:
-
-Go in folder, then:
-
-- Article scraper `node articles.mjs`
-- Bias scraper `node bias.mjs`
-
-## To run it as a job:
-
-- `cd scraper && node cron.js`
+- To schedule re-runs every 30 mins: `npm run start:cron`.
+- To run scrapers individually, run either `npm run scrape:articles` or `npm run scrape:bias`.
 
 # Querying the scraped news dataset:
 
-Go in folder, then access db:
+Enter the database folder, then access db:
 
 ```
 sqlite3 -readonly news.db
@@ -92,7 +82,7 @@ Corporate welfare, not woke tweets, is the problem with   Washington  RIGHT
 Double Standards: Princeton Turns Blind Eye To Plagiaris  Washington  RIGHT
 ```
 
-## Copy dataset from remote to host:
+## Copy database from remote to host:
 
 ```
 scp user@host:path/file_name.db ./file_name.db
@@ -156,20 +146,16 @@ TBD. If you can, please support these and other projects by contributing what yo
 ## Med
 
 - Refactorings
+  - Db migration automation should be done from database, not scraper
   - Bring /services/bias up to parity with /services/articles
   - Refactor scraper retry (ie. axios has built in functionality for this)
 - Remove inline css
+- Enable foreign key support
 
 ## Hard
 
-- Enable foreign key support
-- Backend should return article payload sorted by desc date and desc citations
-  - This may the fix auto-inc issue below
-- Fix auto-increment from articles table (https://www.sqlite.org/faq.html#q1)
-  - Articles are being displayed to the user out of order
 - Expand scraper to enumerate list of urls
 - Db model updates
-  - SqliteError: table articles has no column named citations
   - Add favorite column to sources (media bias) table
   - Add citations table to help articles table store list of citations
 - Add proper logging to all services (scraper cron task, backend, etc)
@@ -200,7 +186,7 @@ Database Best Practices
   - Knex.js comes with an `init` command which creates a db config file template with dev/staging/prod settings for db initialization based on the given `process.env` settings. You can interact with something like `dotenv` from here.
   - For more examples and best practices, check out Alembic's or Knex.js' docs and their respective migration pages.
 
-### Mastering NPM scripts
+### Take advantage of NPM scripts
 
 **Pre and Post scripts**
 

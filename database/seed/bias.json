@@ -1,0 +1,5744 @@
+[
+  {
+    "name": "UFCW Local 400",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Buffalo News",
+    "bias_rating": "HIGH",
+    "factual_reporting": "HIGH",
+    "country": "",
+    "media_type": "TV Station",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Minimal Traffic"
+  },
+  {
+    "name": "The Herald-Times",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "YouTube",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "KLAS",
+    "bias_rating": "HIGH CREDIBILITY",
+    "factual_reporting": "NFN-Low Biased Factual News",
+    "country": "USA",
+    "media_type": "MOSTLY FREE",
+    "mbfc_credibility_rating": "Your Support is Essential",
+    "popularity": "TV Station"
+  },
+  {
+    "name": "The Daily Poster",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "MyNorthwest.com",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Missouri Independent",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Reason",
+    "bias_rating": "RIGHT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Magazine"
+  },
+  {
+    "name": "National Post",
+    "bias_rating": "RIGHT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "Canada",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "MOSTLY FREE"
+  },
+  {
+    "name": "SFist",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Spectrum News NY1",
+    "bias_rating": "LEAST BIASED",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "TV Station"
+  },
+  {
+    "name": "American Resistance",
+    "bias_rating": "Left vs. Right Bias: How we rate the bias of media sources",
+    "factual_reporting": "Your Support is Essential",
+    "country": "NFN-Low Biased Factual News",
+    "media_type": "Join today for $1 to $5 per Month",
+    "mbfc_credibility_rating": "",
+    "popularity": "Your Support is Essential"
+  },
+  {
+    "name": "PennLive",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Knoxville News-Sentinel",
+    "bias_rating": "USA 45/180",
+    "factual_reporting": "NFN-Low Biased Factual News",
+    "country": "History",
+    "media_type": "Funded by / Ownership",
+    "mbfc_credibility_rating": "Your Support is Essential",
+    "popularity": "Analysis / Bias"
+  },
+  {
+    "name": "wusa9.com",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Failed Fact Checks"
+  },
+  {
+    "name": "Florida Governor Ron DeSantis",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Boston Fed News",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Wendell Potter NOW",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Telegraph",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "wwwnc.cdc.gov",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Bolts",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Mediaite",
+    "bias_rating": "LEFT",
+    "factual_reporting": "MOSTLY FACTUAL",
+    "country": "USA (44/180 Press Freedom)",
+    "media_type": "Website",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "High Traffic"
+  },
+  {
+    "name": "travel.state.gov",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "MIT Admissions",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Action News Jax",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Tech Policy Press",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Rasmussen Reports",
+    "bias_rating": "RIGHT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Organization/Foundation"
+  },
+  {
+    "name": "CBS News",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "TV Station"
+  },
+  {
+    "name": "American Prospect",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "BuzzFeed News",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "MOSTLY FACTUAL",
+    "country": "MOSTLY FACTUAL",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "St. Louis Post-Dispatch",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Lawfare",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "WORLD",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Miami New Times",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "South China Morning Post",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "MIXED",
+    "country": "MIXED",
+    "media_type": "Hong Kong (80/180 Press Freedom)",
+    "mbfc_credibility_rating": "Hong Kong (80/180 Press Freedom)",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "STAT",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Federal Trade Commission",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Coffee or Die Magazine",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Barron&apos;s Online",
+    "bias_rating": "Extreme Right, Conspiracy, Propaganda",
+    "factual_reporting": "NFN-Low Biased Factual News",
+    "country": "NFN-Low Biased Factual News",
+    "media_type": "Join today for $1 to $5 per Month",
+    "mbfc_credibility_rating": "Your Support is Essential",
+    "popularity": "Your Support is Essential"
+  },
+  {
+    "name": "UNICORN RIOT",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "The Why Axis",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Pittsburgh Post-Gazette",
+    "bias_rating": "RIGHT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "Artnet News",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Daily Hampshire Gazette",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 48/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "The Verge",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "Department of Homeland Security",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Providence Journal",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Charleston Gazette-Mail",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Media Matters for America",
+    "bias_rating": "LEFT",
+    "factual_reporting": "HIGH",
+    "country": "USA (44/180 Press Freedom)",
+    "media_type": "Organization/Foundation",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Medium Traffic"
+  },
+  {
+    "name": "Cincinnati.com",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Hillman Foundation",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 48/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "TK News",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "New York Post",
+    "bias_rating": "RIGHT-CENTER",
+    "factual_reporting": "MIXED",
+    "country": "MIXED",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "MEDIUM CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "Parents Defending Education",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Riverfront Times",
+    "bias_rating": "LEFT",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Economist",
+    "bias_rating": "LEAST BIASED",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "United Kingdom (35/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Magazine"
+  },
+  {
+    "name": "ABC13",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Mountain State Spotlight",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Gawker",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Des Moines Register",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Atlantic",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Magazine"
+  },
+  {
+    "name": "CSCE",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Daily Beast",
+    "bias_rating": "LEFT",
+    "factual_reporting": "MIXED",
+    "country": "USA (45/180 Press Freedom)",
+    "media_type": "Website",
+    "mbfc_credibility_rating": "MEDIUM CREDIBILITY",
+    "popularity": "High Traffic"
+  },
+  {
+    "name": "RedState",
+    "bias_rating": "Left vs. Right Bias: How we rate the bias of media sources",
+    "factual_reporting": "Your Support is Essential",
+    "country": "Funded by / Ownership",
+    "media_type": "Analysis / Bias",
+    "mbfc_credibility_rating": "",
+    "popularity": "Left vs. Right Bias: How we rate the bias of media sources"
+  },
+  {
+    "name": "The ",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Esquire",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "NBC News",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "TV Station"
+  },
+  {
+    "name": "dayton-daily-news",
+    "bias_rating": "USA 48/180",
+    "factual_reporting": "NFN-Low Biased Factual News",
+    "country": "USA 48/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "Your Support is Essential",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Glenn Greenwald",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "THE CITY",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 48/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Coronavirus War Room",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Faridaily",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Bangor Daily News",
+    "bias_rating": "USA 48/180",
+    "factual_reporting": "NFN-Low Biased Factual News",
+    "country": "USA 48/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "Your Support is Essential",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "The Philadelphia Inquirer",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH CREDIBILITY",
+    "country": "USA (44/180 Press Freedom)",
+    "media_type": "Newspaper",
+    "mbfc_credibility_rating": "Left vs. Right Bias: How we rate the bias of media sources",
+    "popularity": "High Traffic"
+  },
+  {
+    "name": "Washingtonian",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "National Geographic",
+    "bias_rating": "LEAST BIASED",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Magazine"
+  },
+  {
+    "name": "KUT Radio, Austin&apos;s NPR Station",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Mississippi Free Press",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Organization/Foundation"
+  },
+  {
+    "name": "Mirror.co.uk",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Delaware State Police",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "San Francisco Chronicle",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "Reporters Without Borders",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Times",
+    "bias_rating": "Left vs. Right Bias: How we rate the bias of media sources",
+    "factual_reporting": "Your Support is Essential",
+    "country": "Join today for $1 to $5 per Month",
+    "media_type": "Your Support is Essential",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "alicublog",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Nashville Scene",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "WSLS-TV",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Sooty Empiric",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "CBS Boston",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Air Mail",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "News Blog, Riverfront Times",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Monmouth University &#x2026;",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "HillReporter.com",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "No Title | AIER",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "PIIE",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Suffolk University",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "MEDIUM CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "Asra Investigates",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Nation",
+    "bias_rating": "LEFT",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Magazine"
+  },
+  {
+    "name": "Yahoo Entertainment",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Alabama Daily News",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "NewsTrends KE",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Houston Chronicle",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "The Lid",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Slack Tide",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Roll Call",
+    "bias_rating": "LEAST BIASED",
+    "factual_reporting": "VERY",
+    "country": "VERY",
+    "media_type": "HIGH",
+    "mbfc_credibility_rating": "HIGH",
+    "popularity": "USA (44/180 Press Freedom)"
+  },
+  {
+    "name": "The Montgomery Advertiser",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "MOSTLY FREE"
+  },
+  {
+    "name": "News Press",
+    "bias_rating": "EXTREME",
+    "factual_reporting": "",
+    "country": "RIGHT",
+    "media_type": "",
+    "mbfc_credibility_rating": "VERY",
+    "popularity": "VERY"
+  },
+  {
+    "name": "CBS Los Angeles",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "NBC New York",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "Failed Fact Checks",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Left vs. Right Bias: How we rate the bias of media sources"
+  },
+  {
+    "name": "nwitimes.com",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Washington Times",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Morning Shots",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Poynter",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "FIRE",
+    "bias_rating": "Left vs. Right Bias: How we rate the bias of media sources",
+    "factual_reporting": "Your Support is Essential",
+    "country": "Your Support is Essential",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Jezebel",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Office of the Texas Governor",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "ESPN",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Speaker Nancy Pelosi",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "ScienceDirect.com",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Military Reporters &amp; Editors Assoc",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Mariia Kravchenko",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "United States Navy",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Mercury News",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Military.com",
+    "bias_rating": "LEAST BIASED",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "ProFootballTalk",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "U.S. Department of Commerce",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Western Journal",
+    "bias_rating": "Far Right, Failed Fact Checks, Propaganda, Conspiracy",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "MIXED",
+    "mbfc_credibility_rating": "MIXED",
+    "popularity": "USA (44/180 Press Freedom)"
+  },
+  {
+    "name": "WFAA-TV",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Dallas Morning News",
+    "bias_rating": "RIGHT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "Documented",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Hachette Book Group",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Stars &amp; Stripes",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Defense One",
+    "bias_rating": "LEAST BIASED",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "Washington Examiner",
+    "bias_rating": "RIGHT",
+    "factual_reporting": "MIXED",
+    "country": "MIXED",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "MEDIUM CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "INQUIRE",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Washington Free Beacon",
+    "bias_rating": "RIGHT",
+    "factual_reporting": "MIXED",
+    "country": "MIXED",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "MEDIUM CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "Plain Dealer",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "France 24",
+    "bias_rating": "LEAST BIASED",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "MOSTLY FREE"
+  },
+  {
+    "name": "CBS San Francisco",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Ohio Capital Journal",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Christianity Today",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 48/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Nevada Current",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The French Press",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Federal Bureau of Investigation",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Law &amp; Crime",
+    "bias_rating": "MIXED",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 48/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Grist",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "The Crime Report",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "OCCRP",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "FOX Carolina",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "madison.com",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Congressional-Executive Commission on China",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Based Politics",
+    "bias_rating": "Left vs. Right Bias: How we rate the bias of media sources",
+    "factual_reporting": "Your Support is Essential",
+    "country": "NFN-Low Biased Factual News",
+    "media_type": "Join today for $1 to $5 per Month",
+    "mbfc_credibility_rating": "",
+    "popularity": "Your Support is Essential"
+  },
+  {
+    "name": "Amnesty International",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "United Kingdom",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "MOSTLY FREE"
+  },
+  {
+    "name": "NBC 5 Dallas-Fort Worth",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Read Max",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "U.S. Senator Joe Manchin of West Virginia",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Yahoo News",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "Lewiston Sun Journal",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "HuffPost",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Los Angeles Magazine",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "New Lines Magazine",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "WCTX-TV",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "ITEP",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "WMUR",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "MIT Technology Review",
+    "bias_rating": "PRO-SCIENCE",
+    "factual_reporting": "VERY",
+    "country": "VERY",
+    "media_type": "HIGH",
+    "mbfc_credibility_rating": "HIGH",
+    "popularity": "USA (44/180 Press Freedom)"
+  },
+  {
+    "name": "Dissent",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "U.S. Senator Ron Wyden of Oregon",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The American Conservative",
+    "bias_rating": "RIGHT-CENTER",
+    "factual_reporting": "MOSTLY FACTUAL",
+    "country": "MOSTLY FACTUAL",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Magazine"
+  },
+  {
+    "name": "Toronto Star",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "Canada (14/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "Marist Poll",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Bulwark",
+    "bias_rating": "RIGHT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "Vanity Fair",
+    "bias_rating": "LEFT",
+    "factual_reporting": "MOSTLY FACTUAL",
+    "country": "MOSTLY FACTUAL",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Magazine"
+  },
+  {
+    "name": "Audacy",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Wrap",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Radio Free Europe/Radio Liberty",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Joint Chiefs of Staff",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "KCUR 89.3",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Slate",
+    "bias_rating": "LEFT",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "who13.com",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Third Way",
+    "bias_rating": "MOSTLY FACTUAL",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "JPMorgan Chase &amp; Co.",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The San Francisco Standard",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "GOP.com",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Bridge Michigan",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Big Picture",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "CheneyForWyoming.com",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "DemCast",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "U.S. Department of Defense",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Justice News",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "City Pulse",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "BMJ",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "president.gov.ua",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "McClatchy Washington Bureau",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "WPLG-TV",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "National Observer",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "OutKick",
+    "bias_rating": "RIGHT-CENTER",
+    "factual_reporting": "MIXED",
+    "country": "MIXED",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "MEDIUM CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "Persuasion",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "U.S. ARMY RECRUITING COMMAND",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Real America&apos;s Voice News",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Burnham &amp; Gorokhov",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Election Law Blog",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Mississippi Today",
+    "bias_rating": "Extreme Right, Poor Sourcing, Plagiarism, Lack of Transparency",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "Panama 79/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "The Irish Times",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "Ireland (12/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "Monmouth University Polling Institute",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "CNN",
+    "bias_rating": "LEFT",
+    "factual_reporting": "MEDIUM CREDIBILITY",
+    "country": "MIXED",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "MEDIUM CREDIBILITY",
+    "popularity": "TV Station"
+  },
+  {
+    "name": "National Review",
+    "bias_rating": "RIGHT",
+    "factual_reporting": "MOSTLY FACTUAL",
+    "country": "MOSTLY FACTUAL",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Magazine"
+  },
+  {
+    "name": "Dan Diamond",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "University of New Hampshire Scholars&apos; Repository",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Curbed",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "ITV News",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "UK 35/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Noahpinion",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "ET Canada",
+    "bias_rating": "MOSTLY FACTUAL",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "Canada 16/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Anchorage Daily News",
+    "bias_rating": "LEAST BIASED",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "CNBC",
+    "bias_rating": "MOSTLY FACTUAL",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "Failed Fact Checks",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Mostly False"
+  },
+  {
+    "name": "BBC",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "United Kingdom (33/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "TV Station"
+  },
+  {
+    "name": "New Jersey Globe",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "KSDK-TV",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "LancasterOnline",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Nieman Lab",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "CBC News",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "Canada",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "MOSTLY FREE"
+  },
+  {
+    "name": "Geo News",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Vox",
+    "bias_rating": "LEFT",
+    "factual_reporting": "MOSTLY FACTUAL",
+    "country": "MOSTLY FACTUAL",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "The Bulwark Podcast",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Richmond Times-Dispatch",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Representative Ashley Hinson",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "bellingcat",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "West Virginia State Treasury",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Military Times",
+    "bias_rating": "LEAST BIASED",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "Front Page Magazine",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Citizen Lab",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "American Greatness",
+    "bias_rating": "RIGHT",
+    "factual_reporting": "MIXED",
+    "country": "MIXED",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "MEDIUM CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "FOX13 News Memphis",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Maine Public",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "The Advocate",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Virginia Mercury",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "ACA Signups",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Jerusalem Post",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Bernie Moreno For Ohio",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Vulture",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "KARE-TV",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "US Food and Drug Administration",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Ars Technica",
+    "bias_rating": "LEAST BIASED",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "Religion News Service",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Editorial Board",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "E&amp;E News",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "WZTV",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "City Journal",
+    "bias_rating": "RIGHT",
+    "factual_reporting": "MOSTLY FACTUAL",
+    "country": "MOSTLY FACTUAL",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Magazine"
+  },
+  {
+    "name": "Newsweek",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Magazine"
+  },
+  {
+    "name": "Doug Jones",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The American Independent",
+    "bias_rating": "LEFT",
+    "factual_reporting": "MOSTLY FACTUAL",
+    "country": "MOSTLY FACTUAL",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "MEDIUM CREDIBILITY",
+    "popularity": "Organization/Foundation"
+  },
+  {
+    "name": "Fort Worth Star-Telegram",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Lawyers, Guns &amp; Money",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "WTKR-TV",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Arizona Daily Star",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "MOSTLY FREE"
+  },
+  {
+    "name": "Faster, Please!",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "KUTV-TV",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "U.S. Senator for Florida, Marco Rubio",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Time",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Magazine"
+  },
+  {
+    "name": "Page Array",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "TFIGlobal",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Office of the Governor",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "New Jersey Online",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Click2Houston.com",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Intercept",
+    "bias_rating": "LEFT",
+    "factual_reporting": "MOSTLY FACTUAL",
+    "country": "MOSTLY FACTUAL",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "Census.gov",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Chicago Tribune",
+    "bias_rating": "RIGHT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "The Times of Israel",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "Israel (88/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "Orlando Sentinel",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 48/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Space.com",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "April 16",
+    "bias_rating": "Left vs. Right Bias: How we rate the bias of media sources",
+    "factual_reporting": "Your Support is Essential",
+    "country": "Join today for $1 to $5 per Month",
+    "media_type": "Your Support is Essential",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Snopes.com",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Wall Street Journal",
+    "bias_rating": "RIGHT-CENTER",
+    "factual_reporting": "MOSTLY FACTUAL",
+    "country": "MOSTLY FACTUAL",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "Dan Wang",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Nicholas Grossman",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Los Angeles Times",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "SFGATE",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "NH Journal",
+    "bias_rating": "USA 45/180",
+    "factual_reporting": "NFN-Low Biased Factual News",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "Your Support is Essential",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "U.S. Embassy in Ukraine",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "PNAS",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "USCIS",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "War on the Rocks",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Supreme Court of the United States",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Santa Fe New Mexican",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "VICE",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "MOSTLY FACTUAL",
+    "country": "MOSTLY FACTUAL",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "Virgin.com",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Chronicle of Higher Education",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Comment is Freed",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Forward",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Fortune",
+    "bias_rating": "RIGHT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Magazine"
+  },
+  {
+    "name": "Discourse Blog",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "DW.COM",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Kansas City Star",
+    "bias_rating": "HIGH",
+    "factual_reporting": "USA 45/180",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "Left vs. Right Bias: How we rate the bias of media sources",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Colorado Public Radio",
+    "bias_rating": "VERY-",
+    "factual_reporting": "USA",
+    "country": "USA",
+    "media_type": "USA 45/180",
+    "mbfc_credibility_rating": "USA 45/180",
+    "popularity": "History"
+  },
+  {
+    "name": "Miami Herald",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "Breaking the News",
+    "bias_rating": "Left vs. Right Bias: How we rate the bias of media sources",
+    "factual_reporting": "Your Support is Essential",
+    "country": "NFN-Low Biased Factual News",
+    "media_type": "Join today for $1 to $5 per Month",
+    "mbfc_credibility_rating": "",
+    "popularity": "Your Support is Essential"
+  },
+  {
+    "name": "MarketWatch",
+    "bias_rating": "RIGHT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "Ground Truths",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Coin Center",
+    "bias_rating": "Click the links below for a detailed report",
+    "factual_reporting": "NFN-Low Biased Factual News",
+    "country": "Join today for $1 to $5 per Month",
+    "media_type": "Your Support is Essential",
+    "mbfc_credibility_rating": "Your Support is Essential",
+    "popularity": ""
+  },
+  {
+    "name": "Grid News",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Just Security",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Organization/Foundation"
+  },
+  {
+    "name": "AlmanacNews.com",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Protean Magazine",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "WKMG",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Detroit News",
+    "bias_rating": "RIGHT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "Slow Boring",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "fcps.edu",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Task &amp; Purpose",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Siena College Research Institute",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "95.5 WSB",
+    "bias_rating": "RIGHT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Tv Station"
+  },
+  {
+    "name": "TYT Network",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Atlanta Journal-Constitution",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "The Seattle Times",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "Washington Blade",
+    "bias_rating": "HIGH",
+    "factual_reporting": "USA 45/180",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "Left vs. Right Bias: How we rate the bias of media sources",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "governor.ny.gov",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Common Sense",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Foundation for Economic Education",
+    "bias_rating": "RIGHT-CENTER",
+    "factual_reporting": "MIXED",
+    "country": "MIXED",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "MEDIUM",
+    "popularity": "Organization/Foundation"
+  },
+  {
+    "name": "Human Rights Watch",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Raw Story",
+    "bias_rating": "Detailed Report",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "MIXED",
+    "mbfc_credibility_rating": "MIXED",
+    "popularity": "USA (45/180 Press Freedom)"
+  },
+  {
+    "name": "Bloomberg",
+    "bias_rating": "HIGH CREDIBILITY",
+    "factual_reporting": "NFN-Low Biased Factual News",
+    "country": "USA (45/180 Press Freedom)",
+    "media_type": "TV Station",
+    "mbfc_credibility_rating": "Your Support is Essential",
+    "popularity": "High Traffic"
+  },
+  {
+    "name": "Internal Revenue Service",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Scientific American",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Magazine"
+  },
+  {
+    "name": "The New Criterion",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Freddie deBoer",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Meta",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Social Studies",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Breitbart",
+    "bias_rating": "RIGHT",
+    "factual_reporting": "USA (45/180 Press Freedom)",
+    "country": "MIXED",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "Website",
+    "popularity": "Website"
+  },
+  {
+    "name": "Haaretz",
+    "bias_rating": "LEFT",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "Israel (86/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "Army Times",
+    "bias_rating": "USA 48/180",
+    "factual_reporting": "NFN-Low Biased Factual News",
+    "country": "USA 48/180",
+    "media_type": "Left vs. Right Bias: How we rate the bias of media sources",
+    "mbfc_credibility_rating": "Your Support is Essential",
+    "popularity": "NFN-Low Biased Factual News"
+  },
+  {
+    "name": "Glenn Loury",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "FOX 35 Orlando",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Gothamist",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "WTTG-TV",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Page Six",
+    "bias_rating": "Left vs. Right Bias: How we rate the bias of media sources",
+    "factual_reporting": "Your Support is Essential",
+    "country": "Your Support is Essential",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Salon",
+    "bias_rating": "LEFT",
+    "factual_reporting": "MOSTLY FACTUAL",
+    "country": "MOSTLY FACTUAL",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "Alabama Political Reporter",
+    "bias_rating": "LEAST BIASED",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "MOSTLY FREE"
+  },
+  {
+    "name": "Spectrum News 1 Central NY",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The 19th",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "TMZ.com",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Mashable",
+    "bias_rating": "MOSTLY FACTUAL",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "USC Annenberg School for Communication and Journalism",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "6abc",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Jewish Insider",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "Minnesota Department of Health",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "JAMA Network",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Department of Transportation",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Sky News",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Sunday Times",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Indianapolis Star",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Reuters",
+    "bias_rating": "LEAST BIASED",
+    "factual_reporting": "VERY",
+    "country": "VERY",
+    "media_type": "HIGH",
+    "mbfc_credibility_rating": "HIGH",
+    "popularity": "United Kingdom (34/180 Press Freedom)"
+  },
+  {
+    "name": "Brennan Center for Justice",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Organization/Foundation"
+  },
+  {
+    "name": "Payday Report",
+    "bias_rating": "Left vs. Right Bias: How we rate the bias of media sources",
+    "factual_reporting": "Your Support is Essential",
+    "country": "Your Support is Essential",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Reactionary",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "El American",
+    "bias_rating": "PRO-SCIENCE",
+    "factual_reporting": "VERY-",
+    "country": "VERY-",
+    "media_type": "HIGH",
+    "mbfc_credibility_rating": "HIGH",
+    "popularity": "USA (45/180 Press Freedom)"
+  },
+  {
+    "name": "Inside Higher Ed",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "NBC Chicago",
+    "bias_rating": "Detailed Report",
+    "factual_reporting": "RIGHT-CENTER",
+    "country": "RIGHT-CENTER",
+    "media_type": "MIXED",
+    "mbfc_credibility_rating": "MIXED",
+    "popularity": "USA (45/180 Press Freedom)"
+  },
+  {
+    "name": "Insider",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "Intelligencer/Wheeling &#x2026;",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "medRxiv",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Washington Post",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "MOSTLY FACTUAL",
+    "country": "MOSTLY FACTUAL",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "LGBTQ Nation",
+    "bias_rating": "MOSTLY FACTUAL",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "NPS.gov",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "TIME",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Magazine"
+  },
+  {
+    "name": "Original Jurisdiction",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Crimson White",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Milwaukee Journal Sentinel",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "USA (44/180 Press Freedom)",
+    "country": "USA (44/180 Press Freedom)",
+    "media_type": "Newspaper",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Medium Traffic"
+  },
+  {
+    "name": "Monmouth University Polling &#x2026;",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Patriot Post",
+    "bias_rating": "RIGHT",
+    "factual_reporting": "MIXED",
+    "country": "MIXED",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "MEDIUM CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "WPTV",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Present Age",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Guardian",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "MIXED",
+    "country": "MIXED",
+    "media_type": "United Kingdom (33/180 Press Freedom)",
+    "mbfc_credibility_rating": "MEDIUM CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "CT Insider",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Spectator",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "U.S. Department of the Treasury",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "NCAA.org",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "spiked",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "HotAir",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Tennessean",
+    "bias_rating": "LEAST BIASED",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "The Post-Crescent",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "TODAY.com",
+    "bias_rating": "MOSTLY FACTUAL",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Omaha World-Herald",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Florida Phoenix",
+    "bias_rating": "USA 45/180",
+    "factual_reporting": "NFN-Low Biased Factual News",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "Your Support is Essential",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Bloomberg Law",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "National Archives",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Nevada Independent",
+    "bias_rating": "USA 45/180",
+    "factual_reporting": "NFN-Low Biased Factual News",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "Your Support is Essential",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "The Column",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The United States Senate Committee &#x2026;",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Raleigh News Observer",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "The Honest Broker",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Joni Mitchell",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Lincoln Project",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "MIXED",
+    "country": "MIXED",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "MEDIUM CREDIBILITY",
+    "popularity": "Organization/Foundation"
+  },
+  {
+    "name": "Daily Mail",
+    "bias_rating": "RIGHT",
+    "factual_reporting": "United Kingdom (35/180 Press Freedom)",
+    "country": "LOW",
+    "media_type": "United Kingdom (35/180 Press Freedom)",
+    "mbfc_credibility_rating": "Newspaper",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "Fast Company",
+    "bias_rating": "LEFT-CENTER BIAS",
+    "factual_reporting": "",
+    "country": "LEFT-CENTER",
+    "media_type": "",
+    "mbfc_credibility_rating": "HIGH",
+    "popularity": "HIGH"
+  },
+  {
+    "name": "KNXV",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "springfield-news-sun",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "wallstreet:online",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "ProPublica",
+    "bias_rating": "HIGH",
+    "factual_reporting": "USA 45/180",
+    "country": "USA 45/180",
+    "media_type": "Bias",
+    "mbfc_credibility_rating": "Left vs. Right Bias: How we rate the bias of media sources",
+    "popularity": "Left vs. Right Bias: How we rate the bias of media sources"
+  },
+  {
+    "name": "Deadline",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "Salt Lake Tribune",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Associated Press",
+    "bias_rating": "LEAST BIASED",
+    "factual_reporting": "VERY HIGH",
+    "country": "USA (44/180 Press Freedom)",
+    "media_type": "News Agency",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "High Traffic"
+  },
+  {
+    "name": "The Lever",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "U.S. Mission to the OSCE",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Systematic Hatreds",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Billboard",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Narrative Wars",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "WRAL-TV",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "City &amp; State New York",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Talking Points Memo",
+    "bias_rating": "LEFT",
+    "factual_reporting": "MOSTLY FACTUAL",
+    "country": "MOSTLY FACTUAL",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "Gizmodo",
+    "bias_rating": "LEFT",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "Florida Politics",
+    "bias_rating": "HIGH",
+    "factual_reporting": "NFN-Low Biased Factual News",
+    "country": "NFN-Low Biased Factual News",
+    "media_type": "Join today for $1 to $5 per Month",
+    "mbfc_credibility_rating": "Your Support is Essential",
+    "popularity": "Your Support is Essential"
+  },
+  {
+    "name": "Spotify",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Just The News",
+    "bias_rating": "Conspiracy Theories, Propaganda, Numerous Failed Fact Checks",
+    "factual_reporting": "RIGHT",
+    "country": "RIGHT",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": "MIXED"
+  },
+  {
+    "name": "CREW",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "National Journal",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Brookings",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "VERY-",
+    "country": "VERY-",
+    "media_type": "HIGH",
+    "mbfc_credibility_rating": "HIGH",
+    "popularity": "USA (45/180 Press Freedom)"
+  },
+  {
+    "name": "Lean Out with Tara Henley",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Board of Governors of the Federal Reserve System",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Arizona Attorney General&apos;s Office",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Al Jazeera",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "MIXED",
+    "country": "MIXED",
+    "media_type": "Qatar",
+    "mbfc_credibility_rating": "MEDIUM CREDIBILITY",
+    "popularity": "LIMITED FREEDOM"
+  },
+  {
+    "name": "Civil Eats",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Men Yell at Me",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Variety",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "The Moscow Times",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "Netherlands 4/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Mother Jones",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Magazine"
+  },
+  {
+    "name": "Oregon.gov",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "American Purpose",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "MOSTLY FREE"
+  },
+  {
+    "name": "KVUE-TV",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "conventionofstates.com",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "nsarchive.gwu.edu",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Chicago Sun-Times",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "AMAC",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Boston Globe",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "governor.mo.gov",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Daily Caller",
+    "bias_rating": "MEDIUM CREDIBILITY",
+    "factual_reporting": "NFN-Low Biased Factual News",
+    "country": "USA (44/180 Press Freedom)",
+    "media_type": "Website",
+    "mbfc_credibility_rating": "Your Support is Essential",
+    "popularity": "High Traffic"
+  },
+  {
+    "name": "Issues &amp; Insights",
+    "bias_rating": "MIXED",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "al.com",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Sports Illustrated",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Weekly Dish",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "PolitiFact",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "ABC News",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "TV Station"
+  },
+  {
+    "name": "Pew Research Center",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "United States Department of State",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Le&#xB7;gal In&#xB7;sur&#xB7;rec&#xB7; tion",
+    "bias_rating": "LEAST BIASED",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "Canada",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "MOSTLY FREE"
+  },
+  {
+    "name": "JONATHAN TURLEY",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "MSNBC",
+    "bias_rating": "LEFT",
+    "factual_reporting": "MIXED",
+    "country": "MIXED",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "MEDIUM CREDIBILITY",
+    "popularity": "TV Station"
+  },
+  {
+    "name": "House Majority PAC",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Heartland Signal",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Vicky Ward Investigates",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "GOV.UK",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Rolling Stone",
+    "bias_rating": "LEFT",
+    "factual_reporting": "HIGH",
+    "country": "USA (44/180 Press Freedom)",
+    "media_type": "Magazine",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "High Traffic"
+  },
+  {
+    "name": "The Federalist",
+    "bias_rating": "RIGHT",
+    "factual_reporting": "RIGHT",
+    "country": "RIGHT",
+    "media_type": "MIXED",
+    "mbfc_credibility_rating": "LOW CREDIBILITY",
+    "popularity": "USA (44/180 Press Freedom)"
+  },
+  {
+    "name": "FOX News Radio",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "VPM.org",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Gainesville Sun",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "Oxfam America",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Politico",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "Redfield and Wilton Strategies",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Abby Broyles",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Sabato&apos;s Crystal Ball",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "investors.modernatx.com",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "CIS.org",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Renew America Movement",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Fox News",
+    "bias_rating": "RIGHT",
+    "factual_reporting": "MEDIUM CREDIBILITY",
+    "country": "USA (44/180 Press Freedom)",
+    "media_type": "TV Station",
+    "mbfc_credibility_rating": "PANTS OF FIRE",
+    "popularity": "High Traffic"
+  },
+  {
+    "name": "Commentary Magazine",
+    "bias_rating": "MOSTLY FACTUAL",
+    "factual_reporting": "",
+    "country": "USA 45/180",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "American Thinker",
+    "bias_rating": "Conspiracy, Propaganda, Lack of Ownership Transparency, Failed Fact Checks",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "LOW",
+    "mbfc_credibility_rating": "LOW",
+    "popularity": "USA (45/180 Press Freedom)"
+  },
+  {
+    "name": "Flathead Beacon",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Cap Times",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Texas Tribune",
+    "bias_rating": "Your Support is Essential",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Post and Courier",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Baltimore Sun",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 48/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Democracy Docket",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "McSweeney&apos;s",
+    "bias_rating": "SATIRE",
+    "factual_reporting": "N/A",
+    "country": "N/A",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "N/A",
+    "popularity": "Website"
+  },
+  {
+    "name": "Kirkus Reviews",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "KHNL/KGMB",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "ESPN Front Row",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "MyRGV.com",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "People.com",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Governor Tom Wolf",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "KSTU",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "WISN",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Twitchy",
+    "bias_rating": "MIXED",
+    "factual_reporting": "FALSE",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "Left vs. Right Bias: How we rate the bias of media sources",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Ann Coulter",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Fox Business",
+    "bias_rating": "RIGHT-CENTER",
+    "factual_reporting": "MOSTLY FACTUAL",
+    "country": "MOSTLY FACTUAL",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "TV Station"
+  },
+  {
+    "name": "Centers for Disease Control and Prevention",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Daily Wire",
+    "bias_rating": "Conspiracy Theories, Propaganda, Failed Fact Checks",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "MIXED",
+    "mbfc_credibility_rating": "MIXED",
+    "popularity": "USA (44/180 Press Freedom)"
+  },
+  {
+    "name": "Datebook",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Casper Star-Tribune",
+    "bias_rating": "USA 48/180",
+    "factual_reporting": "NFN-Low Biased Factual News",
+    "country": "USA 48/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "Your Support is Essential",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Press Watch",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "James Webb Space Telescope",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Puck",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Independent",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "MIXED",
+    "country": "MIXED",
+    "media_type": "United Kingdom (33/180 Press Freedom)",
+    "mbfc_credibility_rating": "MEDIUM CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "Occupy Democrats",
+    "bias_rating": "Propaganda, Conspiracies, Failed Fact Checks",
+    "factual_reporting": "LOW",
+    "country": "LOW",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "LOW CREDIBILITY",
+    "popularity": "Organization/Foundation"
+  },
+  {
+    "name": "The Gateway Pundit",
+    "bias_rating": "EXTREME",
+    "factual_reporting": "",
+    "country": "RIGHT",
+    "media_type": "",
+    "mbfc_credibility_rating": "VERY",
+    "popularity": "VERY"
+  },
+  {
+    "name": "New Yorker",
+    "bias_rating": "LEFT",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Magazine"
+  },
+  {
+    "name": "Tablet Magazine",
+    "bias_rating": "RIGHT-CENTER",
+    "factual_reporting": "HIGH CREDIBILITY",
+    "country": "USA",
+    "media_type": "MOSTLY FREE",
+    "mbfc_credibility_rating": "Left vs. Right Bias: How we rate the bias of media sources",
+    "popularity": "Magazine"
+  },
+  {
+    "name": "Gallup",
+    "bias_rating": "LEAST BIASED",
+    "factual_reporting": "VERY",
+    "country": "VERY",
+    "media_type": "HIGH",
+    "mbfc_credibility_rating": "HIGH",
+    "popularity": "USA (45/180 Press Freedom)"
+  },
+  {
+    "name": "Pfizer",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "RealClearInvestigations",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Liberty Justice Center",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Uprising",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "UN Watch",
+    "bias_rating": "RIGHT",
+    "factual_reporting": "MOSTLY FACTUAL",
+    "country": "MOSTLY FACTUAL",
+    "media_type": "Switzerland (10/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Organization/Foundation"
+  },
+  {
+    "name": "The Dissenter",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "UnHerd",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Springfield News-Leader",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "PBS NewsHour",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Unz Review",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Alabama Today",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "flux.community",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Congressman Alan Lowenthal",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Arizona Republic",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "MOSTLY FREE"
+  },
+  {
+    "name": "Jewish Telegraphic Agency",
+    "bias_rating": "HIGH",
+    "factual_reporting": "USA 45/180",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "Left vs. Right Bias: How we rate the bias of media sources",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "LegiScan",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Reload",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Information",
+    "bias_rating": "MIXED",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Popular Information",
+    "bias_rating": "HIGH",
+    "factual_reporting": "USA 45/180",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "Left vs. Right Bias: How we rate the bias of media sources",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "THE TENNESSEE HOLLER",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "WTOP News",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "U.S. Department of Justice",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Hong Kong Free Press HKFP",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Jamie Wallis MP",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "NorthJersey.com",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Science",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "House Republican Leader",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Repairers of the Breach",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Dworkin Report",
+    "bias_rating": "LEFT",
+    "factual_reporting": "MIXED",
+    "country": "MIXED",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "MEDIUM CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "Newsbusters",
+    "bias_rating": "RIGHT",
+    "factual_reporting": "MIXED",
+    "country": "MIXED",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "MEDIUM CREDIBILITY",
+    "popularity": "Organization/Foundation"
+  },
+  {
+    "name": "Steyn Online",
+    "bias_rating": "Extreme Right, Conspiracy, Propaganda",
+    "factual_reporting": "NFN-Low Biased Factual News",
+    "country": "NFN-Low Biased Factual News",
+    "media_type": "Join today for $1 to $5 per Month",
+    "mbfc_credibility_rating": "Your Support is Essential",
+    "popularity": "Your Support is Essential"
+  },
+  {
+    "name": "New York Daily News",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "Voice of America",
+    "bias_rating": "LEAST BIASED",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Radio Station"
+  },
+  {
+    "name": "Detroit Free Press",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "Chalkboard Review",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "FRONTLINE",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The States",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "New England Journal of Medicine",
+    "bias_rating": "VERY HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Taiwan News",
+    "bias_rating": "MOSTLY FACTUAL",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "Taiwan 43/180",
+    "mbfc_credibility_rating": "Taiwan 43/180",
+    "popularity": "History"
+  },
+  {
+    "name": "1819news",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Postliberal Order",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "NY State Attorney General",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Hill",
+    "bias_rating": "LEAST BIASED",
+    "factual_reporting": "MOSTLY FACTUAL",
+    "country": "MOSTLY FACTUAL",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "republicanleader.senate.gov",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Trafalgar Group",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "polsci.umass.edu",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Center for American Progress",
+    "bias_rating": "LEFT",
+    "factual_reporting": "MIXED",
+    "country": "MIXED",
+    "media_type": "USA",
+    "mbfc_credibility_rating": "MEDIUM CREDIBILITY",
+    "popularity": "MOSTLY FREE"
+  },
+  {
+    "name": "The State",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "Select Committee to Investigate &#x2026;",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Reuters Institute for the Study &#x2026;",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Akron Beacon Journal",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "MOSTLY FREE"
+  },
+  {
+    "name": "The Triad",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Foreign Policy",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Kellyforalaska",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Southern Poverty Law Center",
+    "bias_rating": "LEFT",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Organization/Foundation"
+  },
+  {
+    "name": "PRESS RUN",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Project Veritas",
+    "bias_rating": "Propaganda, Conspiracy Theories, Failed Fact Checks",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "MIXED",
+    "mbfc_credibility_rating": "MIXED",
+    "popularity": "USA (44/180 Press Freedom)"
+  },
+  {
+    "name": "Office of the President",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Axios",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "NATO",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Dispatch",
+    "bias_rating": "RIGHT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "Northwest News Network",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Prime Minister of Canada",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "KLTV-TV",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Forbes",
+    "bias_rating": "RIGHT-CENTER",
+    "factual_reporting": "MOSTLY FACTUAL",
+    "country": "MOSTLY FACTUAL",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Magazine"
+  },
+  {
+    "name": "National Labor Relations Board",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Financial Times",
+    "bias_rating": "",
+    "factual_reporting": "HIGH CREDIBILITY",
+    "country": "HIGH",
+    "media_type": "United Kingdom (35/180 Press Freedom)",
+    "mbfc_credibility_rating": "Left vs. Right Bias: How we rate the bias of media sources",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "Albany Times Union",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "Montgomery County Public Schools",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Morning Consult",
+    "bias_rating": "LEAST BIASED",
+    "factual_reporting": "VERY",
+    "country": "VERY",
+    "media_type": "HIGH",
+    "mbfc_credibility_rating": "HIGH",
+    "popularity": "USA (45/180 Press Freedom)"
+  },
+  {
+    "name": "Revolver",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "New York Magazine",
+    "bias_rating": "LEFT",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Magazine"
+  },
+  {
+    "name": "The White House",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "MOSTLY FACTUAL",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Colorado Politics",
+    "bias_rating": "Left vs. Right Bias: How we rate the bias of media sources",
+    "factual_reporting": "Your Support is Essential",
+    "country": "NFN-Low Biased Factual News",
+    "media_type": "Join today for $1 to $5 per Month",
+    "mbfc_credibility_rating": "",
+    "popularity": "Your Support is Essential"
+  },
+  {
+    "name": "Florida Bulldog",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Wired",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "NBC4 Washington",
+    "bias_rating": "HIGH",
+    "factual_reporting": "USA 45/180",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "Left vs. Right Bias: How we rate the bias of media sources",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "opb",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Freedom of the Press Foundation",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Dan Stone",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Augusta Chronicle",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Chris Blattman",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "RSLC",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Denver Post",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "kofc.org",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Donald J. Trump",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Young America’s Foundation (YAF)",
+    "bias_rating": "RIGHT",
+    "factual_reporting": "HIGH",
+    "country": "USA 48/180",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "PressThink",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Presidentti",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Washington Monthly",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Magazine"
+  },
+  {
+    "name": "FOX31 Denver",
+    "bias_rating": "Detailed Report",
+    "factual_reporting": "RIGHT-CENTER",
+    "country": "RIGHT-CENTER",
+    "media_type": "MIXED",
+    "mbfc_credibility_rating": "MIXED",
+    "popularity": "USA"
+  },
+  {
+    "name": "WFLA-TV",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The AP (Alex Pareene) Newsletter",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Declaration for American Democracy",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Sun-Sentinel",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "A3P: The Article III Project",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Watts Up With That?",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "New York Times",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "Iowa Starting Line",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "USA Today",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "Yahoo Sports",
+    "bias_rating": "USA 45/180",
+    "factual_reporting": "NFN-Low Biased Factual News",
+    "country": "History",
+    "media_type": "Funded by / Ownership",
+    "mbfc_credibility_rating": "Your Support is Essential",
+    "popularity": "Analysis / Bias"
+  },
+  {
+    "name": "The Drive",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "KFF",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "mcminn.k12.tn.us",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Forever Wars",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Virginian-Pilot",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Daily Signal",
+    "bias_rating": "RIGHT",
+    "factual_reporting": "MOSTLY FACTUAL",
+    "country": "USA (45/180 Press Freedom)",
+    "media_type": "Website",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Medium Traffic"
+  },
+  {
+    "name": "FiveThirtyEight",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "KLBK | KAMC",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "CMS",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Spectrum News 1 Ohio",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Times-Standard",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "CDC",
+    "bias_rating": "Left vs. Right Bias: How we rate the bias of media sources",
+    "factual_reporting": "Your Support is Essential",
+    "country": "Join today for $1 to $5 per Month",
+    "media_type": "Your Support is Essential",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "TheJournal.ie",
+    "bias_rating": "Left vs. Right Bias: How we rate the bias of media sources",
+    "factual_reporting": "Your Support is Essential",
+    "country": "NFN-Low Biased Factual News",
+    "media_type": "Join today for $1 to $5 per Month",
+    "mbfc_credibility_rating": "",
+    "popularity": "Your Support is Essential"
+  },
+  {
+    "name": "Very Serious",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "NPR",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "VERY",
+    "country": "VERY",
+    "media_type": "HIGH",
+    "mbfc_credibility_rating": "HIGH",
+    "popularity": "USA (45/180 Press Freedom)"
+  },
+  {
+    "name": "Concord Monitor",
+    "bias_rating": "USA 48/180",
+    "factual_reporting": "NFN-Low Biased Factual News",
+    "country": "USA 48/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "Your Support is Essential",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Hollywood Reporter",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 48/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "The Dossier",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "KING-TV",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Brick House Cooperative",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Orange County Register",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "theepochtimes.com",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "NCPR Daily News",
+    "bias_rating": "MIXED",
+    "factual_reporting": "NFN-Low Biased Factual News",
+    "country": "Left vs. Right Bias: How we rate the bias of media sources",
+    "media_type": "NFN-Low Biased Factual News",
+    "mbfc_credibility_rating": "Your Support is Essential",
+    "popularity": "Join today for $1 to $5 per Month"
+  },
+  {
+    "name": "Nature",
+    "bias_rating": "PRO-SCIENCE",
+    "factual_reporting": "VERY",
+    "country": "VERY",
+    "media_type": "HIGH",
+    "mbfc_credibility_rating": "HIGH",
+    "popularity": "United Kingdom (33/180 Press Freedom)"
+  },
+  {
+    "name": "MLive.com",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Townhall",
+    "bias_rating": "RIGHT",
+    "factual_reporting": "MIXED",
+    "country": "",
+    "media_type": "MIXED",
+    "mbfc_credibility_rating": "LOW CREDIBILITY",
+    "popularity": "USA (45/180 Press Freedom)"
+  },
+  {
+    "name": "U.S. Office of Personnel Management",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Minding The Campus",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Cook Political Report",
+    "bias_rating": "LEAST BIASED",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "albanycountyda.com",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "WKBTWKBT",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Oregonian",
+    "bias_rating": "RIGHT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Newspaper"
+  },
+  {
+    "name": "The Harvard Crimson",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "The Trace",
+    "bias_rating": "LEFT-CENTER",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (44/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Website"
+  },
+  {
+    "name": "pjmedia.com",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "odessa-journal.com",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Complex",
+    "bias_rating": "MOSTLY FACTUAL",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "Split Ticket",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "New Republic",
+    "bias_rating": "LEFT",
+    "factual_reporting": "HIGH",
+    "country": "HIGH",
+    "media_type": "USA (45/180 Press Freedom)",
+    "mbfc_credibility_rating": "HIGH CREDIBILITY",
+    "popularity": "Magazine"
+  },
+  {
+    "name": "The Columbus Dispatch",
+    "bias_rating": "HIGH",
+    "factual_reporting": "Left vs. Right Bias: How we rate the bias of media sources",
+    "country": "USA 45/180",
+    "media_type": "History",
+    "mbfc_credibility_rating": "NFN-Low Biased Factual News",
+    "popularity": "Funded by / Ownership"
+  },
+  {
+    "name": "The Cavalier Daily",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  },
+  {
+    "name": "Protocol",
+    "bias_rating": "",
+    "factual_reporting": "",
+    "country": "",
+    "media_type": "",
+    "mbfc_credibility_rating": "",
+    "popularity": ""
+  }
+]

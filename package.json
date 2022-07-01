@@ -5,9 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "setup:main": "npm install",
+    "setup:frontend": "npm --prefix ./frontend install",
+    "setup:backend": "npm --prefix ./backend install",
+    "setup:scraper": "npm --prefix ./scraper install",
+    "setup:db-migrate": "npm --prefix ./scraper run db:migrate",
+    "setup:all": "npm run setup:main && npm run setup:frontend && npm run setup:backend && npm run setup:scraper && npm run setup:db-migrate",
+    "dev-backend": "npm --prefix ./backend run dev",
+    "dev-frontend": "npm --prefix ./frontend run start",
     "dev-watch": "concurrently \"npm run dev-backend\" \"npm run dev-frontend\"",
-    "dev-backend": "cd backend && npm run dev",
-    "dev-frontend": "cd frontend && npm start"
+    "build:frontend": "npm --prefix ./frontend run build",
+    "build:backend": "npm --prefix ./backend run prod",
+    "build:all": "npm run build:frontend && npm run build:backend"
   },
   "repository": {
     "type": "git",
