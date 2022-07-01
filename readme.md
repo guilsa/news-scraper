@@ -140,7 +140,6 @@ TBD. If you can, please support these and other projects by contributing what yo
 
 ## Easy
 
-- Remove last n articles from ui, no longer needed
 - Make the express app simpler (shouldn't have used the express application generator)
 
 ## Med

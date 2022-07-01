@@ -6,9 +6,8 @@ import './App.css'
 
 import { groupBy } from './utils/groupBy'
 import { isFilterBy } from './utils/isFilterBy'
-import { categoryToString, formatLastModified } from './utils/custom'
+import { categoryToString } from './utils/custom'
 import { useFetch } from './hooks/useFetch'
-import { useCountFilteredArticles } from './hooks/useCountFilteredArticles'
 
 function displayArticleDate(filterBy, date) {
   return filterBy !== 'date' ? dayjs(date).format('MM/DD/YYYY') : null
@@ -35,8 +34,6 @@ function App() {
 
   const [group, setGroup] = useState({})
   const [filterBy, setFilterBy] = useState('date')
-
-  const remainingCount = useCountFilteredArticles(group)
 
   const publicationSelection = ['The Atlantic', 'New York Times', 'Mother Jones', 'All']
 
@@ -78,12 +75,8 @@ function App() {
         </div>
       </div>
       <div>
-        <label style={{ fontSize: '0.8em', textDecoration: 'underline', display: 'inline' }}>
-          last {remainingCount} articles
-        </label>
         <label style={{ display: 'inline', fontSize: '0.8em' }}>
-          {' '}
-          | updated: {formatLastModified(data['last_modified'])}
+          updated: {new Date(data['last_modified'])?.toLocaleString()}
         </label>
       </div>
       <div className='badges' style={{ marginTop: 25, display: 'inline-block' }}>
