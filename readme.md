@@ -144,20 +144,23 @@ TBD. If you can, please support these and other projects by contributing what yo
 
 ## Med
 
+- Add citations table to help articles table store list of citations
+  - Enable foreign key support
+- Properly separate news articles by day inside infinite scroll
+- User can limit to the top n articles per day
 - Datetime bug: before day ends, backend seems to think its 2022-07-01, I expect 2022-06-30 (in articles' date column)
-- Refactorings
-  - Db migration automation should be done from database, not scraper
-  - Bring /services/bias up to parity with /services/articles
-  - Refactor scraper retry (ie. axios has built in functionality for this)
+- Db migration automation should be done from database, not scraper
+- Bring /services/bias up to parity with /services/articles
+- Db model updates
+  - Add favorite publication table (need user auth)
+    - Add a like column to sources (media bias) table in the meantime
+
+- Refactor scraper retry (ie. axios has built in functionality for this)
 - Remove inline css
-- Enable foreign key support
 
 ## Hard
 
 - Expand scraper to enumerate list of urls
-- Db model updates
-  - Add favorite column to sources (media bias) table
-  - Add citations table to help articles table store list of citations
 - Add proper logging to all services (scraper cron task, backend, etc)
 - Add darkmode
 

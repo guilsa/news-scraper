@@ -4,9 +4,6 @@ import dayjs from 'dayjs'
 
 import './App.css'
 
-import { groupBy } from './utils/groupBy'
-import { isFilterBy } from './utils/isFilterBy'
-import { categoryToString } from './utils/custom'
 import { useFetch } from './hooks/useFetch'
 
 function displayArticleDate(filterBy, date) {
@@ -15,14 +12,11 @@ function displayArticleDate(filterBy, date) {
 
 function App() {
   const [articles, setArticles] = useState([])
-  const [publication, setPublication] = useState('')
   const [page, setPage] = useState(1)
 
-  const isPublication = publication !== ''
   const paramsString = new URLSearchParams({
     page: page,
     limit: 30,
-    ...(isPublication ? { publication: publication } : {}),
   })
 
   const { status, data, error } = useFetch('/articles?' + paramsString.toString())
@@ -32,20 +26,7 @@ function App() {
     setArticles((oldArticles) => [...(oldArticles === [] ? [] : oldArticles), ...data.results])
   }, [setArticles, data.results])
 
-  const [group, setGroup] = useState({})
-  const [filterBy, setFilterBy] = useState('date')
-
-  const publicationSelection = ['The Atlantic', 'New York Times', 'Mother Jones', 'All']
-
-  React.useEffect(() => {
-    // data.results?.sort((a, b) => a.date < b.date)
-    setGroup(groupBy(data.results, filterBy))
-  }, [data, filterBy, publication])
-
-  const handleFilterByPublisher = (target) => {
-    if (target.getAttribute('name') === 'All') setPublication('')
-    else setPublication(target.getAttribute('name'))
-  }
+  const filterBy = 'date'
 
   React.useEffect(() => {
     if (status === 'fetching') return
@@ -61,40 +42,11 @@ function App() {
 
   return (
     <div>
-      <div className='badges'>
-        <label>Filter by:</label>
-        {/* TODO: rename isFilterBy to something related to isActive */}
-        <div className={isFilterBy(filterBy, 'date')} onClick={() => setFilterBy('date')}>
-          Date
-        </div>
-        <div className={isFilterBy(filterBy, 'source')} onClick={() => setFilterBy('source')}>
-          Source
-        </div>
-        <div className={isFilterBy(filterBy, 'bias_rating')} onClick={() => setFilterBy('bias_rating')}>
-          Bias
-        </div>
-      </div>
-      <div>
-        <label style={{ display: 'inline', fontSize: '0.8em' }}>
-          updated: {new Date(data['last_modified'])?.toLocaleString()}
-        </label>
-      </div>
-      <div className='badges' style={{ marginTop: 25, display: 'inline-block' }}>
-        <label>Publishers:</label>
-        {publicationSelection.map((pub, idx) => (
-          <div
-            key={idx}
-            name={pub}
-            className='publishers active'
-            style={{ display: 'inline-block' }}
-            onClick={(e) => handleFilterByPublisher(e.target)}
-          >
-            {pub}
-          </div>
-        ))}
-      </div>
+      <label style={{ display: 'inline', fontSize: '0.8em' }}>
+        updated: {new Date(data['last_modified'])?.toLocaleString()}
+      </label>
 
-      <div>
+      <div style={{ marginTop: 30 }}>
         {status === 'error' && <div>{error}</div>}
         {status === 'fetching' && <span>Loading.....</span>}
         {articles?.map((article) => {

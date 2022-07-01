@@ -33,6 +33,7 @@ function paginatedResults(req, res, next) {
 
     const stmt = db.prepare(
       `SELECT
+          articles.id,
           articles.title,
           articles.source,
           articles.description,
