@@ -144,6 +144,7 @@ TBD. If you can, please support these and other projects by contributing what yo
 
 ## Med
 
+- Datetime bug: before day ends, backend seems to think its 2022-07-01, I expect 2022-06-30 (in articles' date column)
 - Refactorings
   - Db migration automation should be done from database, not scraper
   - Bring /services/bias up to parity with /services/articles

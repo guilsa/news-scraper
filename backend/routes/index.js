@@ -7,17 +7,6 @@ var router = express.Router()
 
 const middleware = [validatePaginationLimit, paginatedResults]
 
-function replaceCitationsStrWithTotalCitationsInt(arr) {
-  return arr.reduce((storage, item) => {
-    if (item['totalCitations'] !== undefined) {
-      item['totalCitations'] = item['citations'].split('; ').length
-      delete item.citations
-    }
-    storage.push(item)
-    return storage
-  }, [])
-}
-
 router.get('/articles', middleware, function (req, res) {
   res.json(res.paginatedResults)
 })
@@ -65,8 +54,13 @@ function paginatedResults(req, res, next) {
 
     const results = {}
 
-    results.results = replaceCitationsStrWithTotalCitationsInt(articles)
-    results.results = articles.sort((a, b) => b['totalCitations'] - a['totalCitations'])
+    results.results = articles
+      .reduce((storage, item) => {
+        item['totalCitations'] = item['citations'] === null ? 0 : item['citations'].split('; ').length
+        storage.push(item)
+        return storage
+      }, [])
+      .sort((a, b) => b['totalCitations'] - a['totalCitations'])
 
     results.last_modified = lastModified.createdAt
 
