@@ -17,12 +17,6 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(min(650px, 100%), 1fr));
 }
 
-.box {
-  border-radius: 5px;
-  padding: 2px auto;
-  font-size: 1em;
-}
-
 .badges {
   font-size: 0.7em;
   font-weight: bold;
