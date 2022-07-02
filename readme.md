@@ -146,7 +146,7 @@ TBD. If you can, please support these and other projects by contributing what yo
 
 - Add citations table to help articles table store list of citations
   - Enable foreign key support
-- Properly separate news articles by day inside infinite scroll
+- Separate news articles by day inside infinite scroll
 - User can limit to the top n articles per day
 - Datetime bug: before day ends, backend seems to think its 2022-07-01, I expect 2022-06-30 (in articles' date column)
 - Db migration automation should be done from database, not scraper
@@ -181,14 +181,17 @@ TBD. If you can, please support these and other projects by contributing what yo
 
 # Learnings
 
-Database Best Practices
+If this was a blog post, what would I write?
 
-- Have a schema migration strategy
-  - Reproducibility, automation and version control
-  - In general, we want to automate the creation of database schemas for development and testing and have version control and roll things back/forward/latest.
-  - Use tools like Knex.js and have `db:migrate` and `db:seed` npm scripts.
-  - Knex.js comes with an `init` command which creates a db config file template with dev/staging/prod settings for db initialization based on the given `process.env` settings. You can interact with something like `dotenv` from here.
-  - For more examples and best practices, check out Alembic's or Knex.js' docs and their respective migration pages.
+### Database Best Practices
+
+Have a schema migration strategy! Think of the power of db reproducibility, automation and version control.
+
+In general, we want to automate the creation of database schemas for development and testing and have version control and roll things back/forward/latest.
+
+Use tools like Knex.js and have `db:migrate` and `db:seed` npm scripts. Knex.js comes with an `init` command which creates a db config file template with dev/staging/prod settings for db initialization based on the given `process.env` settings. You can interact with something like `dotenv` from here.
+
+For more examples and best practices, check out Alembic's or Knex.js' docs and their respective migration pages.
 
 ### Take advantage of NPM scripts
 
@@ -200,7 +203,30 @@ Create "pre" and "post" scripts and NPM will automatically run them in order. So
 
 It's possible to pass environment variables using the "config" field in your `package.json` file. Note that this is great but "encourages confusing and non-12-factor-app-compliant patterns".
 
-### Project Organization: Component Naming Convention & Folder Structure 
+### Component mocking with manual data injection may help improve developer confidence
+
+If you're rapid developing and prototyping and aren't doing TDD, or setting up a UI building framework like Storybook is simply too much at the moment, consider keeping handy a .json file export of some of your database models so that you can inject them into your components to test new use cases. You can bypass all the backend data fetching process and select exactly the piece of data that you want. We increase our testing confidence when we can limit to fewer items and check if they load properly, then if this first test passes, we can return to loading thousands of items at once.
+
+```
+{
+    "title": "What the Joe Rogan podcast controversy says about the online misinformation ecosystem",
+    "description": "An open letter urging Spotify to crack down on COVID-19 misinformation has gained the signatures of more than a thousand doctors, scientists and health professionals spurred by growing concerns …",
+    "date": "2022-01-21",
+    "url": "https://www.npr.org/2022/01/21/1074442185/joe-rogan-doctor-covid-podcast-spotify-misinformation",
+    "source": "NPR",
+    "createdAt": "2022-01-22T01:00:01.764Z"
+  },
+  {
+    "title": "Trump Allies Are Still Feeding the False 2020 Election Narrative",
+    "description": "Fifteen months after they tried and failed to overturn the 2020 election, the same group of lawyers and associates is continuing efforts to decertify the vote, feeding a false narrative.  — Give this article- - - Read in app",
+    "date": "2022-04-18",
+    "url": "https://www.nytimes.com/2022/04/18/us/politics/trump-allies-election-decertify.html",
+    "source": "New York Times",
+    "createdAt": "2022-04-18T21:00:01.495Z"
+  }
+```
+
+### Project Organization: Component Naming Convention & Folder Structure
 
 A well defined file and folder structure diminishes cognitive overload. Clutter impedes scalability and dev experience.
 
