@@ -11,6 +11,15 @@ body {
   }
 }
 
+main header {
+  display: inline;
+  font-size: 0.8em;
+}
+
+main section {
+  margin-top: 30px;
+}
+
 .grid {
   display: grid;
   grid-gap: 10px;

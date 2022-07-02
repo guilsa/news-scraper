@@ -36,17 +36,15 @@ function App() {
   }, [page, status])
 
   return (
-    <div>
-      <label style={{ display: 'inline', fontSize: '0.8em' }}>
-        updated: {new Date(data['last_modified'])?.toLocaleString()}
-      </label>
+    <main>
+      <header>updated: {new Date(data['last_modified'])?.toLocaleString()}</header>
 
-      <div style={{ marginTop: 30 }}>
+      <section>
         {status === 'error' && <div>{error}</div>}
         {status === 'fetching' && <span>Loading.....</span>}
         <ArticleList articles={articles} />
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }
 
