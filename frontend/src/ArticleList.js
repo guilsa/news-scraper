@@ -1,4 +1,4 @@
-import dayjs from 'dayjs'
+// import dayjs from 'dayjs'
 
 import './styles/Article.css'
 
@@ -8,31 +8,35 @@ function displayBiasRating(bias_rating) {
   return <>({bias_rating})</>
 }
 
-function displayArticleDate(filterBy, date) {
-  return filterBy !== 'date' ? dayjs(date).format('MM/DD/YYYY') : null
+// function displayNewDay(date) {
+//   return dayjs(date).format('MM/DD/YYYY')
+// }
+
+function displayTotalCitations(totalCitations) {
+  if (!totalCitations) return
+  return <span>({totalCitations})</span>
 }
 
 function Article(props) {
-  const filterBy = 'date'
-  const { source, bias_rating, url, title, description, date } = props
+  const { source, bias_rating, url, title, description, totalCitations } = props
 
   return (
-    <article className='article'>
-      <header>
+    <article className='container'>
+      <div className='publication-name'>
         <span>{source}</span>
         <span className='capitalize'>&nbsp;{displayBiasRating(bias_rating)}</span>
-      </header>
-      <section className='section'>
+      </div>
+      <div className='title-description'>
         <h3>
           <a href={url}>{title}</a>
         </h3>
         <p>{description}</p>
-        <span>{displayArticleDate(filterBy, date)}</span>
-      </section>
+        <span>{displayTotalCitations(totalCitations)}</span>
+      </div>
     </article>
   )
 }
 
 export default function ArticleList({ articles }) {
-  return articles?.map(({ id, ...props }) => <Article key={id} {...props} />)
+  return articles?.map(({ id, date, ...props }) => <Article key={id} {...props} />)
 }
