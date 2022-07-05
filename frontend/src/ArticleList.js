@@ -1,4 +1,4 @@
-// import dayjs from 'dayjs'
+import dayjs from 'dayjs'
 
 import './styles/Article.css'
 
@@ -8,9 +8,9 @@ function displayBiasRating(bias_rating) {
   return <>({bias_rating})</>
 }
 
-// function displayNewDay(date) {
-//   return dayjs(date).format('MM/DD/YYYY')
-// }
+function displayNewDay(date) {
+  return dayjs(date).format('MM/DD/YYYY')
+}
 
 function displayTotalCitations(totalCitations) {
   if (!totalCitations) return
@@ -19,7 +19,6 @@ function displayTotalCitations(totalCitations) {
 
 function Article(props) {
   const { source, bias_rating, url, title, description, totalCitations } = props
-
   return (
     <article className='container'>
       <div className='publication-name'>
@@ -37,6 +36,17 @@ function Article(props) {
   )
 }
 
-export default function ArticleList({ articles }) {
-  return articles?.map(({ id, date, ...props }) => <Article key={id} {...props} />)
+export default function ArticleList({ data }) {
+  return data?.map((blockOfContent) => {
+    const date = blockOfContent[0]
+    const contentBlock = blockOfContent[1]
+    return (
+      <div key={date}>
+        <div className='date'>{displayNewDay(date)}</div>
+        {contentBlock.map((content) => {
+          return <Article {...content} />
+        })}
+      </div>
+    )
+  })
 }

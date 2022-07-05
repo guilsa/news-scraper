@@ -42,7 +42,7 @@ function App() {
       <section>
         {status === 'error' && <div>{error}</div>}
         {status === 'fetching' && <span>Loading.....</span>}
-        <ArticleList articles={articles} />
+        <ArticleList data={articles} />
       </section>
     </main>
   )

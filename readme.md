@@ -146,7 +146,6 @@ TBD. If you can, please support these and other projects by contributing what yo
 
 - Add citations table to help articles table store list of citations
   - Enable foreign key support
-- Separate news articles by day inside infinite scroll
 - User can limit to the top n articles per day
 - Datetime bug: before day ends, backend seems to think its 2022-07-01, I expect 2022-06-30 (in articles' date column)
 - Db migration automation should be done from database, not scraper
