@@ -5,11 +5,46 @@ const config = require('../config')
 
 var router = express.Router()
 
-const middleware = [validatePaginationLimit, paginatedResults]
+const middleware = [validatePaginationLimit, paginatedResults, sortByCitations, groupBy]
 
 router.get('/articles', middleware, function (req, res) {
   res.json(res.paginatedResults)
 })
+
+function getKeyIdx(array, key) {
+  for (let i = 0; i < array.length; i++) {
+    const currentKey = array[i][0]
+    if (currentKey === key) return i
+  }
+  return -1
+}
+
+function groupBy(req, res, next) {
+  res.paginatedResults.results = res.paginatedResults.results.reduce((store, item) => {
+    const { date, id, ...other } = item
+    const indexOf = getKeyIdx(store, date)
+    if (indexOf !== -1) {
+      store[indexOf][1].push({ id, ...other })
+    } else {
+      store.push([date, [{ id, ...other }]])
+    }
+
+    return store
+  }, [])
+
+  next()
+}
+
+function sortByCitations(req, res, next) {
+  res.paginatedResults.results = res.paginatedResults.results
+    .reduce((storage, item) => {
+      item['totalCitations'] = item['citations'] === null ? 0 : item['citations'].split('; ').length
+      storage.push(item)
+      return storage
+    }, [])
+    .sort((a, b) => b['totalCitations'] - a['totalCitations'])
+  next()
+}
 
 function validatePaginationLimit(req, res, next) {
   const PAGE_LIMIT = 50
@@ -56,13 +91,6 @@ function paginatedResults(req, res, next) {
     const results = {}
 
     results.results = articles
-      .reduce((storage, item) => {
-        item['totalCitations'] = item['citations'] === null ? 0 : item['citations'].split('; ').length
-        storage.push(item)
-        return storage
-      }, [])
-      .sort((a, b) => b['totalCitations'] - a['totalCitations'])
-
     results.last_modified = lastModified.createdAt
 
     if (endIndex < count) {
