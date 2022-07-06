@@ -1,20 +1,22 @@
 # Table of Contents
 
-Hey! Welcome to my news scraper project. I've been using it to practice more Node.js develpoment, database best practices, devops and some interesting React and JavaScript concepts (ie. infinite scroll, data filtering, component architecture). Please checkout the [Learnings](#learnings) sections for more.
+Hey! Welcome to my news scraper project. I've been using it to practice more Node.js develpoment, database best practices, devops and some interesting React and JavaScript concepts (ie. infinite scroll, data filtering, component architecture).
 
-[About](#about)
-[Prerequisites](#prerequisites)
-[Install & start dev servers](#install--start-dev-servers)
-[Scrapers](#scrapers)
-[Querying the scraped news dataset](#querying-the-scraped-news-dataset)
-[Database Backup Scripts](#database-backup-scripts)
-[Data QA & Challenges](#data-qa--challenges)
-[Deployment Workflow](#deployment-workflow)
-[Environment Variables](#environment-variables)
-[PM2 Commands](#pm2-commands)
-[Todo](#todo)
-[Learnings](#learnings)
-[Contributions](#contributions)
+Please checkout the [Learnings](#learnings) section and my `package.json` setup for each directory for the most interesting and useful stuff.
+
+- [About](#about)
+- [Prerequisites](#prerequisites)
+- [Install & start dev servers](#install--start-dev-servers)
+- [Scrapers](#scrapers)
+- [Querying the scraped news dataset](#querying-the-scraped-news-dataset)
+- [Database Backup Scripts](#database-backup-scripts)
+- [Data QA & Challenges](#data-qa--challenges)
+- [Deployment Workflow](#deployment-workflow)
+- [Environment Variables](#environment-variables)
+- [PM2 Commands](#pm2-commands)
+- [Todo](#todo)
+- [Learnings](#learnings)
+- [Contributions](#contributions)
 
 # About
 
@@ -149,11 +151,13 @@ pm2 monit
 
 # Todo
 
+Estimates and nomenclature (easy/med/hard) are drafts.
+
 ## Easy
 
 - Make the express app simpler (shouldn't have used the express application generator)
 
-## Med
+## Medium
 
 - Add totalCitations column (or article_details table)
 - Add ability to query all articles with a minimum amount of total citations
@@ -164,10 +168,8 @@ pm2 monit
 - Db migration automation should be done from database, not scraper
 - Bring /services/bias up to parity with /services/articles
 - Db model updates
-
   - Add favorite publication table (need user auth)
     - Add a like column to sources (media bias) table in the meantime
-
 - Refactor scraper retry (ie. axios has built in functionality for this)
 - Remove inline css
 
