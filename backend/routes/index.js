@@ -39,7 +39,7 @@ function sortByCitations(req, res, next) {
   res.paginatedResults.results = res.paginatedResults.results
     .reduce((storage, item) => {
       item['totalCitations'] = item['citations'] === null ? 0 : item['citations'].split('; ').length
-      storage.push(item)
+      if (item['totalCitations'] > 5) storage.push(item)
       return storage
     }, [])
     .sort((a, b) => b['totalCitations'] - a['totalCitations'])

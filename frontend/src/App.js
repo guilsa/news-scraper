@@ -13,7 +13,7 @@ function App() {
 
   const paramsString = new URLSearchParams({
     page: page,
-    limit: 30,
+    limit: 50,
   })
 
   const { status, data, error } = useFetch('/articles?' + paramsString.toString())
