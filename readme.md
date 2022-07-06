@@ -144,8 +144,10 @@ TBD. If you can, please support these and other projects by contributing what yo
 
 ## Med
 
-- Add citations table to help articles table store list of citations
-  - Enable foreign key support
+- Add totalCitations column (or article_details table)
+- Add ability to query all articles with a minimum amount of total citations
+  - Add a get historic days url route
+  - Limit /articles response by total citations
 - User can limit to the top n articles per day
 - Datetime bug: before day ends, backend seems to think its 2022-07-01, I expect 2022-06-30 (in articles' date column)
 - Db migration automation should be done from database, not scraper
@@ -163,6 +165,7 @@ TBD. If you can, please support these and other projects by contributing what yo
 - Expand scraper to enumerate list of urls
 - Add proper logging to all services (scraper cron task, backend, etc)
 - Add darkmode
+- Add url params to infinite scroll so that views are sharable
 
 # Ideas
 
@@ -181,6 +184,12 @@ TBD. If you can, please support these and other projects by contributing what yo
 # Learnings
 
 If this was a blog post, what would I write?
+
+### Infinite Scroll Limitations
+
+Apply filters before, not after, your paginated results
+
+There might be ways around this, but there are some interesting consequences if you do choose to use infinite scroll. For example, any filtering needs to be applied at the SQL query level, not in your Express.js middlelayer or in the frontend. The reason being, say that a fetch for articles is limited to 30 items at a time. And say that you chose to apply a filter after you're grabbed your paginated results which removes anything with less than 10 citations. Well, if the backend finds 0, it only searched the paginated results. At this point, the user can't put through a call to fetch more.
 
 ### Database Best Practices
 
