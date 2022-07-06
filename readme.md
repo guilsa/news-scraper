@@ -200,9 +200,21 @@ If this was a blog post, what would I write?
 
 ### Infinite Scroll Limitations
 
-Apply filters before, not after, your paginated results.
+**Apply filters before, not after, your paginated results.**
 
 There might be ways around this, but there are some interesting consequences if you do choose to use infinite scroll. For example, any filtering needs to be applied at the SQL query level, not in your Express.js middlelayer or in the frontend. The reason being, say that a fetch for articles is limited to 30 items at a time. And say that you chose to apply a custom filter after you've queried for the paginated results - and the filter removes articles that received less than 10 citations. Well, if the backend finds none, it only searched the paginated results. At this point, the user can't put through a call to fetch for more.
+
+**Data merges during http get requests**
+
+I've recently decided to group articles inside particular days, and render it as such to the user. 
+
+Before: `const backendResponse = ['article1', 'article2', 'article3']`
+
+The simplest format I came up with is something like:
+
+After: `const backendResponse = [['date1', [1,2,3]], ['date2', [4,5,6]]]`
+
+As you can see, we introduced nesting. It easily gets complex to test as we grow the number of properties in the article list (ie. we would have objects instead of a list of integers). The main point though: be ready to implement a merge function that appends to the correct location in your local state tree. Consider simplifying it and writing tests around this - that's how I'm planning on tackling it. Stay tuned here for more.
 
 ### Database Best Practices
 
