@@ -1,3 +1,21 @@
+# Table of Contents
+
+Hey! Welcome to my news scraper project. I've been using it to practice more Node.js develpoment, database best practices, devops and some interesting React and JavaScript concepts (ie. infinite scroll, data filtering, component architecture). Please checkout the [Learnings](#learnings) sections for more.
+
+[About](#about)
+[Prerequisites](#prerequisites)
+[Install & start dev servers](#install--start-dev-servers)
+[Scrapers](#scrapers)
+[Querying the scraped news dataset](#querying-the-scraped-news-dataset)
+[Database Backup Scripts](#database-backup-scripts)
+[Data QA & Challenges](#data-qa--challenges)
+[Deployment Workflow](#deployment-workflow)
+[Environment Variables](#environment-variables)
+[PM2 Commands](#pm2-commands)
+[Todo](#todo)
+[Learnings](#learnings)
+[Contributions](#contributions)
+
 # About
 
 I often get my mainstream news from memeorandum.com.
@@ -129,13 +147,6 @@ pm2 logs
 pm2 monit
 ```
 
-# Contributions
-
-TBD. If you can, please support these and other projects by contributing what you can to honor their work:
-
-- [DietPi](https://dietpi.com/)
-- [Media Bias/Fact Check](https://mediabiasfactcheck.com/)
-
 # Todo
 
 ## Easy
@@ -187,9 +198,9 @@ If this was a blog post, what would I write?
 
 ### Infinite Scroll Limitations
 
-Apply filters before, not after, your paginated results
+Apply filters before, not after, your paginated results.
 
-There might be ways around this, but there are some interesting consequences if you do choose to use infinite scroll. For example, any filtering needs to be applied at the SQL query level, not in your Express.js middlelayer or in the frontend. The reason being, say that a fetch for articles is limited to 30 items at a time. And say that you chose to apply a filter after you're grabbed your paginated results which removes anything with less than 10 citations. Well, if the backend finds 0, it only searched the paginated results. At this point, the user can't put through a call to fetch more.
+There might be ways around this, but there are some interesting consequences if you do choose to use infinite scroll. For example, any filtering needs to be applied at the SQL query level, not in your Express.js middlelayer or in the frontend. The reason being, say that a fetch for articles is limited to 30 items at a time. And say that you chose to apply a custom filter after you've queried for the paginated results - and the filter removes articles that received less than 10 citations. Well, if the backend finds none, it only searched the paginated results. At this point, the user can't put through a call to fetch for more.
 
 ### Database Best Practices
 
@@ -377,3 +388,10 @@ How can I differentiate between component names with plural nouns versus collect
   - It's fine to export a component named `Settings` as that's a common and recognizable name and does not include a collection or a list of identical things. An example component name `SystemPreferences` is not the same as `PreferenceList` component because inside we have a collection of distinct things.
 
 </details>
+
+# Contributions
+
+TBD. If you can, please support these and other projects by contributing what you can to honor their work:
+
+- [DietPi](https://dietpi.com/)
+- [Media Bias/Fact Check](https://mediabiasfactcheck.com/)
