@@ -19,7 +19,7 @@ What's being used now:
 
 # Prerequisites
 
-- Node 16.11.0 via nvm.
+- [pnpm 7.x](https://pnpm.io/installation)
 - Deployment is done to a separate Raspberry-Pi style box.
 
 # Install & start dev servers

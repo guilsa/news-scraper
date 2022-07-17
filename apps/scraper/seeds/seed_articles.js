@@ -3,7 +3,8 @@
  * @returns { Promise<void> }
  */
 
-const data = require('../../database/seed/articles.json')
+// TODO: change to aliased directory
+const data = require('../../../libs/database/seed/articles.json')
 
 // TODO: Should only run in dev
 
