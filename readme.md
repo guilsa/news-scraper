@@ -39,21 +39,35 @@ What's being used now:
 
 # Prerequisites
 
-- Node 16.11.0 via nvm.
+- [pnpm 7.x](https://pnpm.io/installation)
 - Deployment is done to a separate Raspberry-Pi style box.
 
-# Install & start dev servers
+# Setup
 
-This is a monorepo for 3 services.
+This is a monorepo for 3 services:
 
-To install everything at once, use: `npm run setup:all`. Then start dev servers with: `npm run dev-watch`.
+- backend
+- frontend
+- scraper
 
-# Scrapers:
+## Installation
+
+```shell
+pnpm i
+```
+
+## Start dev servers
+
+```shell
+pnpm run dev-watch
+```
+
+# Scrapers
 
 There are 2 scraper services: articles and bias. Make sure you enter the `scraper` folder, then:
 
-- To schedule re-runs every 30 mins: `npm run start:cron`.
-- To run scrapers individually, run either `npm run scrape:articles` or `npm run scrape:bias`.
+- To schedule re-runs every 30 mins: `pnpm run start:cron`.
+- To run scrapers individually, run either `pnpm run scrape:articles` or `pnpm run scrape:bias`.
 
 # Querying the scraped news dataset:
 
@@ -206,7 +220,7 @@ There might be ways around this, but there are some interesting consequences if 
 
 **Data merges during http get requests**
 
-I've recently decided to group articles inside particular days, and render it as such to the user. 
+I've recently decided to group articles inside particular days, and render it as such to the user.
 
 Before: `const backendResponse = ['article1', 'article2', 'article3']`
 
