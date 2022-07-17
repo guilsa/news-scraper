@@ -22,22 +22,36 @@ What's being used now:
 - [pnpm 7.x](https://pnpm.io/installation)
 - Deployment is done to a separate Raspberry-Pi style box.
 
-# Install & start dev servers
+# Setup
 
-This is a monorepo for 3 services.
+This is a monorepo for 3 services:
 
-To install everything at once, use: `npm run setup:all`. Then start dev servers with: `npm run dev-watch`.
+- backend
+- frontend
+- scraper
 
-# Scrapers:
+## Installation
+
+```shell
+pnpm i
+```
+
+## Start dev servers
+
+```shell
+pnpm run dev-watch
+```
+
+# Scrapers
 
 There are 2 scraper services: articles and bias. Make sure you enter the `scraper` folder, then:
 
-- To schedule re-runs every 30 mins: `npm run start:cron`.
-- To run scrapers individually, run either `npm run scrape:articles` or `npm run scrape:bias`.
+- To schedule re-runs every 30 mins: `pnpm run start:cron`.
+- To run scrapers individually, run either `pnpm run scrape:articles` or `pnpm run scrape:bias`.
 
-# Querying the scraped news dataset:
+# Querying the scraped news dataset
 
-Enter the database folder, then access db:
+Enter the `database` folder, then access db:
 
 ```
 sqlite3 -readonly news.db
@@ -82,7 +96,7 @@ Corporate welfare, not woke tweets, is the problem with   Washington  RIGHT
 Double Standards: Princeton Turns Blind Eye To Plagiaris  Washington  RIGHT
 ```
 
-## Copy database from remote to host:
+## Copy database from remote to host
 
 ```
 scp user@host:path/file_name.db ./file_name.db
@@ -90,8 +104,8 @@ scp user@host:path/file_name.db ./file_name.db
 
 # Database Backup Scripts
 
-- Export/import bash scripts are available, located in `/database/scripts`
-- Export saves to the `/database/dump` folder
+- Export/import bash scripts are available, located in `/libs/database/scripts`
+- Export saves to the `/libs/database/dump` folder
 
 # Data QA & Challenges
 
@@ -111,7 +125,7 @@ Everything is set up to run on my local LAN, especially since I started this wit
 
 PM2 is used with `production` environment variables set in `ecosystem.config.js`.
 
-# PM2 Commands:
+# PM2 Commands
 
 As opposed to restart, which kills and restarts the process, reload achieves a 0-second-downtime reload. To reload an app:
 
@@ -177,7 +191,7 @@ TBD. If you can, please support these and other projects by contributing what yo
 
 # Learnings
 
-Database Best Practices
+## Database Best Practices
 
 - Have a schema migration strategy
   - Reproducibility, automation and version control
@@ -186,12 +200,12 @@ Database Best Practices
   - Knex.js comes with an `init` command which creates a db config file template with dev/staging/prod settings for db initialization based on the given `process.env` settings. You can interact with something like `dotenv` from here.
   - For more examples and best practices, check out Alembic's or Knex.js' docs and their respective migration pages.
 
-### Take advantage of NPM scripts
+## Take advantage of NPM scripts
 
-**Pre and Post scripts**
+### Pre and Post scripts
 
 Create "pre" and "post" scripts and NPM will automatically run them in order. So running "start" will automatically run "prestart" if you have that, etc.
 
-**Config field**
+### Config field
 
 It's possible to pass environment variables using the "config" field in your `package.json` file. Note that this is great but "encourages confusing and non-12-factor-app-compliant patterns".
